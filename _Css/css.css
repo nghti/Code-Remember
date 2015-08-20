@@ -1,0 +1,86 @@
+	/* bo trong goc*/
+    border-radius: 5px;
+    /* or */
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	/* css 1 input */
+	input[type=submit]
+    /* them 1icon nho nhe */
+    .what p:after {
+    border-left: 40px solid rgba(0, 0, 0, 0);
+    border-right: 40px solid rgba(0, 0, 0, 0);
+    border-top: 60px solid #009966;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 18px;
+    width: 0;
+    z-index: 9999;
+    
+    /* vip(uu tiên) */
+    !important;
+	/*cấp độ màu*/
+	background-color: #cc0000;
+	background: -moz-linear-gradient(bottom, #cc0000 30%, #330000 70%);
+	background: -o-linear-gradient(bottom, #cc0000 30%, #330000 70%);
+	background: -ms-linear-gradient(bottom, #cc0000 30%, #330000 70%);
+	background: -webkit-gradient(linear,left bottom,left top,color-stop(0.3, #cc0000),color-stop(0.7, #330000));
+	/*box-shadow*/
+	background: #cc0000;
+    height: 50px;
+    -moz-box-shadow: 5px 10px 5px #000;
+    -webkit-box-shadow: 5px 10px 5px #000;
+    box-shadow: 5px 10px 5px #000;
+	/*text-shadow*/
+	color: #cc0000;
+    font-size: 120%;
+    font-weight: bold;
+    text-shadow: 0 0 3px blue;
+	/*transition*/
+	vd:
+	p {
+    background: #cc0000;
+    transition: height 2s;
+    -moz-transition: height 2s;
+    -webkit-transition: height 2s;
+    -o-transition: height 2s;
+    height: 23px;
+    width: 120px;
+	}
+
+	p:hover {
+		height: 100px;
+	}
+	/*column*/
+	column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-rule: 1px dashed #cc0000;
+    -moz-column-rule: 1px dashed #cc0000;
+    -webkit-column-rule: 1px dashed #cc0000;
+	/* font */
+	@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('fonts/MyriadPro-Regular.eot');
+    src: url('fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/MyriadPro-Regular.woff') format('woff'),
+         url('fonts/MyriadPro-Regular.ttf') format('truetype'),
+         url('fonts/MyriadPro-Regular.svg#Soymilk') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	}
+	/* */
+.ui-controlgroup li a:after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-bottom: 17px solid transparent;
+	border-top: 18px solid transparent;
+	border-left: 15px solid #000000;
+	position: absolute;
+	top: 0px;
+	right: -15px;
+	}
+	

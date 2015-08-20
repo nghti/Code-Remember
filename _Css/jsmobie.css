@@ -1,0 +1,290 @@
+﻿/*viet tat css*/
+-> margin: 20px auto 20px auto; <=> margin: 20px auto 20px;
+-> padding: ^
+-> background: white url(image/ui.png) repeat-x top left scroll;
+	-color
+	-image
+	-repeat
+	-position
+	-attachment
+-> font: normal(italic) normal(small-caps) normal(bold) 18px/1.4em tohama, times;
+	-style
+	-variant
+	-weight
+	-size
+      line-height
+	-family
+-> border: 1px solid white;
+-> list-style: disc inside(outside) url(image/ui.png);
+	-type
+	-position
+	-image
+/*radius*/
+.ui-controlgroup-vertical .ui-btn.ui-first-child {
+    -webkit-border-top-left-radius: 20px!important;
+    border-top-left-radius: 20px!important;
+    -webkit-border-top-right-radius: 20px!important;
+    border-top-right-radius: 20px!important;
+}
+.ui-controlgroup-vertical .ui-btn.ui-last-child {
+    -webkit-border-bottom-left-radius: 20px!important;
+    border-bottom-left-radius: 20px!important;
+    -webkit-border-bottom-right-radius: 20px!important;
+    border-bottom-right-radius: 20px!important;
+}
+
+/*radius*/
+.ui-controlgroup .ui-btn {
+    -webkit-border-radius: 20px!important;
+	border-radius: 20px!important;
+    
+}
+border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;-ms-border-radius: 10px;-o-border-radius: 10px;
+/*after*/
+ .ui-controlgroup li a:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 41px solid transparent;
+    border-right: 40px solid #0e0f0f;
+    position: absolute;
+    top: 0px;
+    left: -40px;
+    transition: all 0.3s ease;
+   	-moz-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+}
+/*nth*/
+.content-home-menu li:nth-child(2),
+.content-home-menu li:nth-child(3),
+.content-home-menu li:nth-child(4){
+    border-bottom: thin solid #ffffff;
+}
+/*android*/
+ cam : #ff9b83
+ den lot: #aeadad 
+ color: #565656
+ 
+ overflow-x: hidden;
+overflow-y: visible;
+ 
+ 
+/*pass reszubi*/
+ http://reszubi.toasternet-online.de/android
+ reszubi
+ reszubi123
+ 
+ 
+/*ios 7*/
+font-family: Helvetica Neue; 
+http://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300
+/*android*/
+--------------------------------------------------------------------------------------------->
+- style magazile(Books & Magazines) 			chinh: #3156a3       		phu: #2a498b
+--------------------------------------------------------------------------------------------->
+- working car(Car Dealerships) 				chinh: #000000       		phu: #252525
+	Auto Dealer(Car Dealerships) 				chinh: #131c23       		phu: #363e44
+	carat(Car Dealerships) 					chinh: #f95446       		phu: #fa6d62
+	Carell(Car Dealerships) 					chinh: #f34b0a       		phu: #f5662f
+--------------------------------------------------------------------------------------------->
+- kiddo turf(Children) 							chinh: #f77600       		phu: #d26400
+--------------------------------------------------------------------------------------------->
+- activewear(Commerce) 						chinh: #e36355       		phu: #c15448
+	diagonal(Commerce) 						chinh: #70a3d8       		phu: #5f8bb8
+	shopsimple(Commerce) 						chinh: #a9d8ce       		phu: #90b8af
+--------------------------------------------------------------------------------------------->
+- spa(Health & Beauty) 						chinh: #7ab300       		phu: #689800
+	big day(Health & Beauty) 					chinh: #f1e5bd       		phu: #cec4a2
+	Boshonto(Health & Beauty) 				chinh: #ff9b83       		phu: #d9846f
+	brighton(Health & Beauty) 				chinh: #02aeea       		phu: #0294c7
+	dating(Health & Beauty) 					chinh: #f40e63       		phu: #d00c54
+	medpark(Health & Beauty) 				chinh: #132f54       		phu: #657890
+	memories(Health & Beauty) 				chinh: #d290ae       		phu: #b37b94
+	merriage(Health & Beauty) 				chinh: #ebc04f       		phu: #c8a343
+	ourwedding(Health & Beauty) 				chinh: #ff665f       		phu: #d95751
+	savethedata2(Health & Beauty) 			chinh: #f88484       		phu: #d37070
+	trendy(Health & Beauty) 					chinh: #4b3a69       		phu: #403159
+	vow(Health & Beauty) 					chinh: #3daeb8       		phu: #34949d
+--------------------------------------------------------------------------------------------->
+- bella motel(Hospitality & Restaurant) 		chinh: #a1bd57       		phu: #89a14a
+	agritourismo(Hospitality & Restaurant) 	chinh: #71aa1f       		phu: #60911a
+	lumina(Hospitality & Restaurant) 			chinh: #c4733b       		phu: #a76232
+	mazzareli(Hospitality & Restaurant) 		chinh: #8f8378       		phu: #7a6f66
+	seasons(Hospitality & Restaurant) 		chinh: #c53721       		phu: #a82f1c
+	white-rock(Hospitality & Restaurant) 		chinh: #6c858a       		phu: #5c7175
+--------------------------------------------------------------------------------------------->
+- lawyers(Law & Finance) 						chinh: #ff6666       		phu: #d95757
+--------------------------------------------------------------------------------------------->
+- werock(Music & Entertainment) 				chinh: #e62948       		phu: #c4233d
+--------------------------------------------------------------------------------------------->
+- Unreal Estate(Real Estate) 					chinh: #4982d7       		phu: #3e6fb7
+	argo(Real Estate) 						chinh: #33cc66       		phu: #2bae57
+	casa fresco(Real Estate) 					chinh: #f4ca0a       		phu: #d0ac09
+--------------------------------------------------------------------------------------------->
+- SaintChurch(Religion & Nonprofit) 			chinh: #ff6000       		phu: #d95200
+--------------------------------------------------------------------------------------------->
+- build(Small Business) 						chinh: #005c7d       		phu: #004e6a
+--------------------------------------------------------------------------------------------->
+- fitnessclub(Sports & Games) 					chinh: #ffa21d       		phu: #d98a19
+	gamedevs(Sports & Games) 				chinh: #c5db3b       		phu: #a8ba32
+--------------------------------------------------------------------------------------------->
+
+
+1.  NetBiz .::. Health & Beauty:          69(spa) -              done(android*, standard*, ios*)
+2.  NetBiz .::. Hospitality & Restaurant: 403(bella motel) -     done(android*, standard*, ios*)
+3.  NetBiz .::. Children:                 152(kiddo turf) -      done(android*, standard*, ios^) 
+4.  NetBiz .::. Car Dealerships:          179(working car) -     done(android*, standard*, ios^)
+5.  NetBiz .::. Music & Entertainment:    441(werock) -          done(android*, standard*, ios*)
+6.  NetBiz .::. Small Business:           205(build) -           done(android*, standard*, ios*)
+7.  NetBiz .::. Real Estate:              70(Unreal Estate) -    done(android*, standard*, ios*)
+8.  NetBiz .::. Commerce:                 
+391(activewear) -      done(android*, standard*, ios*)
+imag99(cover)
+9.  NetBiz .::. Books & Magazines:        229(style magazines) - done(android*, standard*, ios*)
+10. NetBiz .::. Sports & Games:           275(fitnessclub) -     done(android*, standard*, ios*) 
+11. NetBiz .::. Law & Finance:            406(lawyers) -		 done(android*, standard*, ios*)
+12. NetBiz .::. Religion & Nonprofit:     153(SaintChurch) -	 done(android*, standard*, ios*)
+
+-del- NetBiz .::. Sports & Games:           276(gamedevs) -		   done(android,)
+-del- NetBiz .::. Health & Beauty:          400(Boshonto) -        done(android,)
+-del- NetBiz .::. Health & Beauty:          149(medpark) -         done(android, standard)
+
+/*tong*/
+-android 				36
+-standard 			12
+-ios 				12
+/*add*/ Preview view1
+-ios
++Hospitality & Restaurant(agri tourismo)
+-android 
++Books & Magazines(imag99,passion,original)
++Children(bebe,magicreche)
+-cover
++Commerce(shopsimple)
++Health & Beauty(ourwedding,memori,dating)
++Car Dealerships(Auto Dealer)
++Real Estate(argo)
++Hospitality & Restaurant(agri tourismo)
++Sports & Games(gamedevs)
+/*date 7-10*/ ----------------------------------------------------------------------------/
+/*add*/ Preview
+-ios
++Hospitality & Restaurant(agri tourismo)
++Commerce(TenderShop)
+-android 
++Books & Magazines(imag99,passion,original)
++Children(bebe,magicreche)
++Health & Beauty(Arthur,Everafter)
+-cover
++Commerce(shopsimple)
++Health & Beauty(ourwedding,memori,dating)
++Car Dealerships(Auto Dealer)
++Real Estate(argo)
++Hospitality & Restaurant(agri tourismo,lumina)
++Sports & Games(gamedevs)
+/*loi~ img*/
+Hospitality & Restaurant(medicom) -androi(no) vs Home_Android_Mazzareli_anh(nham) img home(about) ....
+
+tinh yeu cua keny
+sua
+// ios
+-----MYBANDS -> MYBOOKS-----
+- mybands(home) ------> mybuch
+- Bands (hinh anh)       ------ Bücher    
+- - Bands Details(gioi thieu)    ------ Bücher -details
+- location(vị trí)	------
+- -location Details(kultur - und sportforum(văn hóa - thể thao và diễn đàn))	------
+- events 	-
+- - Events Details   => highfield festival 2014(lễ hội Highfield 2014)	-
+- lyrics(lời bài hát)	-
+- - Lyrics Details => Dust bowl(bụi bát)	-
+- datenschutz(riêng tư)	-
+- impressum(dấu ấn)	-
+
+- panel	------>
+- login	------>
+- forgot password	------>
+- register	------>
+- my account	------>
+- change password	------>
+- error(no)
+- thank you(yes)
+
+-------MYBOOKS(you)------
+home ->
+about  ->
+video& photos ->
+location(vị trí) ->
+
+category(loai sach) -> 
+-- new boook
+-- boook hot
+
+MYBOOKS(test)
+- home -> about -> feature((dung muc sach)->(moi)-(ban chay)) -> gallery -> pricing((sanpham)->(detail-cart)) -> contact
+
+color:
+den #010000
+den lot: #555555
+xanh: #98b827
+tran lot-top: #F9F9F9
+xam: #6e4444
+line-top: #eeeeee
+vang: #ffc107
+
+
+chu + chu trong box: #555555
+do? text: #e51c23
+do? bottom: #e84e40
+do? box: #b0120a 
+boder+test(in): #4a2215
+
+no #f9f9f9
+
+width: 590px
+margin-ngoai: 20px
+
+208 -> radius: 70px
+
+
+ios: padding(top) 28px
+	padding(content) 32px
+	
+	nho? 2tab+2
+	
+	from: nho: 24px 
+	lon: 36
+	
+	
+77 -> 320
+? -> 640
+
+myfoto
+test #616161
+top #00e5ff
+buttom #00b8d4
+da: #8d6e63
+
+
+
+
+del: 
+480 -> 69
+1024 > 
+
+
+
+info.txt (Books & Magazines)
+
+preview.jpg
+
+del het >>>> 'Health & Beauty'
+
+Boshonto??? Health & Beauty
+
+
+
+
+
+
+

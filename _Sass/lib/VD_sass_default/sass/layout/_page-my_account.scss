@@ -1,0 +1,23 @@
+.wp-btn {
+  width: 220px;
+  height: 55px;
+  border-radius: 10px;
+  border: 2px solid #b5b5b5;
+  background: #f6f6f6;
+  font-size: 20px;
+  color: #313131;
+  font-family: "Helvetica Neue";
+  cursor: pointer;
+  font-weight: 300;
+}
+.wp-l {
+  float: left;
+}
+.wp-r {
+  float: right;
+}
+.control-group .wp-btn:hover {
+  background: #ff9c00;
+  border: 0px;
+  color: #ffffff;
+}

@@ -1,0 +1,24 @@
+.wd-form-control.wd-time, .wd-form-control.wd-date {
+	line-height: 24px;
+	padding-top: 0;
+}
+.wd-logo a img {
+	width: auto;
+}
+.wd-block-receive-info .wd-form-receive-info .wd-form-control {
+	line-height: 47px !important;
+	padding-top: 0;
+}
+.dropdown div {
+	border-top: 1px solid #ccc;;
+}
+.wd-form-login .wd-form-control {
+	line-height: 28px;
+	padding-top: 0;
+}
+.wd-box:before {
+	border-bottom: 10px solid #c8c8c6;
+}
+.wd-box:after {
+	display: none;
+}

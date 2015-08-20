@@ -1,0 +1,159 @@
+﻿<-> PAGE( data-role="page" )
+data-add-back-btn	true | FALSE -> Tự động thêm một nút Back , chỉ tiêu đề
+data-back-btn-text	sometext -> Chỉ định một số văn bản cho nút Back
+data-back-btn-theme	letter (a-z) -> Ghi rõ màu nền cho nút Back
+data-close-btn-text	letter (a-z) -> Chỉ định một số văn bản cho nút Close trên hộp thoại
+data-dom-cache	true | FALSE -> xóa bộ nhớ cache jQuery DOM hoặc không cho các trang cá nhân ( nếu thiết lập đúng, bạn cần phải chăm sóc để quản lý các DOM mình và kiểm tra kỹ lưỡng về tất cả các thiết bị di động )
+data-overlay-theme	letter (a-z) -> Chỉ định lớp phủ ( nền) màu sắc của trang thoại
+data-theme	letter (a-z) -> Chỉ định màu sắc chủ đề của trang. Mặc định là " c "
+data-title	sometext -> Chỉ định tiêu đề trang
+data-url	url -> giá cập nhật URL , thay vì địa chỉ được sử dụng để yêu cầu các trang
+
+<-> HEADER( data-role="header" ) with FOOTER( data-role=footer" )
+data-id	sometext -> ID duy nhat, cân thiêt nêu dài
+data-position	INLINE | fixed -> tiêu đê nôi tuyên or đâu trang
+data-fullscreen	true | FALSE -> tiêu đê luôn đâu và nhìn xuyên or ko?
+data-theme	letter (A-z) -> màu săc măc đinh "a"
+
+<-> FIXED TOOLBAR( data-role="header" or data-role="footer" ) with data-position="fixed" => cố định thuộc tính
+data-disable-page-zoom	TRUE | false -> người dùng có thể mở rộng / thu nhỏ trang hoặc không
+data-fullscreen	true | FALSE -> thanh công cụ để luôn luôn được định vị ở phía trên và / hoặc dưới cùng
+data-tap-toggle	TRUE | false -> người dùng có thể chuyển đổi thanh công cụ khả năng hiển thị trên vòi nước / nhấp chuột hay không
+data-transition	SLIDE | fade | none -> định các hiệu ứng chuyển khi một vòi nước / nhấp chuột xảy ra
+data-update-page-padding	TRUE | false -> định miếng đệm của cả trên và dưới của trang được cập nhật trên thay đổi kích thước , chuyển đổi và " updatelayout " sự kiện ( jQuery Mobile luôn cập nhật những đệm vào " pageshow " sự kiện)
+data-visible-on-page-show	TRUE | false -> Chỉ định thanh công cụ khả năng hiển thị khi trang mẹ được thể hiện
+
+<-> CONTENT( data-role="content" ) => vai trò nội dung
+data-theme	letter (a-z) -> Chỉ định màu sắc chủ đề của nội dung. Mặc định là " c "
+
+<-> CONTROLGROUP( data-role="controlgroup" ) => vai trò nhóm các đối tượng
+data-mini	true | FALSE -> nhóm có kích thước nhỏ hoặc thường xuyên
+data-type	horizontal | VERTICAL -> nhóm này có nên được hiển thị theo chiều ngang hoặc theo chiều dọc
+
+<-> NAVBAR( <li> elements inside a container with data-role="navbar" ) => trong container để diền hướng
+data-icon	biểu tượng Tài liệu tham khảo Chỉ định biểu tượng của mục danh sách
+data-iconpos	left | right | TOP | bottom | notext -> định vị trí của các biểu tượng
+
+<-> BUTTON( data-role="button" ) => vai trò nút
+data-corners	TRUE | false -> tròn góc hay không?
+data-icon	-> biêu tượng
+data-iconpos	LEFT | right | top | bottom | notext -> vi trí 
+data-iconshadow	TRUE | false -> nút nên có bóng or không
+data-inline	true | FALSE	-> nút nôi tuyên or không
+data-mini	true | FALSE	-> nút size nho or thuong xuyên
+data-shadow	TRUE | false	-> nút có bóng or không
+data-theme	 letter (A-z)	-> Chi đinh màu săc cho nut
+ -=> nhiều nút: data-role="controlgroup"
+ 
+<-> CHECKBOX( type="checkbox" ) => kiểu hộp kiểm
+data-mini	true | FALSE -> Chỉ định sai có hộp kiểm có kích thước nhỏ hoặc thường xuyên
+data-role	none -> vai trò Ngăn chặn jQuery Mobile để hộp kiểm tra phong cách như nút
+data-theme	letter (a-z) -> Chỉ định màu sắc chủ đề của hộp kiểm
+ -=> nhiều nút: data-role="controlgroup"
+ 
+<-> RADIO BUTTON( type="radio" )
+data-mini	true | FALSE -> có nút có kích thước nhỏ hoặc thường xuyên
+data-role	none -> vai trò Ngăn chặn jQuery Mobile để radiobuttons phong cách như nút tăng cường
+data-theme	letter (a-z) -> Chỉ định màu sắc chủ đề của nút radio
+ 
+<-> COLLAPSIBLE( data-role="collapsible" ) => vai trò đóng, mở
+data-collapsed	TRUE | false -> Chỉ định sai cho dù nội dung nên được đóng cửa hoặc mở rộng
+data-collapsed-icon -> biểu tượng Tài liệu tham khảo Chỉ định biểu tượng của nút đóng mở . Mặc định là " cộng "
+data-content-theme	letter (a-z) -> Chỉ định màu sắc chủ đề của nội dung đóng mở . Cũng sẽ thêm góc được làm tròn đến nội dung đóng mở
+data-expanded-icon -> biểu tượng Tài liệu tham khảo Chỉ định biểu tượng của nút đóng mở khi nội dung được mở rộng. Mặc định là " trừ"
+data-iconpos	LEFT | right | top | bottom -> định vị trí của các biểu tượng
+data-inset	TRUE | false -> có nút đóng mở nên được theo kiểu với các góc tròn và một số lợi nhuận hay không
+data-mini	true | FALSE -> có các nút đóng mở có kích thước nhỏ hoặc thường xuyên
+data-theme	letter (a-z) -> Chỉ định màu sắc chủ đề của các nút đóng mở
+
+<-> COLLAPSIBLE SET( data-role="collapsible-set" ) => vai trò đóng, mở toàn bộ
+data-collapsed-icon	Icons Reference	Specifies the icon of the collapsible button. Default is "plus"
+data-content-theme	letter (a-z)	Specifies the theme color of the collapsible content
+data-expanded-icon	Icons Reference	Specifies the icon of the collapsible button when the content is expanded. Default is "minus"
+data-iconpos	left | right | top | bottom | notext	Specifies the position of the icon
+data-inset	true | false	Specifies whether the collapsibles should be styled with rounded corners and some margin or not
+data-mini	true | false	Specifies whether the collapsible buttons should be of small or regular size
+data-theme	letter (a-z)	Specifies the theme color of the collapsible set
+
+<-> FIELDCONTAINER
+data-role="fieldcontain" -> quấn quanh cặp yếu tố nhãn / form.
+
+<-> INPUTS( type="text|search|etc" or textarea elements )  
+data-mini	true | FALSE -> liệu đầu vào có kích thước nhỏ hoặc thường xuyên
+data-role	none -> vai trò Ngăn chặn jQuery Mobile với phong cách đầu vào / textareas như nút
+data-theme	letter (a-z) -> Chỉ định màu sắc chủ đề của lĩnh vực đầu vào
+
+<-> LINK( data-role="button" )
+data-ajax	TRUE | false -> liệu để tải các trang thông qua ajax để cải thiện trải nghiệm người dùng và chuyển tiếp. Nếu đặt sai, jQuery Mobile sẽ làm một trang yêu cầu bình thường.
+data-direction	reverse -> chuyển hướng ngược lại Xếp (chỉ dành cho trang hoặc hộp thoại )
+data-dom-cache	true | FALSE -> xóa bộ nhớ cache jQuery DOM hoặc không cho các trang cá nhân ( nếu thiết lập đúng, bạn cần phải chăm sóc để quản lý các DOM mình và kiểm tra kỹ lưỡng về tất cả các thiết bị di động )
+data-prefetch	true | FALSE -> prefetch trang vào DOM để họ có sẵn khi người dùng truy cập chúng
+data-rel	back | dialog | external | popup -> Chỉ định một lựa chọn cho cách liên kết nên cư xử . Trở lại - Di chuyển một bước trở lại trong lịch sử. Thoại - Mở một liên kết như một hộp thoại , không được theo dõi trong lịch sử. Bên ngoài - Đối với liên kết đến một tên miền khác . Popup - sẽ mở ra một cửa sổ popup.
+data-transition	FADE | flip | flow | pop | slide | slidedown | slidefade | slideup | turn | none -> làm thế nào để chuyển đổi từ trang này sang trang kế tiếp. Xem chương jQuery Mobile chuyển tiếp của chúng tôi .
+data-position-to	ORIGIN | jQuery selector | window -> định vị trí popup như hộp . Nguồn gốc - Mặc định . Vị trí popup qua liên kết mở ra nó . jQuery chọn - vị trí các popup trên các yếu tố quy định . Cửa sổ - vị trí popup ở giữa màn hình cửa sổ .
+
+<-> LIST( An <ol> or <ul> with data-role="listview" )
+data-autodividers	true | FALSE -> có tự động phân chia danh sách các mặt hàng hay không
+data-count-theme	letter (a-z) -> Chỉ định màu sắc chủ đề của bong bóng số . Mặc định là " c "
+data-divider-theme	letter (a-z) -> Chỉ định màu sắc chủ đề của danh sách chia . Mặc định là " b"
+data-filter	true | FALSE -> có thêm một hộp tìm kiếm trong một danh sách hay không
+data-filter-placeholder	sometext -> Chỉ định văn bản bên trong hộp tìm kiếm. Mặc định là " mặt hàng Bộ lọc ... "
+data-filter-theme	letter (a-z) -> Chỉ định màu sắc chủ đề của bộ lọc tìm kiếm. Mặc định là " c "
+data-icon	Icons Reference -> Chỉ định biểu tượng của danh sách
+data-inset	true | FALSE -> có danh sách nên được theo kiểu với các góc tròn và một số lợi nhuận hay không
+data-split-icon	Icons Reference -> biểu tượng Tài liệu tham khảo Chỉ định biểu tượng của nút chia . Mặc định là " mũi tên -r"
+data-split-theme	letter (a-z) -> Chỉ định màu sắc chủ đề của các nút chia . Mặc định là " b"
+data-theme	letter (a-z) -> Chỉ định màu sắc chủ đề của danh sách
+
+<-> LIST ITEM( An <li> inside an <ol> or <ul> with data-role="listview" )
+data-filtertext	sometext -> Chỉ định một văn bản để tìm kiếm khi lọc các yếu tố . Văn bản này sau đó sẽ được lọc thay vì văn bản danh sách mặt hàng thực tế
+data-icon	Icons Reference -> biểu tượng Tài liệu tham khảo Chỉ định biểu tượng của mục danh sách
+data-role	list-divider -> Chỉ định một chia cho danh sách các mặt hàng
+data-theme	letter (a-z) -> Chỉ định màu sắc chủ đề của mục danh sách
+
+<-> DIALOG( data-role="dialog") with data-rel="dialog" => tạo hộp thoại
+data-close-btn-text	sometext -> Chỉ định văn bản cho các nút đóng chỉ cho các hộp thoại
+data-dom-cache	true | FALSE -> để xóa bộ nhớ cache jQuery DOM hoặc không cho các trang cá nhân ( nếu thiết lập đúng, bạn cần phải chăm sóc để quản lý các DOM mình và kiểm tra kỹ lưỡng về tất cả các thiết bị di động )
+data-overlay-theme	letter (a-z) -> Chỉ định lớp phủ ( nền) màu sắc của trang thoại
+data-theme	letter (a-z) -> Chỉ định màu sắc chủ đề của trang thoại
+data-title	sometext -> Chỉ định tiêu đề cho trang thoại
+
+<-> POPUP( data-role="popup" ) => tạo 1 hộp popup
+data-corners	TRUE | false -> có các popup nên đã làm tròn góc hay không
+data-overlay-theme	letter (a-z) -> Chỉ định lớp phủ ( nền) màu sắc của hộp popup . Mặc định là nền trong suốt ( không có) .
+data-shadow	TRUE | false -> liệu hộp popup nên có bóng hay không
+data-theme	letter (a-z) -> Chỉ định màu sắc chủ đề của hộp popup . Mặc định thừa kế, "không" đặt popup để minh bạch
+data-tolerance	30, 15, 30, 15 -> Xác định khoảng cách từ các cạnh của cửa sổ ( trên cùng, bên phải, phía dưới , bên trái)
++ An anchor with data-rel="popup":
+(Một neo với dữ liệu rel = " popup" :)
+data-position-to	origin | jQuery selector | window -> định vị trí popup như hộp . Nguồn gốc - Mặc định . Vị trí popup qua liên kết mở ra nó . jQuery chọn - vị trí các popup trên các yếu tố quy định . Cửa sổ - vị trí popup ở giữa màn hình cửa sổ .
+data-rel	popup	để mở hộp popup
+data-transition	fade | flip | flow | pop | slide | slidedown | slidefade | slideup | turn | none -> định làm thế nào để chuyển đổi từ trang này sang trang kế tiếp. Xem chương jQuery Mobile chuyển tiếp của chúng tôi .
+
+<-> SELECT( All <select> elements )
+data-icon	Icons Reference -> biểu tượng Tài liệu tham khảo Chỉ định biểu tượng của yếu tố lựa chọn . Mặc định là " mũi tên -d"
+data-iconpos	left | RIGHT | top | bottom | notext -> định vị trí của các biểu tượng
+data-inline	true | FALSE -> yếu tố lựa chọn nên được nội tuyến hay không
+data-mini	true | FALSE -> có các lựa chọn có kích thước nhỏ hoặc thường xuyên
+data-native-menu	TRUE | false -> Khi thiết lập để sai , nó sử dụng tùy chỉnh của riêng chọn menu jQuery (đề nghị nếu bạn muốn chọn menu để hiển thị giống nhau trên tất cả các thiết bị di động )
+data-overlay-theme	letter (a-z) -> Chỉ định màu sắc chủ đề của riêng chọn menu jQuery ( sử dụng cùng với dữ liệu bản địa -menu = "false" )
+data-placeholder	true | FALSE -> Có thể được đặt trên một phần tử <option> của một phi bản địa chọn
+data-role	none -> có vai trò Ngăn chặn jQuery Mobile phong cách yếu tố chọn như nút
+data-theme	letter (a-z) -> Chỉ định màu sắc chủ đề của yếu tố lựa chọn
+
+<-> SLIDER( type="range" )
+data-highlight	true | FALSE -> có đường trượt nên được đánh dấu hay không
+data-mini	true | FALSE -> có thanh trượt có kích thước nhỏ hoặc thường xuyên
+data-role	none -> vai trò Ngăn chặn jQuery Mobile để điều khiển thanh trượt kiểu như nút
+data-theme	letter (a-z) -> Chỉ định màu sắc chủ đề của bộ điều khiển trượt ( đầu vào, xử lý và theo dõi )
+data-track-theme	letter (a-z) -> Chỉ định màu sắc chủ đề của đường đua trượt
+
+<-> ENHANCEMENT( data-enhance="false" or data-ajax="false" )
+data-enhance	TRUE | false -> Nếu thiết lập để "true", (mặc định) jQuery Mobile sẽ tự động kiểu trang , làm cho nó thích hợp cho các thiết bị di động. Nếu thiết lập để " sai " , khuôn khổ sẽ không phong cách trang
+data-ajax	TRUE | false -> tải các trang thông qua ajax hay không
+
+<-> FLIP TOGGLE SWITCH( data-role="slider" )
+data-mini	true | FALSE -> chuyển đổi có kích thước nhỏ hoặc thường xuyên
+data-role	none -> vai trò Ngăn chặn jQuery Mobile để chuyển mạch chuyển đổi phong cách như nút
+data-theme	letter (a-z) -> Chỉ định màu sắc chủ đề của nút chuyển đổi
+data-track-theme	letter (a-z) -> Chỉ định màu sắc chủ đề của ca khúc

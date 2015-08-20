@@ -1,0 +1,52 @@
+// |++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// | Variables
+// |++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Path
+$image-url: "../img";
+$font-url: "../fonts";
+
+// Width & Height
+$width-container: 970px;
+$height-footer: 150px;
+
+// Color
+$color-white: #fff;
+$color-black: #000;
+$color-primary: #3465aa;
+$color-secondary: #8cc43d;
+$color-link: #046cae;
+$color-hover-link: #000;
+$color-text: #222;
+$color-warning: #d4230f;
+$color-error: #f00;
+$color-bg: #f6f6f6;
+
+// Font
+$font-family-headline: "HelveticaNeue-Regular", sans-serif;
+$font-family-headline1: "HelveticaNeue-Bold", sans-serif;
+$font-family-text: 'Open Sans', sans-serif;
+$font: normal normal 100% "Helvetica", sans-serif;
+
+$font-size-headline: 40px;
+$font-size-subheadline: 25px;
+$font-size-text-md: 20px;
+$font-size-text: 14px;
+$font-size-text-sm: 16px;
+
+$font-normal: 400;
+$font-semibold: 600;
+$font-bold: 700;
+
+// Border-radius
+$border-radius-base: 4px;
+$border-radius-large: 6px;
+$border-radius-small: 3px;
+
+// Breakpoints
+$ex_desktop: "(min-width: 1200px)";
+$desktop: "(max-width: 1200px)";
+$tablet: "(max-width: 992px)";
+$phone: "(max-width: 768px)";
+$smallphone: "(max-width: 480px)";
+$extra-smallphone: "(max-width: 320px)";

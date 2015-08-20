@@ -1,0 +1,218 @@
+iMAC1s-iMac:~ imac1$ cd /Users/imac1/Documents/html+css/sass_1 
+iMAC1s-iMac:sass_1 imac1$ sass --watch style.scss:style.css
+---------------------------------------------------------------------------------------------
+///////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////// STUDY SASS ///////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+---------------------------------------------------------------------------------------------
+sass -> (nhanh, dễ quản lý ... cs3 )
+---------------------------------------------------------------------------------------------
+**************
+****************************
+*************************************
+-> / * Quy tắc xếp chồng (Nested Rules) * /
+*************************************
+****************************
+**************
+.menu {
+ background: #f94342;
+ 	li{
+ 		float: right;
+		a {
+		color: #fff;
+		text-decoration: underline;
+			&:hover,&:visited {
+			color: #f3f3f3;
+			text-decoration: none;
+			}
+		}
+ 	}
+}
+
+***
+ex: & -> tên cha
+#main {
+  color: black;
+  &-sidebar { border: 1px solid; }
+}
+is compiled to:
+
+#main {
+  color: black; }
+  #main-sidebar {
+    border: 1px solid; }
+***
+ex: kết nối
+.funky {
+  font: {
+    family: fantasy;
+    size: 30em;
+    weight: bold;
+  }
+}
+is compiled to:
+
+.funky {
+  font-family: fantasy;
+  font-size: 30em;
+  font-weight: bold; }
+***
+ex: kết nối x 2
+.funky {
+  font: 20px/24px fantasy {
+    weight: bold;
+  }
+}
+is compiled to:
+
+.funky {
+  font: 20px/24px fantasy;
+    font-weight: bold;
+}
+**************
+****************************
+*************************************
+-> / * Sử dụng biến (Varibles) – $tên-biến * /
+*************************************
+****************************
+**************
+$primary_shadow: 5px 5px 5px #000000;
+
+h1.post_title {text-shadow: $primary_shadow}
+***
+ex: !global(toàn cầu)
+#main {
+  $width: 5em !global;
+  width: $width;
+}
+
+#sidebar {
+  width: $width;
+}
+is compiled to:
+
+#main {
+  width: 5em;
+}
+
+#sidebar {
+  width: 5em;
+}
+**************
+****************************
+*************************************
+-> / * Quy tắc Mixin – @mixin tên_mix * /
+*************************************
+****************************
+**************
+@mixin float-left {
+float: left;
+margin: 0px 10px;
+}
+
+.class { @include float-left;}
+
+----------- OR -------------
+@mixin float-left($float,$margin) {
+float: $float;
+margin: $margin;
+}
+
+.class_1 {
+@include float-left(right,5px 10px)
+}
+**************
+****************************
+*************************************
+-> / * Extends – Kế thừa @extend tên_class * /
+*************************************
+****************************
+**************
+.button_1 {
+-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+......
+text-shadow:1px 1px 0px #ffffff;
+}
+
+.button_2 { @extend .button_1; }
+.button_3 { @extend .button_1; }
+
+----------> Vùng chọn %name
+%fuck_you {
+color: red;
+margin: 5px 10px;
+}
+
+.fuck_me { @extend %fuck_you; }
+**************
+****************************
+*************************************
+-> / * Các mệnh đề điều kiện trong SASS * /
+*************************************
+****************************
+**************
+----------> Điều kiện @if
+$type: monster;
+p {
+  @if $type == ocean {
+    color: blue;
+  } @else if $type == matador {
+    color: red;
+  } @else if $type == monster {
+    color: green;
+  } @else {
+    color: black;
+  }
+}
+is compiled to:
+
+p {
+  color: green; }
+----------> Điều kiện @for
+@for $i from 1 through 3 {
+  .item-#{$i} { width: 2em * $i; }
+}
+is compiled to:
+
+.item-1 {
+  width: 2em; }
+.item-2 {
+  width: 4em; }
+.item-3 {
+  width: 6em; }
+----------> Điều kiện @each
+@each $animal in puma, sea-slug, egret, salamander {
+  .#{$animal}-icon {
+    background-image: url('/images/#{$animal}.png');
+  }
+}
+is compiled to:
+
+.puma-icon {
+  background-image: url('/images/puma.png'); }
+.sea-slug-icon {
+  background-image: url('/images/sea-slug.png'); }
+.egret-icon {
+  background-image: url('/images/egret.png'); }
+.salamander-icon {
+  background-image: url('/images/salamander.png'); }
+----------> Điều kiện while
+$i: 6;
+@while $i > 0 {
+  .item-#{$i} { width: 2em * $i; }
+  $i: $i - 2;
+}
+is compiled to:
+
+.item-6 {
+  width: 12em; }
+
+.item-4 {
+  width: 8em; }
+
+.item-2 {
+  width: 4em; }
+
+
+
