@@ -1,0 +1,101 @@
+// |++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// |
+// | Events
+// |++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.b-events {
+	&:extend(.b-audio-sermon all);
+
+	.button-group {
+		margin-top: 0;
+
+		.item-filter {
+			width: 100%%;
+			margin-right: 0;
+
+			&:last-child {
+				margin-right: 0;
+				background-color: transparent;
+				color: inherit;
+
+				&.active {
+					background-color: @color-primary;
+					color: @color-white;
+				}
+			}
+		}
+	}
+
+	.b-body {
+		.mix {
+			margin-bottom: 30px;
+
+			&:nth-child(3n + 1) {
+				clear: left;
+			}
+		}
+
+		.image {
+			.size(100%, auto);
+		}
+
+		.title {
+			margin-top: 10px;
+
+			&,
+			a {
+				&:extend(.link-hover-color all);
+				font-weight: @font-normal;
+				font-size: @font-size-subheadline;
+				font-style: italic;
+			}
+		}
+
+		.time {
+			margin-top: 10px;
+			font-weight: @font-bold;
+		}
+
+		.description {
+
+		}
+
+		.button-primary {
+			margin-top: 20px;
+			color: @color-white;
+			background-color: @color-primary;
+			border-color: @color-primary;
+			font-size: @font-size-text-md;
+
+			&:hover {
+				border-color: lighten(@color-primary, 10%);
+				background-color: lighten(@color-primary, 10%);
+			}
+		}
+	}
+
+	@media @tablet {
+		.button-group .col-item:first-child .item-filter {
+			margin-bottom: 20px;
+		}
+
+		.b-body {
+			.mix {
+				&:nth-child(3n + 1) {
+					clear: none;
+				}
+
+				&:nth-child(2n + 1) {
+					clear: left;
+				}
+			}
+		}
+	}
+
+	@media @smallphone {
+		.col-item,
+		.b-body .mix {
+			width: 100%;
+		}
+	}
+}

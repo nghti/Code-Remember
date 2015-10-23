@@ -1,0 +1,181 @@
+// |++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// |
+// | Video
+// |++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.b-popular-video {
+	.heading {
+		margin-top: 20px;
+		padding: 10px;
+		text-align: center;
+		color: @color-white;
+		background-color: @color-primary;
+		font-size: @font-size-subheadline;
+		font-weight: @font-bold;
+	}
+
+	.list {
+		margin-top: 20px;
+
+		.item + .item {
+			margin-top: 20px;
+		}
+
+		.thumb {
+			.size(100px, auto);
+		}
+
+		.title {
+			&,
+			a {
+				font-weight: @font-bold;
+
+				&:hover {
+					color: @color-primary;
+				}
+			}
+		}
+
+		.metadata {
+			margin-top: 5px;
+			font-size: 14px;
+			font-style: italic;
+		}
+	}
+}
+
+.link-upload-video {
+	margin-top: 20px;
+	text-align: center;
+	padding: 15px;
+	background-color: #cb4441;
+
+	.wrap-icon {
+		display: block;
+
+		.icon-libs {
+			font-size: 100px;
+			color: @color-white;
+		}
+	}
+
+	.text {
+		margin-top: 30px;
+		text-transform: uppercase;
+		color: @color-white;
+		font-size: @font-size-text-md;
+		font-weight: @font-bold;
+	}
+}
+
+.wrap-video {
+	margin-top: 20px;
+
+	.name {
+		font-weight: @font-bold;
+		margin-bottom: 10px;
+		font-size: @font-size-text-md;
+	}
+
+	.wrap-info-video {
+		overflow: hidden;
+	}
+
+	.social-network {
+		float: left;
+		margin-top: 10px;
+
+		.item {
+			display: inline-block;
+
+			+ .item {
+			 	margin-left: 10px;
+			}
+		}
+
+		.icon-libs {
+			color: @color-primary;
+			font-size: @font-size-text-md;
+		}
+	}
+
+	.short-link {
+		float: right;
+		margin-top: 10px;
+	}
+
+	.display-tb {
+		display: table;
+		margin-top: 10px;
+	}
+
+	.video-info-detail-left {
+		display: table-cell;
+		vertical-align: top;
+		padding-right: 30px;
+
+		.title {
+			text-transform: uppercase;
+			color: #000;
+			margin-bottom: 10px;
+		}
+	}
+
+	.video-info-detail-right {
+		display: table-cell;
+		vertical-align: top;
+		padding-left: 30px;
+		border-left: 1px solid #aaa;
+	}
+}
+
+.b-add-video {
+	margin-top: 20px;
+
+	.wrap-title {
+		padding: 0 200px;
+	}
+
+	.title {
+		text-transform: uppercase;
+		font-size: @font-size-subheadline;
+		font-weight: @font-bold;
+		text-align: center;
+	}
+
+	.form-horizontal {
+		margin-top: 30px;
+		padding: 0 200px;
+	}
+
+	.form-control {
+		border: 1px solid #ccc;
+	}
+
+	.select select {
+		.border-radius(0);
+	}
+
+	textarea {
+		height: 150px;
+	}
+
+	.button-primary {
+		margin-top: 30px;
+	}
+
+	@media @desktop {
+		.form-horizontal,
+		.wrap-title {
+			padding: 0;
+		}
+	}
+
+	@media @tablet {
+		.form-horizontal {
+			label {
+				margin-bottom: 5px;
+			}
+		}
+	}
+}

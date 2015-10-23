@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>My website</title>
+		<link rel="shortcut icon" href="img/www/favicon.ico">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/common.css">
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 9]>
+			<div class="ie-no-support">
+				<h3 class="title">Xin lỗi!!! Chúng tôi không hỗ trợ cho trình duyệt IE này</h3>
+				<p class="description">Vui lòng click theo đường dẫn để <a href="http://browsehappy.com/">cập nhật trình duyệt</a> hiện đại hoặc IE phiên bản mới nhất giúp duyệt web tốt hơn</p>
+			</div>
+		<![endif]-->
+		<div class="wrapper animated fadeIn page-home">
+			<!-- Header -->
+			<header class="header">
+				<div class="container-fluid">
+					<h1 class="logo">
+						<a href="#">
+							<img src="img/www/logo.png" alt="logo" width="311" height="59">
+						</a>
+					</h1>
+				</div>
+			</header>
+			<!-- Navigation -->
+			<nav class="navbar navbar-default navigation">
+				<div class="container-fluid">
+					<a href="#menu" class="navbar-toggle button-nav-mobile">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<ul class="social-network">
+						<li class="item"><a href="#" class="js-tooltip" title="Facebook"><i class="fa fa-facebook icon-libs"></i></a></li>
+						<li class="item"><a href="#" class="js-tooltip" title="Twitter"><i class="fa fa-twitter icon-libs"></i></a></li>
+						<li class="item"><a href="#" class="js-tooltip" title="Google Plus"><i class="fa fa-google-plus icon-libs"></i></a></li>
+						<li class="item"><a href="#" class="js-tooltip" title="Youtube"><i class="fa fa-youtube icon-libs"></i></a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right nav-desktop">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="Video-detail.html">Video</a></li>
+						<li><a href="Audio.html">Audio</a></li>
+						<li><a href="Daily-Reading.html">Daily Reading</a></li>
+						<li><a href="Stories.html">Stories</a></li>
+						<li class="active"><a href="Event.html">Event</a></li>
+						<li><a href="About.html">About</a></li>
+						<li><a href="#popup-login" data-effect="mfp-zoom-in" class="js-open-popup-sign-in">Sign In</a></li>
+					</ul>
+				</div>
+			</nav>
+			<!-- Banner -->
+			<section class="banner">
+				<img class="image-banner" src="img/temp/background-events.jpg" alt="image banner">
+			</section>
+			<!-- Main content -->
+			<section class="main-content">
+				<div class="container">
+					<div class="b-events">
+						<div id="isotope-filter" class="row button-group">
+							<div class="col-md-4 col-xs-12 col-item">
+								<button class="filter item-filter" data-filter="all">All events</button>
+							</div>
+							<div class="col-md-4 col-xs-6 col-item">
+								<button class="filter item-filter" data-filter=".upcoming">Upcoming Events</button>
+							</div>
+							<div class="col-md-4 col-xs-6 col-item">
+								<button class="filter item-filter" data-filter=".overtime">Overtime Events</button>
+							</div>
+						</div>
+						<div class="b-body">
+							<ul class="row" id="isotope">
+								<li class="col-md-4 col-xs-6 mix upcoming">
+									<div class="item-inner">
+										<a href="Event-Detail.html"><img class="image" src="img/temp/1.webp" alt="image"></a>
+										<h4 class="title"><a href="Event-Detail.html">International Events</a></h4>
+										<p class="time">Year-round events</p>
+										<p class="description">
+											International Ministries serve various international Christian communities in Kansas City and the nations. Our Arabic, Chinese, Korean, Hispanic, Russian, and Portuguese ministries offer language-specific seminars and conferences in Kansas City.
+										</p>
+										<div class="wrap-button">
+											<a href="Event-Detail.html" class="btn button-primary">More info</a>
+										</div>
+									</div>
+								</li>
+								<li class="col-md-4 col-xs-6 mix overtime">
+									<div class="item-inner">
+										<a href="Event-Detail.html"><img class="image" src="img/temp/2.webp" alt="image"></a>
+										<h4 class="title"><a href="Event-Detail.html">Immerse Program</a></h4>
+										<p class="time">Monthly</p>
+										<p class="description">
+											Experience an eight-day immersion into the life of an intercessory missionary at IHOPKC, perfect for people in the workplace, home, and ministry who don’t have the time to join an internship. Come encounter God in the prayer room...
+										</p>
+										<div class="wrap-button">
+											<a href="Event-Detail.html" class="btn button-primary">More info</a>
+										</div>
+									</div>
+								</li>
+								<li class="col-md-4 col-xs-6 mix overtime">
+									<div class="item-inner">
+										<a href="Event-Detail.html"><img class="image" src="img/temp/3.png" alt="image"></a>
+										<h4 class="title"><a href="Event-Detail.html">7 Days Ablaze</a></h4>
+										<p class="time">March 16–22, 2015</p>
+										<p class="description">
+											L7 Days Ablaze is for those already in ministry, the marketplace, a school, or for anyone desiring intimacy with the Lord and to effectively witness for Him.
+										</p>
+										<div class="wrap-button">
+											<a href="Event-Detail.html" class="btn button-primary">More info</a>
+										</div>
+									</div>
+								</li>
+								<li class="col-md-4 col-xs-6 mix upcoming">
+									<div class="item-inner">
+										<a href="Event-Detail.html"><img class="image" src="img/temp/4.webp" alt="image"></a>
+										<h4 class="title"><a href="Event-Detail.html">Passion for Jesus</a></h4>
+										<p class="time">April 8–10, 2015</p>
+										<p class="description">
+											It is our destiny to live in intimate relationship with God, knowing the depth and delight of being loved by Jesus, our Bridegroom God. Become the person you were born to be—an extravagant lover of God.
+										</p>
+										<div class="wrap-button">
+											<a href="Event-Detail.html" class="btn button-primary">More info</a>
+										</div>
+									</div>
+								</li>
+								<li class="col-md-4 col-xs-6 mix upcoming">
+									<div class="item-inner">
+										<a href="Event-Detail.html"><img class="image" src="img/temp/5.webp" alt="image"></a>
+										<h4 class="title"><a href="Event-Detail.html">International Day of Prayer for the Persian World</a></h4>
+										<p class="time">April 10, 2015</p>
+										<p class="description">
+											Join us in prayer for the Persian world on Friday, April 10, asking the Lord to bring Muslims into His kingdom and to strengthen Farsi-speaking believers, many of whom are persecuted for their faith.
+										</p>
+										<div class="wrap-button">
+											<a href="Event-Detail.html" class="btn button-primary">More info</a>
+										</div>
+									</div>
+								</li>
+								<li class="col-md-4 col-xs-6 mix overtime">
+									<div class="item-inner">
+										<a href="Event-Detail.html"><img class="image" src="img/temp/6.webp" alt="image"></a>
+										<h4 class="title"><a href="Event-Detail.html">Onething Regionals / IHOPU Ministry Trips</a></h4>
+										<p class="time">April 17–18, 2015</p>
+										<p class="description">
+											Calling forerunners to intimacy with Jesus, intercession, evangelism, outreach, and works of justice.
+										</p>
+										<div class="wrap-button">
+											<a href="Event-Detail.html" class="btn button-primary">More info</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<nav class="text-center">
+								<ul class="pagination-ct">
+									<li class="prev"><a href="#"><</a></li>
+									<li><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li class="active"><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li>...</li>
+									<li><a href="#">99</a></li>
+									<li class="next"><a href="#">></a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<!-- Banner advertise-->
+					<div class="banner-advertise">
+						<a href="#" target="_blank">
+							<img src="img/temp/img-2.jpg" alt="banner advertise" width="1600" height="265">
+						</a>
+					</div>
+					<!-- Block connect us & get email -->
+					<div class="wrap-2-block">
+						<div class="b-connect-us">
+							<div class="b-head">
+								<h2 class="title">Connect Us</h2>
+							</div>
+							<div class="b-body">
+								<p class="description">Connect with us on all these social networks</p>
+								<ul class="list-social">
+									<li class="item">
+										<a href="#">
+											<span class="wrap-icon">
+												<i class="fa fa-facebook icon-libs"></i>
+											</span>
+											<span class="wrap-text">Facebook</span>
+										</a>
+									</li>
+									<li class="item">
+										<a href="#">
+											<span class="wrap-icon">
+												<i class="fa fa-twitter icon-libs"></i>
+											</span>
+											<span class="wrap-text">Twitter</span>
+										</a>
+									</li>
+									<li class="item">
+										<a href="#">
+											<span class="wrap-icon">
+												<i class="fa fa-google-plus icon-libs"></i>
+											</span>
+											<span class="wrap-text">Google +</span>
+										</a>
+									</li>
+									<li class="item">
+										<a href="#">
+											<span class="wrap-icon">
+												<i class="fa fa-youtube icon-libs"></i>
+											</span>
+											<span class="wrap-text">Youtube</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="b-get-email">
+							<div class="b-head">
+								<h2 class="title">Get Email Updates</h2>
+							</div>
+							<div class="b-body">
+								<form>
+									<div class="row">
+										<div class="form-group col-sm-6">
+											<input type="text" class="form-control" placeholder="First Name">
+										</div>
+										<div class="form-group col-sm-6">
+											<input type="text" class="form-control" placeholder="Last Name">
+										</div>
+										<div class="form-group col-sm-12">
+											<input type="text" class="form-control" placeholder="Your mail">
+											<button type="submit" class="btn button-primary">
+												<i class="fa fa-play icon-libs"></i>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Footer -->
+			<footer class="footer">
+				<div class="footer-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-4 col">
+								<h2 class="title">Our page</h2>
+								<div class="wrap-content">
+									<ul class="list">
+										<li class="item"><a href="#">Our page 1</a></li>
+										<li class="item"><a href="#">Our page 2</a></li>
+										<li class="item"><a href="#">Our page 3</a></li>
+										<li class="item"><a href="#">Our page 4</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-4 col">
+								<h2 class="title">Link</h2>
+								<div class="wrap-content">
+									<ul class="list">
+										<li class="item"><a href="#">Facebook</a></li>
+										<li class="item"><a href="#">Twitter</a></li>
+										<li class="item"><a href="#">Google +</a></li>
+										<li class="item"><a href="#">Youtube</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-4 col">
+								<h2 class="title">About Us</h2>
+								<div class="wrap-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt veritatis excepturi eos animi praesentium recusandae id cupiditate ut, consequatur fuga.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="container">
+						<p class="copyright">Copyright &copy; 2015 | <a href="#" class="link">Domain Name</a></p>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- Menu mobile -->
+		<nav id="menu">
+			<ul>
+				<li class="mm-selected"><a href="#">Home</a></li>
+				<li><a href="#">Video</a></li>
+				<li><a href="#">Audio</a></li>
+				<li><a href="#">Daily Reading</a></li>
+				<li><a href="#">Stories</a></li>
+				<li><a href="#">Event</a></li>
+				<li><a href="#">Sign In</a></li>
+			</ul>
+		</nav>
+		<!-- Popup sign in -->
+		<div id="popup-login" class="popup-login mfp-with-anim mfp-hide">
+			<div class="sign-in-with-social">
+				<h2 class="title">Sign in using your Social Network</h2>
+				<div class="wrap-list">
+					<ul class="list">
+						<li class="item">
+							<a href="#" class="btn button-primary facebook">
+								<i class="fa fa-facebook icon-libs"></i>
+								<span class="text">Facebook</span>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#" class="btn button-primary google-plus">
+								<i class="fa fa-google-plus icon-libs"></i>
+								<span class="text">Google +</span>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#" class="btn button-primary twitter">
+								<i class="fa fa-twitter icon-libs"></i>
+								<span class="text">Twitter</span>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#" class="btn button-primary linkedin">
+								<i class="fa fa-linkedin icon-libs"></i>
+								<span class="text">Linked In</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="divider">
+				<span>Or</span>
+			</div>
+			<div class="sign-in-with-account">
+				<h2 class="title">Sign in with your account</h2>
+				<form class="form">
+					<div class="form-group">
+						<label for="exampleInputEmail1">Email</label>
+						<input type="text" class="form-control">
+						<p class="error">This field is invalid!</p>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Password</label>
+						<input type="password" class="form-control">
+						<a href="#" class="forgot-password">Forgot password</a>
+					</div>
+					<div class="text-center">
+						<button type="submit" class="btn button-primary">Sign in</button>
+					</div>
+				</form>
+				<p class="note">Don't have an account yet? <a href="#popup-register" data-effect="mfp-zoom-in" class="js-open-poup-sign-up">Register here</a></p>
+			</div>
+		</div>
+		<!-- Popup sign up -->
+		<div id="popup-register" class="popup-login mfp-with-anim mfp-hide">
+			<div class="sign-in-with-social">
+				<h2 class="title">Register using your Social Network</h2>
+				<div class="wrap-list">
+					<ul class="list">
+						<li class="item">
+							<a href="#" class="btn button-primary facebook">
+								<i class="fa fa-facebook icon-libs"></i>
+								<span class="text">Facebook</span>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#" class="btn button-primary google-plus">
+								<i class="fa fa-google-plus icon-libs"></i>
+								<span class="text">Google +</span>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#" class="btn button-primary twitter">
+								<i class="fa fa-twitter icon-libs"></i>
+								<span class="text">Twitter</span>
+							</a>
+						</li>
+						<li class="item">
+							<a href="#" class="btn button-primary linkedin">
+								<i class="fa fa-linkedin icon-libs"></i>
+								<span class="text">Linked In</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="divider">
+				<span>Or</span>
+			</div>
+			<div class="sign-in-with-account">
+				<h2 class="title">Create your account</h2>
+				<form class="form">
+					<div class="form-group">
+						<label for="exampleInputEmail1">Email</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Password</label>
+						<input type="password" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Retype Password</label>
+						<input type="password" class="form-control">
+					</div>
+					<div class="form-group">
+						<input id="radio1" type="radio" name="radio" value="1">
+						<label for="radio1" class="radio"><span><span></span></span>Subscribe to our newsletter</label>
+					</div>
+					<p class="agree-term">By click the button below, you agree to our <a href="#">Term of Service</a> and <a href="#">Privacy Policy</a></p>
+					<div class="text-center">
+						<button type="submit" class="btn button-primary">Register</button>
+					</div>
+				</form>
+				<p class="note">Already have an account <a href="#popup-login" data-effect="mfp-zoom-in" class="js-open-popup-sign-in">Sign in here</a></p>
+			</div>
+		</div>
+		<!-- Script -->
+		<script src="js/vendor/jquery-1.11.1.min.js"></script>
+		<script src="js/vendor/jquery-migrate-1.2.1.min.js"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/vendor/jquery.easing.1.3.js"></script>
+		<script src="js/vendor/camera.min.js"></script>
+		<script src="js/vendor/jquery.mmenu.min.js"></script>
+		<script src="js/vendor/jquery.mixitup.min.js"></script>
+		<script src="js/vendor/slick.min.js"></script>
+		<script src="js/vendor/easyResponsiveTabs.js"></script>
+		<script src="js/vendor/mediaelement-and-player.min.js"></script>
+		<script src="js/vendor/jquery.magnific-popup.min.js"></script>
+		<script src="js/vendor/jquery.tagsinput.min.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

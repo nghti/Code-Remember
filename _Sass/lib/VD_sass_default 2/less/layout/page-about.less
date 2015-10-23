@@ -1,0 +1,59 @@
+// |++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// |
+// | Page About
+// |++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.b-about {
+	&:extend(.b-tab-content-audio all);
+
+	.resp-tabs-list {
+		.resp-tab-item {
+			background: transparent;
+			border: 1px solid @color-primary !important;
+			color: @color-primary;
+			height: auto;
+			line-height: 1.4;
+			padding: 13px 15px !important;
+		}
+
+		.resp-tab-active {
+			background: @color-primary;
+			color: @color-white;
+		}
+	}
+
+	.title {
+		text-transform: uppercase;
+		font-weight: @font-bold;
+		font-size: @font-size-subheadline;
+	}
+
+	.content-detail {
+		&:extend(.clearfix all);
+		margin-top: 20px;
+
+		.image {
+			float: right;
+			margin-left: 20px;
+		}
+
+		.text-content {
+			overflow: hidden;
+
+			p {
+				padding: 5px 0;
+			}
+		}
+	}
+
+	@media @tablet {
+		.content-detail {
+			.image {
+				float: none;
+				margin-left: 0;
+				margin-bottom: 20px;
+				width: 100%;
+			}
+		}
+	}
+}

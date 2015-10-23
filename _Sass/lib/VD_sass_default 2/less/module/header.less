@@ -1,0 +1,39 @@
+// |++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// |
+// | Header
+// |++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.header {
+	position: relative;
+	height: 131px;
+	background: url("@{image-url}/bg-header.jpg") no-repeat;
+	.background-size(cover);
+
+	&:before {
+		content: "";
+		.position(@top: 0, @left: 0);
+		.square(100%);
+		z-index: 1;
+		background-color: fade(@color-black, 30%);
+	}
+
+	.container-fluid {
+		position: relative;
+		z-index: 2;
+	}
+
+	.logo {
+		float: left;
+		margin-top: 35px;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	@media @smallphone {
+		.select-language {
+			margin-top: 10px;
+		}
+	}
+}

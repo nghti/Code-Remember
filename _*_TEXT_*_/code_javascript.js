@@ -74,11 +74,11 @@ var a = ["white"];    // Bắt đầu với một mảng một phần tử / ["w
 var b = a[0];         // b => white
 var c = a[100];       // c => undefined (no error)
 a[1] = 3.14;          // a => ["white", 3.14]
-var i = 2;            // i = 2pt
+var i = 2;            // i = 2
 a[i] = 3;             // a => ["white", 3.14, 3]
 a[i + 1] = "rabbit";  // a => ["white", 3.14, 3, "rabbit"]
 a[a[i]] = a[0];       // a => ["white", 3.14, 3, "white"]
-var d = a.length;     // d => 4
+var d = a.length;     // d => 4 / đếm pt
 -------------------------------------> Adding and deleting
 var a = ["follow", "the", "white", "rabbit"];
 
@@ -164,7 +164,7 @@ var b = (2 in a);          // b => true (có 3 pt)
 var c = (9 in a);          // c => false
 var d = (length in a);     // d => true
 
-// ===== typeof
+// ===== typeof / xem kiểu
 
 var a = 3;
 var b = typeof a;   // b => "number"
@@ -252,10 +252,10 @@ if (bulletCount === 1) {
   bulletCount += 'bullets';
 }
 
-var user = (name == null) ? 'default user' : name;
+var bulletCount = (bulletCount === 1) ? "bullet" : "bullets";
 -------------------------------------> switch
 var quote;
-switch (characterName) {
+switch ('') {
   case 'Smith':
     quote = 'Goodbye, Mr. Anderson...';
     break;

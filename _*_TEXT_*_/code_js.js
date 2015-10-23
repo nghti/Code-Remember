@@ -1,260 +1,10 @@
----------------------------------------------------------------------------------------------
-///////////////////////////////////////////////////////////////////////////////////
+----------------------------------------------------------------------------------
+//////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////// STUDY JS ////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
----------------------------------------------------------------------------------------------
-.click() 
-.scroll()
-.hover() 
-.hide()             --> ẩn thành phần
-.show()             --> hiện thành phần
-.toggle()           --> ẩn hiện thành phần ~ to vs nhỏ
-.toggleClass()      --> ẩn hiện class ~ 
-.fadeIn()           --> hiện thành phần rõ dần
-.fadeOut()          --> ẩn thành phần mờ dần
-.fadeTo()           --> hiện thành phần rõ dần
-.fadeToggle()       --> ẩn hiện thành phàn mờ dần 
-.slideDown()        --> hiên thành phần trượt
-.slideUp()          --> ẩn thành phần trượt
-.slideToggle()      --> ẩn hiện thành phần trượt
-.find()             --> tìm TP của list-cha
-.prev()             --> xác định chọn trước
-.prevAll()          --> chọn trước all 
-.prevUntil()        --> chọn trước nó đến gần trước
-.next()             --> xác dịnh chọn sau 
-.nextAll()          --> chọn trước all
-.nextUntil()        --> chọn sau nó đến gần sau
-.has()              --> xác định con
-.hasClass()         --> tìm trong TP có class đó ko
-.before()           --> add thêm vào trước
-.after()            --> add thêm vào sau
-.add()              --> add thêm nữa ...
-.addClass()         --> add class 
-.addBack()          --> Là chính nó đấy 
-.css()              --> Thêm css trong js
-.html()             --> Thêm html trong js
-.attr()             --> Xác định thuộc tính của thành phần.
--------------------------------------------------------------
--------------------------------------------------> Hàm Event
--------------------------------------------------------------
-.click()            --> // Kích hoạt sự kiện click trên thành phần hoặc ràng buộc xử lý một sự kiện tới sự kiện click trong javascript.
-.dblclick()         --> // Kích hoạt sự kiện double click trên thành phần hoặc ràng buộc xử lý một sự kiện tới sự kiện double click trong javascript.
----->[VD]
-$(function(){
-    $('p').click(function(){
-        var clicked = $('span').click();
-        if(clicked){$('span').css('color','red');}
-    });
-});
------------------------------------------------//
-.scroll()           --> // Ràng buộc xử lý một sự kiện tới sự kiện Javascript "scroll" hay kích hoạt sự kiện này trên thành phần.
----->[VD]
-$(function(){
-    $('.target').scroll(function(){
-        $("span").css("display", "inline").fadeOut("slow");
-    });
-});
------------------------------------------------//
-.hover()            --> //kết hợp xử lý cả 2 sự kiện di chuyển con trỏ chuột vào thành phần (mouseenter) và di chuyển con trỏ chuột ra khỏi thành phần (mouseleave).
----->[VD]
-$(function(){
-    $('li').hover(function(){
-        $(this).toggleClass('active');
-    });
-});
--------------------------------------------------------------
---------------------------------------------------> Hiệu ứng
--------------------------------------------------------------
---------------------------------
-/ -------> ẩn hiện <------- /
-.hide()             --> ẩn thành phần // Ẩn thành phần phù hợp. Thành phần sẽ được ẩn giống như được sử dụng style="display: none;". 
-.show()             --> hiện thành phần // Hiện thành phần phù hợp, thành phần sẽ được hiện giống như được sử dụng style="display: block;".
----->[VD]
-$(function(){
-    $('div').hide();
-    $('button').click(function(){
-        $('div').show();  
-    });
-});
------------------------------------------------//
-.toggle()           --> ẩn hiện thành phần ~ to vs nhỏ // Hiển thị và ẩn các thành phần phù hợp, việc hiển thị và ẩn được luân phiên nhau giữa các lần action (VD action Click).
----->[VD]
-$(function(){
-    $('button').click(function(){
-        $('.test03').toggle(2000);
-    });
-});
------------------------------------------------//
-.toggleClass()      --> ẩn hiện class ~ // Thêm hoặc loại bỏ một hoặc nhiều class của thành phần.
----->[VD]
-$(document).ready(function(){
-    $("button").click(function(){
-        $("p").toggleClass("blue");
-    });
-});
---------------------------------
-/ -------> mờ dần <------- /
-.fadeIn()           --> hiện thành phần rõ dần // Hiển thị các thành phần phù hợp với hiệu ứng rõ dần (fade in).
-.fadeOut()          --> ẩn thành phần mờ dần // Ẩn các thành phần phù hợp với hiệu ứng mờ dần (fade). 
----->[VD]
-$(document).ready(function(){
-    $(".btn1").click(function(){
-        $("#div1").fadeIn();
-        $("#div2").fadeIn("slow");
-        $("#div3").fadeIn(3000);
-    });
-    $(".btn2").click(function(){
-        $("#div1").fadeOut();
-        $("#div2").fadeOut("slow");
-        $("#div3").fadeOut(3000);
-    });
-});
------------------------------------------------//
-.fadeTo()           --> hiện thành phần rõ dần // Hiển thị các thành phần phù hợp với hiệu ứng mờ dần (fade).
-.fadeToggle()       --> ẩn hiện thành phần mờ dần // Làm hiển thị (display: block;) hoặc biến mất (display: none;) thành phần kèm với hiệu ứng làm mờ (opacity).
----->[VD]
-$(document).ready(function(){
-    $("button").click(function(){
-        $("#div1").fadeToggle();
-        $("#div2").fadeToggle("slow");
-        $("#div3").fadeToggle(3000);
-    });
-});
---------------------------------
-/ -------> trượt <------- /
-.slideDown()        --> hiên thành phần trượt // Hiển thị các thành phần phù hợp với hiệu ứng chuyển động trượt (slide).
-.slideUp()          --> ẩn thành phần trượt // Ẩn các thành phần phù hợp với hiệu ứng chuyển động trượt (slide).
----->[VD]
-$(document).ready(function(){
-    $(".btn1").click(function(){
-        $("p").slideUp();
-    });
-    $(".btn2").click(function(){
-        $("p").slideDown();
-    });
-});
------------------------------------------------//
-.slideToggle()      --> ẩn hiện thành phần trượt // Hiển thị và ẩn các thành phần phù hợp với hiệu ứng chuyển động trượt (slide).
----->[VD]
-$(document).ready(function(){
-    $("button").click(function(){
-        $("p").slideToggle();
-    });
-});
---------------------------------
-/ -------> ảnh động <------- /
-.animate()          --> Thực hiện một hình ảnh động (animate) tùy chỉnh của một tập hợp các thuộc tính css.
--------------------------------------------------------------
---------------------------------------------------> Tìm
--------------------------------------------------------------
-.find()             --> tìm TP của list-cha // Giúp tìm thành phần trong thành phần cha.
----->[VD]
-$(document).ready(function(){
-    $("ul").find("span").css({"color": "red", "border": "2px solid red"});
-});
------------------------------------------------//
-.prev()             --> xác định chọn trước // Xác định thành phần cùng cấp ngay trước thành phần sử dụng .prev()
----->[VD]
-$(document).ready(function(){
-    $("li.start").prev().css({"color": "red", "border": "2px solid red"});
-});
------------------------------------------------//
-.prevAll()          --> chọn trước all // Xác định tất cả các thành phần cùng cấp ngay trước thành phần sử dụng .prevAll()
----->[VD]
-$(document).ready(function(){
-    $("li.start").prevAll().css({"color": "red", "border": "2px solid red"});
-});
------------------------------------------------//
-.prevUntil()        --> chọn trước nó đến gần trước // Xác định tất cả các thành phần cùng cấp ngay trước thành phần được chọn (tag) và kết thúc việc này ngay tại thành phần (bộ chọn) có trong .nextAll()
----->[VD]
-$(document).ready(function(){
-    $("li.start").prevUntil("li.stop").css({"color": "red", "border": "2px solid red"});
-});
------------------------------------------------//
-.next()             --> xác dịnh chọn sau // Xác định thành phần cùng cấp ngay kế tiếp thành phần sử dụng .next()
-.nextAll()          --> chọn trước all // Xác định tất cả các thành phần cùng cấp ngay kế tiếp thành phần sử dụng .nextAll()
-.nextUntil()        --> chọn sau nó đến gần sau  // Xác định tất cả các thành phần cùng cấp ngay kế tiếp thành phần được chọn (tag) và kết thúc việc này ngay tại thành phần (bộ chọn) có trong .nextAll()
--------> xác định <-------
-.has()              --> xác định con // Xây dựng một đối tượng jQuery mới từ một tập hợp con của các thành phần phù hợp.
----->[VD]
-$(document).ready(function(){
-    $("p").has("span").css("background-color", "yellow");
-});
------------------------------------------------//
-.hasClass()         --> tìm trong TP có class đó ko // Xác định thành phần có chứa class nhất định nào đó hay không.
----->[VD]
-$(document).ready(function(){
-    $("button").click(function(){
-        alert($("p").hasClass("intro"));
-    });
-});
-----------------------------------------------------------------------
---------------------------------------------------> Chuyển một phần tử
-----------------------------------------------------------------------
-.before()           --> add thêm vào trước // Thêm thành phần vào ngay trước thành phần đã có.
----->[VD]
-$(function(){
-    $('div').before('<p>nội dung thêm vào</p>');
-});
------------------------------------------------//
-.after()            --> add thêm vào sau // Chèn nội dung, xác định bởi tham số vào ngay sau mỗi thành phần đã có.
----->[VD]
-$(function(){
-    $('div').after('<p>nội dung thêm vào</p>');
-});
------------------------------------------------//
-.append()           --> Thành phần được chèn thêm nội dung, nội dung này thường được sắp xếp ở vị trí sau cùng.
-.appendTo()         --> Chèn nội dung vào thành phần đã có, thường được sắp xếp ở vị trí sau cùng.
--------------------------------------------------------------------------
---------------------------------------------------> Hàm về một thuộc tính
--------------------------------------------------------------------------
-.add()              --> add thêm nữa ...  // Thêm thành phần vào thành phần đã có để cùng thực hiện một hành động.
----->[VD]
-$(function(){
-    $('div').add('p').css('border','1px solid blue');
-});
------------------------------------------------//
-.addClass()         --> add class // Thêm class cho thành phần.
----->[VD]
-$(document).ready(function(){
-    $("button").click(function(){
-        $("p:first").addClass("intro");
-    });
-});
------------------------------------------------//
-.addBack()          --> Là chính nó đấy // Thêm thành phần vào trước thành phần đã có để cùng thực hiện một hành động.
----->[VD]
-$(function(){
-    $('.test').nextAll().addBack().css('border','1px solid blue');
-});
------------------------------------------------//
-.css()              --> Thêm css trong js // Được dùng để thêm một hoặc nhiều style cho thành phần, ngoài ra còn có thể sử dụng .css() để lấy giá trị style của thành phần.
----->[VD]
-$(function(){
-    $('p.test').css('color','red');
-});
------------------------------------------------//
-.html()             --> Thêm html trong js // Lấy nội dung HTML của thành phần, hoặc gán giá trị HTML cho thành phần.
----->[VD]
-$(function(){
-    $('div').html('<p>Thành phần được thêm</p>');
-});
------------------------------------------------//
-.attr()             --> Xác định thuộc tính của thành phần.
----->[VD]
-$(function(){
-    var hrefAttr = $('a').attr('href');
-    $('.test').html(hrefAttr);
-});
------------------------------------------------//
-.val()              --> Lấy giá trị hiện tại của thành phần, hoặc thay đổi giá trị cho thành phần.
--------------------------------------------------------------
---------------------------------------------------> Ajax
--------------------------------------------------------------
-.get()              --> Lấy các thành phần DOM phù hợp của các đối tượng jQuery.
-.load()             --> Load sự kiện javascript. Load dữ liệu từ server sau đó đặt HTML trở lại từ các thành phần được chọn. // lấy db server về
+//////////////////////////////////////////////////////////////////////////////////
+----------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
- >>>>>>>>>>>>>>>>>>>>>>>>>>>>> -- Code MD -- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -- Code CC -- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 ------------------------------------------------------------------------------
 $(document).ready(function(){ // document.ready load web or window.resize -> kéo web
   $("p").click(function(){ // bộ chọn // sự kiện
@@ -262,8 +12,110 @@ $(document).ready(function(){ // document.ready load web or window.resize -> ké
   });
 });
 ------------------------------------------------------------------------------
- >>>>>>>>>>>>>>>>>>>>>>>>>>>>> -- VD DEMO -- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -- Code HH -- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 ------------------------------------------------------------------------------
+$(document).ready(function() {
+/ --> Hiệu ứng <-- /
+    // toggle() : ẩn hiện luân phiên
+    $('h1').hover(function() {
+        $(this).next().toggle();
+    });
+    // toggleClass() : ẩn hiện class
+    $('h2').click(function() {
+        $("p").toggleClass('active');
+    });
+    // hide() : Ẩn (style="display: none;)
+    // show() : Hiện (style="display: block;)
+    $('div').hide();
+    $('button').dblclick(function(){
+        $('div').show();  
+    });
+    // fadeIn() : hiện rõ dần
+    // fadeOut() : ẩn mờ dần
+    $(".in").click(function(){
+        $("#div1").fadeIn();
+        $("#div2").fadeIn("slow");
+        $("#div3").fadeIn(3000);
+    });
+    $(".out").click(function(){
+        $("#div1").fadeOut();
+        $("#div2").fadeOut("slow");
+        $("#div3").fadeOut(3000);
+    });
+    // fadeTo() : hiện rõ dần
+    // fadeToggle() : ẩn hiện mờ dần + (opacity)
+    $("button").click(function(){
+        $("#div1").fadeToggle();
+        $("#div2").fadeToggle("slow");
+        $("#div3").fadeToggle(3000);
+    });
+    // slideDown() : hiên trượt
+    // slideUp() : ẩn trượt
+    $(".down").click(function(){
+        $("p").slideUp();
+    });
+    $(".up").click(function(){
+        $("p").slideDown();
+    });
+    // slideToggle() : ẩn hiện trượt
+    $("button").click(function(){
+        $("p").slideToggle();
+    });
+/ --> Tìm <-- /
+    // find() : tìm TP của list-cha
+    $("ul").find("span").css({"color": "red", "border": "2px solid red"});
+    // prev() : xác định chọn trước
+    $("li.start").prev().css({"color": "red", "border": "2px solid red"});
+    // prevAll() : chọn trước all
+    $("li.start").prevAll().css({"color": "red", "border": "2px solid red"});
+    // prevUntil() : chọn trước nó đến gần trước
+    $("li.start").prevUntil("li.stop").css({"color": "red", "border": "2px solid red"});
+    // has() : xác định con
+    $("p").has("span").css("background-color", "yellow");
+    // hasClass() : tìm trong TP có class đó ko
+    $("button").click(function(){
+        alert($("p").hasClass("intro"));
+    });
+/ --> Chuyển một phần tử <-- /
+    // before() : add thêm vào trước
+    $('div').before('<p>nội dung thêm vào</p>');
+    // after() : add thêm vào sau
+    $('div').after('<p>nội dung thêm vào</p>');
+    / --> Hàm về một thuộc tính <-- /
+    // add() : add thêm nữa ...
+    $('div').add('p').css('border','1px solid blue');
+    // addClass() : add thêm class
+    $("button").click(function(){
+        $("p:first").addClass("intro");
+    });
+    // addBack() : Là chính nó đấy
+    $('.test').nextAll().addBack().css('border','1px solid blue');
+    // css() : Thêm css trong js
+    $('p.test').css('color','red');
+    // html() : Thêm html trong js
+    $('div').html('<p>Thành phần được thêm</p>');
+    // attr() : Xác định thuộc tính của thành phần
+    var hrefAttr = $('a').attr('href');
+    $('.test').html(hrefAttr);
+
+});
+------------------------------------------------------------------------------
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -- EX ADD -- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+------------------------------------------------------------------------------
+// thẻ a không bị load khi click
+$("#id").click(function(event){
+  event.preventDefault();
+});
+
+// if xét width
+$(window).resize(function(){
+   if ($(window).width() <= 320) {
+      ...
+   }
+   else {
+      ...
+   }
+});
 // [VD] jQuery.ScrollTo
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
 
@@ -302,27 +154,19 @@ $(document).ready(function () {
     });
 
 });
-------------------------------------------------------------------------------
- >>>>>>>>>>>>>>>>>>>>>>>>>>>>> -- Ghi chú -- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-------------------------------------------------------------------------------
-// thẻ a không bị load khi click
-$("#id").click(function(event){
-  event.preventDefault();
-});
-
-// if xét width
-$(window).resize(function(){
-   if ($(window).width() <= 320) {
-      ...
-   }
-   else {
-      ...
-   }
-});
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+-----------------------------------------------//
+.animate()          // Thực hiện một hình ảnh động (animate) tùy chỉnh của một tập hợp các thuộc tính css.
+-----------------------------------------------//
+.append()           // Thành phần được chèn thêm nội dung, nội dung này thường được sắp xếp ở vị trí sau cùng.
+.appendTo()         // Chèn nội dung vào thành phần đã có, thường được sắp xếp ở vị trí sau cùng.
+-----------------------------------------------//
+.val()              // Lấy giá trị hiện tại của thành phần, hoặc thay đổi giá trị cho thành phần.
+-----------------------------------------------// Ajax
+.get()              // Lấy các thành phần DOM phù hợp của các đối tượng jQuery.
+.load()             // Load sự kiện javascript. Load dữ liệu từ server sau đó đặt HTML trở lại từ các thành phần được chọn. // lấy db server về
 .jquery             --> Xác định một thành phần có phải là jQuery object hay không. Xác định phiên bản hiện tại của jQuery đang chạy trong trang. // phải js o vs version ?
 
 .scrollLeft()       --> Lấy vị trí hiện tại theo chiều ngang của thanh cuộn cho các thành phần đầu tiên trong một bộ các thành phần phù hợp hoặc thiết lập vị trí ngang của thanh cuộn cho mỗi thành phần phù hợp.

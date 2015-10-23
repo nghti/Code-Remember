@@ -1,5 +1,12 @@
-iMAC1s-iMac:~ imac1$ cd /Users/imac1/Documents/html+css/sass_1 
-iMAC1s-iMac:sass_1 imac1$ sass --watch style.scss:style.css
+(#) creater compass and start
+iMAC1s-iMac:~ imac1$ gem install compass
+iMAC1s-iMac:~ imac1$ compass version
+iMAC1s-iMac:Desktop imac1$ compass create mynew
+iMAC1s-iMac:Desktop imac1$ compass watch mynew
+* note change in config.rb
+--------------------------------------------------->
+(#) start sass
+iMAC1s-iMac:sass imac1$ sass --watch style.scss:style.css
 ---------------------------------------------------------------------------------------------
 ///////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////// STUDY SASS ///////////////////////////////////////
@@ -10,7 +17,7 @@ sass -> (nhanh, dễ quản lý ... cs3 )
 **************
 ****************************
 *************************************
--> / * Quy tắc xếp chồng (Nested Rules) * /
+-> / * Quy tắc xếp chồng (Nested Rules) ^^ không nên xếp quá 4 chồng * /
 *************************************
 ****************************
 **************
@@ -38,9 +45,11 @@ ex: & -> tên cha
 is compiled to:
 
 #main {
-  color: black; }
-  #main-sidebar {
-    border: 1px solid; }
+  color: black; 
+}
+#main-sidebar {
+  border: 1px solid; 
+}
 ***
 ex: kết nối
 .funky {
@@ -55,7 +64,8 @@ is compiled to:
 .funky {
   font-family: fantasy;
   font-size: 30em;
-  font-weight: bold; }
+  font-weight: bold; 
+}
 ***
 ex: kết nối x 2
 .funky {
