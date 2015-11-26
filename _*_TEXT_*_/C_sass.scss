@@ -4,7 +4,7 @@ iMAC1s-iMac:~ imac1$ compass version
 iMAC1s-iMac:Desktop imac1$ compass create mynew
 iMAC1s-iMac:Desktop imac1$ compass watch mynew
 * note change in config.rb
---------------------------------------------------->
+--------------->
 (#) start sass
 iMAC1s-iMac:sass imac1$ sass --watch style.scss:style.css
 ---------------------------------------------------------------------------------------------
@@ -22,35 +22,26 @@ sass -> (nhanh, dễ quản lý ... cs3 )
 ****************************
 **************
 .menu {
- background: #f94342;
- 	li{
+ 	li {
  		float: right;
 		a {
-		color: #fff;
-		text-decoration: underline;
+		  color: #fff;
 			&:hover,&:visited {
-			color: #f3f3f3;
 			text-decoration: none;
 			}
 		}
  	}
+  &-sidebar {
+    border: 1px solid;
+  }
 }
 
-***
-ex: & -> tên cha
-#main {
-  color: black;
-  &-sidebar { border: 1px solid; }
-}
 is compiled to:
-
-#main {
-  color: black; 
-}
-#main-sidebar {
+...
+.menu-sidebar {
   border: 1px solid; 
 }
-***
+**************
 ex: kết nối
 .funky {
   font: {
@@ -59,6 +50,7 @@ ex: kết nối
     weight: bold;
   }
 }
+
 is compiled to:
 
 .funky {
@@ -66,13 +58,14 @@ is compiled to:
   font-size: 30em;
   font-weight: bold; 
 }
-***
+**************
 ex: kết nối x 2
 .funky {
   font: 20px/24px fantasy {
     weight: bold;
   }
 }
+
 is compiled to:
 
 .funky {
@@ -88,8 +81,10 @@ is compiled to:
 **************
 $primary_shadow: 5px 5px 5px #000000;
 
-h1.post_title {text-shadow: $primary_shadow}
-***
+sass: ->
+
+.post_title {text-shadow: $primary_shadow}
+**************
 ex: !global(toàn cầu)
 #main {
   $width: 5em !global;
@@ -99,6 +94,7 @@ ex: !global(toàn cầu)
 #sidebar {
   width: $width;
 }
+
 is compiled to:
 
 #main {
@@ -120,13 +116,16 @@ float: left;
 margin: 0px 10px;
 }
 
-.class { @include float-left;}
+sass: ->
 
+.class { @include float-left;}
 ----------- OR -------------
 @mixin float-left($float,$margin) {
 float: $float;
 margin: $margin;
 }
+
+sass: ->
 
 .class_1 {
 @include float-left(right,5px 10px)
@@ -145,6 +144,8 @@ margin: $margin;
 text-shadow:1px 1px 0px #ffffff;
 }
 
+sass: ->
+
 .button_2 { @extend .button_1; }
 .button_3 { @extend .button_1; }
 
@@ -153,6 +154,8 @@ text-shadow:1px 1px 0px #ffffff;
 color: red;
 margin: 5px 10px;
 }
+
+sass: ->
 
 .fuck_me { @extend %fuck_you; }
 **************

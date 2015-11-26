@@ -1,10 +1,17 @@
-1
 -----------------------------------------------------------------------------------------------------
 ------------------- Show hidden files (like htaccess) in Mac OS X -----------------------------------
 -----------------------------------------------------------------------------------------------------
 iMAC1s-iMac:~ imac1$ defaults write com.apple.finder AppleShowAllFiles TRUE
 iMAC1s-iMac:~ imac1$ killall Finder
 iMAC1s-iMac:~ imac1$ defaults write com.apple.finder AppleShowAllFiles FALSE
+-----------------------------------------------------------------------------------------------------
+---------------------------------- Cross-browser ----------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+<!--[if lt IE 9]>
+   <link rel="stylesheet" type="text/css" media="screen" href="css/lt.ie.9.css" />
+<![endif]-->
+
+=> Modernizr
 -----------------------------------------------------------------------------------------------------
 ---------------------------------- Localhost --------------------------------------------------------
 -----------------------------------------------------------------------------------------------------
@@ -17,18 +24,6 @@ etc/extra/httpd-vhosts.conf
 —— user
 iMAC1s-iMac:~ imac1$ cd /Applications/XAMPP/htdocs/wohnungssuche/trunk_pro
 iMAC1s-iMac:trunk_pro imac1$ sudo chmod -R 777 *
------------------------------------------------------------------------------------------------------
----------------------------------- SASS -------------------------------------------------------------
------------------------------------------------------------------------------------------------------
-(#) creater compass and start
-iMAC1s-iMac:~ imac1$ gem install compass
-iMAC1s-iMac:~ imac1$ compass version
-iMAC1s-iMac:Desktop imac1$ compass create mynew
-iMAC1s-iMac:Desktop imac1$ compass watch mynew
-* note change in config.rb
---------------->
-(#) start sass
-iMAC1s-iMac:sass imac1$ sass --watch style.scss:style.css
 -----------------------------------------------------------------------------------------------------
 ---------------------------------- Github -----------------------------------------------------------
 -----------------------------------------------------------------------------------------------------
@@ -69,7 +64,7 @@ OR>
 
 (*) git status (trạng thái)
 	git status
-
+####################################################################################################
 (# 1) git clone (tạo bản sao) Sever ---> Local
 iMAC1s-iMac:Desktop imac1$ git clone https://github.com/nghti/sass_default.git
 OR >
@@ -85,7 +80,7 @@ iMAC1s-iMac:myApp imac1$ git push origin master
 (# 3) commit add Local ---> Sever
 iMAC1s-iMac:git_new imac1$ git add -A
 iMAC1s-iMac:git_new imac1$ git commit -m "Ghi chú Commit"
-	iMAC1s-iMac:git_new imac1$ git pull origin master
+iMAC1s-iMac:git_new imac1$ git pull origin master
 iMAC1s-iMac:git_new imac1$ git push origin master
 
 (# 3) commit add Sever ---> Local
@@ -93,7 +88,19 @@ iMAC1s-iMac:git_new imac1$ git pull
 -----------------------------------------------------------------------------------------------------
 ---------------------------------- BitBucket --------------------------------------------------------
 -----------------------------------------------------------------------------------------------------
-
+...
+-----------------------------------------------------------------------------------------------------
+---------------------------------- SASS -------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+(#) creater compass and start
+iMAC1s-iMac:~ imac1$ gem install compass
+iMAC1s-iMac:~ imac1$ compass version
+iMAC1s-iMac:Desktop imac1$ compass create mynew
+iMAC1s-iMac:Desktop imac1$ compass watch mynew
+* note change in config.rb
+--------------->
+(#) start sass
+iMAC1s-iMac:sass imac1$ sass --watch style.scss:style.css
 -----------------------------------------------------------------------------------------------------
 ----------------------------------- Phonegap --------------------------------------------------------
 -----------------------------------------------------------------------------------------------------

@@ -9,14 +9,22 @@ Bootstrap(nhanh, responsive)
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> /* di động, 'user-scalable=no' là ko cho viewport */
 
 Normalize.css (reset)
+
 --
 @media (min-width: ...) { ... } /* Truy vấn phương tiện truyền thông */
 @media only screen and (max-width:320px) {} /* only screen -> chính màn hình đó */
---
-col-md-4 (xs - sm - md - lg)
 
-col-md-offset-3 (đẩy -> trái)
-col-md-push-3 (đè -> trái)
+--
+col-xs-4 (xs - sm - md - lg)
+
+xs => ~~~~~
+sm => 768px
+md => 992px
+lg => 1200px
+
+col-xs-offset-3 (đẩy -> trái)
+
+col-xs-push-3 (đè -> trái)
 
 .row ( trong lớp -> == )
 .container ( các thiết bị khác nhau with # )

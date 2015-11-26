@@ -1,8 +1,8 @@
----------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 ///////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////// STUDY HTML ///////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////
----------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
 <header> <!-- Định nghĩa khu vực header (phần đầu) của trang. -->
 <footer> <!-- Định nghĩa khu vực footer (phần cuối) của trang. -->
 <hgroup> <!-- Định nghĩa một nhóm các tiêu đề. -->
@@ -10,7 +10,7 @@
 <aside> <!-- Định nghĩa nội dung bên ngoài nội dung chính (thường là phần sidebar). -->
 <article> <!-- Định nghĩa một bài viết, một nội dung riêng biệt. -->
 <section> <!-- Định nghĩa một khu vực (vùng bao). -->
-/-******************************************* HTML *******************************************-/
+/-**** HTML ****-/
 <!doctype html>
 <html lang="en">
     <head>
@@ -40,22 +40,33 @@
         <!-- JavaScript files end -->
     </head>
     <body>
-        <header>
-            <hgroup>
-                <h1>Name</h1>
-                <h2>HTML5 and CSS3</h2>
-            </hgroup>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    ...
-                </ul>
-            </nav>
-        </header>
+        <div id=”wrapper”>
+            <header id=”header”>
+                <hgroup>
+                    <h2>HTML5 and CSS3</h2>
+                </hgroup>
+                <nav id="mainnav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        ...
+                    </ul>
+                </nav>
+            </header><--!End #header-->
 
-        <section id="pageBody">
-            <section id="content">
-                <article>
+            <section id=”mainContent”>
+                <section id="leftContent">
+                    <article>
+                        <section class="box-new">
+                            <header>
+                                <h1>This is a section heading</h1>
+                            </header>
+                            <p>This is an example ...</p>
+                        </section>
+                        ...
+                    </article>
+                </section>
+
+                <aside id="sidebar">
                     <section>
                         <header>
                             <h1>This is a section heading</h1>
@@ -63,25 +74,16 @@
                         <p>This is an example ...</p>
                     </section>
                     ...
-                </article>
-            </section>
+                </aside>
+            </section><--!End #mainContent -->
 
-            <aside>
-                <section>
-                    <header>
-                        <h1>This is a section heading</h1>
-                    </header>
-                    <p>This is an example ...</p>
-                </section>
-                ...
-            </aside>
-        </section>
-
-        <footer>
-            <p>&copy; 2015 Nghti.</p>
-        </footer>
+            <footer id=”footer”>
+                <p>&copy; 2015 Nghti.</p>
+            </footer><--!End #footer-->
+        </div><--!End #wrapper-->
     </body>
 </html>
+
 /-******************************************* New *******************************************-/
 <!-- layer1 -->
 <audio> Định nghĩa âm thanh, như nhạc hay trường audio khác..
