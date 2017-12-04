@@ -137,10 +137,12 @@ http://getbootstrap.com.vn/css/#code
 - Button
 	<button type="button" class="btn btn-default">Left</button>
 	http://getbootstrap.com.vn/components/#btn-groups
+	
 	...
 	ex: css style
 
 ## js
+```css
 
 - Modals 						 	/* hộp thoại nhắc nhở */
 
@@ -163,7 +165,7 @@ http://getbootstrap.com.vn/css/#code
 - Carousel: ;				 			/* slider - băng chuyền 2 loai*/
 	+ id="carousel-example-generic"
 	+ id="carousel-example-captions"
-
+```
 
 
 
