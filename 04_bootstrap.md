@@ -1,21 +1,29 @@
 # STUDY BOOTSTRAP 3
 
-## Bootstrap: 
+## Bootstrap
 > code nhanh, Hệ thống lưới 12 cột dễ style, Hổ trợ responsive và trình duyệt tốt, Css vs Js cơ bản đã dk viết sẵn
 
 ```css
-# >> so sánh
-                  Bottstrap 2                         Bottstrap 3
-                  chỉ hổ trợ less										  có hổ trợ sass
-                 																			lưới responsive tốt hơn
-                 																			mobile trước (mobile first)
-- tên class vs js có thay đổi
+>> so sánh
+> Bottstrap 2                         
+chỉ hổ trợ less
 
-                 .span* chia cột                     .col-md-* chia cột
-                 .container-fluid                    .container
-                 .row-fluid                          .row
+> Bottstrap 3
+có hổ trợ sass
+lưới responsive tốt hơn
+mobile trước (mobile first)
+
+>> tên class vs js có thay đổi
+> Bottstrap 2  
+.span* chia cột
+.container-fluid                    
+.row-fluid      
+
+> Bottstrap 3
+.col-md-* chia cột
+.container
+.row
 ```
-
 ## html
 Normalize.css (reset)
 #--------------| vô hiệu hóa responsive zoom
