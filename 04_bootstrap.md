@@ -35,10 +35,12 @@ Normalize.css (reset)
 
 ### width
 .container ( các thiết bị khác nhau with # )
+
 .container-fluid ( chiều rộng của nó sẽ full-width )
+
 .row ( trong lớp => margin: 0 -15px -> == )
 
-==> .container(mobile first): @media (min-width: 768px) >= @media (min-width: 992px) >= @media (min-width: 1200px)
+> .container(mobile first): @media (min-width: 768px) >= @media (min-width: 992px) >= @media (min-width: 1200px)
 
 ### lưới 12(cột)
 
@@ -47,14 +49,18 @@ Normalize.css (reset)
 ==> user col   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2"> col thiết bị khác nhau </div>
 
 col-xs-offset-3 (margin-left: trái)
+
 col-xs-push-3   (position: relative <=> left: trái)
+
 col-xs-pull-3   (position: relative <=> right: phải)
 
 ### media
+```css
 @media (min-width: 768px) { ... }
 @media (max-width: 320px) { ... }
 @media (min-width: 320px) and (max-width: 768px) { ... }
 @media only screen and (max-width:320px) {} /* only screen -> chính màn hình đó */
+```
 
 ## css
 ```css
