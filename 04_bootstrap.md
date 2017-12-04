@@ -111,8 +111,9 @@ http://getbootstrap.com.vn/css/#code
 - form
 	+ .form-inline 					 	// (- - -)
 	+ .form-horizontal			 		// tạo lưới cho form-group 
-	+ > .form-group          		// box cho input sẽ cách đẹp $ xét width: 100% or thêm .col-$-$ 
-	+ .checkbox-inline và radio-inline. 		// (- - -)
+	+ > .form-group          				// box cho input sẽ cách đẹp $ 
+								   xét width: 100% or thêm .col-$-$ 
+	+ .checkbox-inline và radio-inline. 			// (- - -)
 	...
 	http://getbootstrap.com.vn/css/#forms
 
