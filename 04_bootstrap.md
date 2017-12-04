@@ -29,7 +29,9 @@ mobile trước (mobile first)
 Normalize.css (reset)
 
 ### vô hiệu hóa responsive zoom
+```html
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+```
 
 ### width
 .container ( các thiết bị khác nhau with # )
