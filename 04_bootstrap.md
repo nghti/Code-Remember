@@ -1,6 +1,7 @@
 # STUDY BOOTSTRAP 3
 ## Bootstrap: 
-- code nhanh, Hệ thống lưới 12 cột dễ style, Hổ trợ responsive và trình duyệt tốt, Css vs Js cơ bản đã dk viết sẵn
+> code nhanh, Hệ thống lưới 12 cột dễ style, Hổ trợ responsive và trình duyệt tốt, Css vs Js cơ bản đã dk viết sẵn
+```css
 # >> so sánh
                   Bottstrap 2                         Bottstrap 3
                   chỉ hổ trợ less										  có hổ trợ sass
@@ -11,7 +12,7 @@
                  .span* chia cột                     .col-md-* chia cột
                  .container-fluid                    .container
                  .row-fluid                          .row
-
+```
 ###------------------------------------------ * html * ------------------------------------------------
 Normalize.css (reset)
 #--------------| vô hiệu hóa responsive zoom
