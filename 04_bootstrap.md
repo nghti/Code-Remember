@@ -1,5 +1,5 @@
-#####------------------------------------- STUDY BOOTSTRAP 3 -------------------------------------------
-##Bootstrap: 
+# STUDY BOOTSTRAP 3
+## Bootstrap: 
 - code nhanh, Hệ thống lưới 12 cột dễ style, Hổ trợ responsive và trình duyệt tốt, Css vs Js cơ bản đã dk viết sẵn
 # >> so sánh
                   Bottstrap 2                         Bottstrap 3
