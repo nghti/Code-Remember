@@ -1,6 +1,8 @@
 # STUDY BOOTSTRAP 3
+
 ## Bootstrap: 
 > code nhanh, Hệ thống lưới 12 cột dễ style, Hổ trợ responsive và trình duyệt tốt, Css vs Js cơ bản đã dk viết sẵn
+
 ```css
 # >> so sánh
                   Bottstrap 2                         Bottstrap 3
@@ -13,6 +15,7 @@
                  .container-fluid                    .container
                  .row-fluid                          .row
 ```
+
 ## html
 Normalize.css (reset)
 #--------------| vô hiệu hóa responsive zoom
@@ -99,7 +102,9 @@ http://getbootstrap.com.vn/css/#code
 	+ .img-rounded    			 // border-radius: 6px
 	+ .img-circle     			 // border-radius: 50%;
 	+ .img-thumbnail  			 // thumbnail img
+
 ## Components
+
 - fon icon glyphicon
 	<span class="glyphicon glyphicon-search"></span>
 	http://getbootstrap.com.vn/components/#glyphicons
@@ -111,6 +116,7 @@ http://getbootstrap.com.vn/css/#code
 	ex: css style
 
 ## js
+
 - Modals 						 /* hộp thoại nhắc nhở */
 
 - Dropdowns 				 /* menu sổ xuống */
