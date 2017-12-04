@@ -14,6 +14,7 @@ lưới responsive tốt hơn
 mobile trước (mobile first)
 
 >> tên class vs js có thay đổi
+
 > Bottstrap 2  
 .span* chia cột
 .container-fluid                    
@@ -26,6 +27,7 @@ mobile trước (mobile first)
 ```
 ## html
 Normalize.css (reset)
+
 #--------------| vô hiệu hóa responsive zoom
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
 
