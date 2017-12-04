@@ -44,9 +44,15 @@ Normalize.css (reset)
 
 ### lưới 12(cột)
 
-==> col-xs-4	...		0px(xs) >=        768px(sm)         >=         992px(md)         >=         1200px(lg) >
+##### col-xs-4	
+```html
+0px(xs) >=        768px(sm)         >=         992px(md)         >=         1200px(lg) >
+```
 
-==> user col   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2"> col thiết bị khác nhau </div>
+##### user col   
+```html
+div class="col-xs-12 col-sm-6 col-md-4 col-lg-2"> col thiết bị khác nhau </div>
+```
 
 col-xs-offset-3 (margin-left: trái)
 
