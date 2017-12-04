@@ -13,7 +13,7 @@
                  .container-fluid                    .container
                  .row-fluid                          .row
 ```
-###------------------------------------------ * html * ------------------------------------------------
+## html
 Normalize.css (reset)
 #--------------| vô hiệu hóa responsive zoom
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
@@ -41,7 +41,7 @@ col-xs-pull-3   (position: relative <=> right: phải)
 @media (min-width: 320px) and (max-width: 768px) { ... }
 @media only screen and (max-width:320px) {} /* only screen -> chính màn hình đó */
 
-###------------------------------------------ * css * ------------------------------------------------
+## css
 
 .clearfix									 // Clear box >> height
 .lead  		   							 // nổi bật văn bản >> font-size: 21px;
@@ -99,7 +99,7 @@ http://getbootstrap.com.vn/css/#code
 	+ .img-rounded    			 // border-radius: 6px
 	+ .img-circle     			 // border-radius: 50%;
 	+ .img-thumbnail  			 // thumbnail img
------------------------------------------ * Components * -------------------------------------------
+## Components
 - fon icon glyphicon
 	<span class="glyphicon glyphicon-search"></span>
 	http://getbootstrap.com.vn/components/#glyphicons
@@ -110,7 +110,7 @@ http://getbootstrap.com.vn/css/#code
 	...
 	ex: css style
 
-###------------------------------------------ * js * ------------------------------------------------
+## js
 - Modals 						 /* hộp thoại nhắc nhở */
 
 - Dropdowns 				 /* menu sổ xuống */
