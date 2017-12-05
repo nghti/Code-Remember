@@ -6,12 +6,12 @@
 
 -moz-osx-font-smoothing: grayscale;
 
-#### cách text
+#### Cách text
 word-spacing: -6px; 		//	cách chữ
 
 letter-spacing: 8px; 		//	cách từ
 
-#### hiển thì chuột
+#### Hiển thì chuột
 cursor					        //	cursor: pointer;
 
 #### width %
@@ -20,7 +20,7 @@ width: calc(100%/4);
 #### height auto css
 height: calc(100vh);
 
-#### responsive size pc = ipa
+#### Responsive size pc = ipa
 ```css
 @media only screen and (max-width: 768px) and (min-width: 481px)
 body {
@@ -30,11 +30,11 @@ body {
 ## Select tag a pro
 http://lea.verou.me/demos/nth.html
 
-#### chọn 1 input
+#### Chọn 1 input
 ```css
 input[type=submit]
 ```
-#### chọn con
+#### Chọn con
 ```css
 :first-child         // chọn con đầu tiên và cha duy nhất
 :last-child          // chọn con cuối cùng và cha duy nhất
@@ -55,14 +55,13 @@ input[type=submit]
 :lt                  // nhỏ hơn >> all
 ```
 ##  CS3
+```css
 -moz-     // filefox
-
 -o-       // opera
-
 -ms-      // ie
-
 -webkit-  // chrome & safari
-
+```
+-----------
 - Border-img      ie11 >>
 - Column          (cột văn bản trong div) ie10 >>
 - filter          (lọc img) ie13
@@ -81,36 +80,32 @@ input[type=submit]
 - text
 ```css
 // text-overflow (giới hạn và thay text)
-  text-overflow: clip;       // Xén bớt vùng text
-  text-overflow: ellipsis;   // giới hạn vs thay = 3 chấm ! chạy được trên 1 dòng 
-  text-overflow: 'còn tiếp'; // Cắt đoạn text ... và thay bằng đoạn text khác
+   text-overflow: clip;       // Xén bớt vùng text
+   text-overflow: ellipsis;   // giới hạn vs thay = 3 chấm ! chạy được trên 1 dòng 
+   text-overflow: 'còn tiếp'; // Cắt đoạn text ... và thay bằng đoạn text khác
 
 // word-wrap (từ xuống hàng)
-  word-wrap: break-word; // Những từ quá dài sẽ xuống hàng.
-  word-wrap: normal;     // mặc định cho word-wrap.
+   word-wrap: break-word; // Những từ quá dài sẽ xuống hàng.
+   word-wrap: normal;     // mặc định cho word-wrap.
 
 // word-break (chữ xuống hàng)
-  word-break: break-all; // hết đoạn ngắt chữ xuống hàng
-  word-break: hyphenate; // hết từ xuống hàng tại gạch nối thích hợp
-  word-break: normal;    // mặc định cho từ
+   word-break: break-all; // hết đoạn ngắt chữ xuống hàng
+   word-break: hyphenate; // hết từ xuống hàng tại gạch nối thích hợp
+   word-break: normal;    // mặc định cho từ
   ```
 - text-shadow
 ```css
-  text-shadow: 0 0 3px blue;  // width -> height -> mờ -> màu
-  + [add]
+  text-shadow: 0 0 3px blue;                      // width -> height -> mờ -> màu
   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;  // nhiều màu
 ```
 - box-shadow
 ```css
-  box-shadow: 5px 10px 5px 10px #000;       // width -> height -> mờ -> độ lan -> màu
-  -moz-box-shadow: 5px 10px 5px 10px #000;
-  -webkit-box-shadow: 5px 10px 5px 10px #000;
-  + [add]
-  box-shadow: 10px 10px #cc0000 inset;      // Thay độ bóng từ ngoài vào trong sáng
+  box-shadow: 5px 10px 5px 10px #000;             // width -> height -> mờ -> độ lan -> màu
+  box-shadow: 10px 10px #cc0000 inset;            // Thay độ bóng từ ngoài vào trong sáng
 ```
 - box-sizing
 ```css
-  box-sizing: border-box;       // width and height đã bao gồm border
+  box-sizing: border-box;                         // width and height đã bao gồm border
 ```
 - transition (chuyển đối khi có một hành động..:hover làm to nút) 
 ```css
@@ -120,7 +115,7 @@ input[type=submit]
   transition-timing-function: ease-in;     // chậm chậm
   transition-timing-function: ease-out;    // kết chậm
   transition-timing-function: ease-in-out; // chậm đều
------------
+  -----------
   transition-property: width;  // xác định hiệu ứng chuyển đổi cho thuộc tính
   transition-duration: 2s;     // time
   transition-timing-function: linear;
@@ -135,7 +130,7 @@ input[type=submit]
              scale()         // ảnh hưởng đến kích thước pt
              sKewX(),sKewy() // nghiêng yếu tố sang trái or phải
              matrix()        // chuyển đổi 2D or 3D
------------
+  -----------
   transform: scale(20) skew(-20deg);
   transform: rotate(45deg) translate(24px, 25px)
 ```
@@ -147,7 +142,7 @@ input[type=submit]
   {animation-timing-function: ease-in;}     // đều chậm
   {animation-timing-function: ease-out;}    // kết chậm
   {animation-timing-function: ease-in-out;} // chậm đều
------------
+  -----------
 >  mã animation
 @keyframes example {
   0%   {background-color: red; left:0px; top:0px;}
@@ -164,7 +159,7 @@ input[type=submit]
   animation-iteration-count: 3;   // infinite(~)
   animation-direction: alternate; // reverse(chạy ngược) or alternate(chay 1v sau đó ngược lại )
 }
-+ [Viết tắt]()
++ [Viết tắt]
 {
   animation: example 5s linear 2s infinite alternate;
 }
@@ -189,7 +184,6 @@ input[type=submit]
 
 // chia lại tỉ lệ ảnh
   background-size: cover or contain
-}
 ```
 
 ## VD support 
