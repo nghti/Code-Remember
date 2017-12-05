@@ -1,4 +1,4 @@
-#👉 STUDY HTML 👈
+👉 STUDY HTML 👈
 
 ## HTML >> XHTML
 - Thêm một XHTML <! DOCTYPE> vào dòng đầu tiên của mỗi trang
@@ -27,16 +27,20 @@
 
 ### ---=> table
 colspan="2" // số cột
+
 rowspan="2" // số hàng
 
 ## html5 có gì mới
+```html
 -> khai báo đơn giản         // <!DOCTYPE html>, <meta charset="UTF-8">
 -> các thẻ ngữ ngĩa new      // <header>, <footer>, ...
 -> kiểm soát thuộc tính new  // ngày, giờ, lịch, ...
 -> yếu tố đồ họa new         // <svg>, <canvas>
 -> yếu tố đa phương tiện new // <audio>, <video>
+```
 
 ### ---=> tag
+```html
 - <header>  // Định nghĩa khu vực header (phần đầu) của trang.
 - <footer>  // Định nghĩa khu vực footer (phần cuối) của trang.
 - <section> // Định nghĩa một khu vực (vùng bao).
@@ -46,11 +50,14 @@ rowspan="2" // số hàng
 - <hgroup>  // Định nghĩa một nhóm các tiêu đề.
 - <nav>     // Định nghĩa link danh mục (navigation)
 - <mark>    // làm nổi bật văn bản.
+```
 
 ### ---=> đa phương tiện
-audio
-video
++ audio
+ 
++ video
 
 ### ---=> đồ họa
-svg
-canvas
++ svg
+
++ canvas
