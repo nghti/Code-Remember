@@ -1,37 +1,40 @@
-#####/------------------------------------------ STUDY CSS -------------------------------------------
-/* ------------------------------------------------------------------------ *\
-|* This file contains CSS helper classes.
-\* ------------------------------------------------------------------------ */
+# CSS
 
-/*===== top add ======*/
-###--------------------------------------------  Ghi nhớ --------------------------------------------
-#/* font-smoothing (mịn chữ) */
+##  Thẻ chưa nhớ
+### font-smoothing (mịn chữ)
 -webkit-font-smoothing: antialiased;
+
 -moz-osx-font-smoothing: grayscale;
 
-#/* cách text */
+### cách text
 word-spacing: -6px; 		//	cách chữ
 letter-spacing: 8px; 		//	cách từ
 
-#/* hiển thì chuột */
+### hiển thì chuột
 cursor					        //	cursor: pointer;
 
-#/* width %*/
+### width %
 width: calc(100%/4);
 
-#/* height auto css */
+### height auto css
 height: calc(100vh);
 
-#/* responsive size pc = ipad  */
+### responsive size pc = ipa
+```css
 @media only screen and (max-width: 768px) and (min-width: 481px)
 body {
     min-width: 1144px;
 }
-###-------------------------------------------- Select --------------------------------------------
-#/* chọn 1 input */
-input[type=submit]
+```
+## Select tag a pro
+http://lea.verou.me/demos/nth.html
 
-#/* chọn con */
+### chọn 1 input
+```css
+input[type=submit]
+```
+### chọn con
+```css
 :first-child         // chọn con đầu tiên và cha duy nhất
 :last-child          // chọn con cuối cùng và cha duy nhất
 
@@ -50,30 +53,28 @@ input[type=submit]
 :gt                  // lớn hơn >> all
 :lt                  // nhỏ hơn >> all
 
-###--------------------------------------------  CS3 --------------------------------------------
+##  CS3
 -moz-     // filefox
 -o-       // opera
 -ms-      // ie
 -webkit-  // chrome & safari
 
-#/* Border-img */      ie11 >>
-#/* Column*/           (cột văn bản trong div) ie10 >>
-#/* filter */          (lọc img) ie13
-#/* User Interface */  (giao diện người dùng) ie13
-#/* display: flex; */  ie11 >>
-
-##---------------------------------------------
-{
-#/* border-radius */
+/* Border-img */      ie11 >>
+/* Column*/           (cột văn bản trong div) ie10 >>
+/* filter */          (lọc img) ie13
+/* User Interface */  (giao diện người dùng) ie13
+/* display: flex; */  ie11 >>
+---------------------------------------------
+/* border-radius */
 -----------
 
-#/* rgba */
+/* rgba */
 -----------
 
-#/* opacity */
+/* opacity */
 -----------
 
-#/* text */
+/* text */
 // text-overflow (giới hạn và thay text)
   text-overflow: clip;       // Xén bớt vùng text
   text-overflow: ellipsis;   // giới hạn vs thay = 3 chấm ! chạy được trên 1 dòng 
@@ -88,55 +89,55 @@ input[type=submit]
   word-break: hyphenate; // hết từ xuống hàng tại gạch nối thích hợp
   word-break: normal;    // mặc định cho từ
 
-#/* text-shadow */
+/* text-shadow */
   text-shadow: 0 0 3px blue;  // width -> height -> mờ -> màu
-+ [add]
+  + [add]
   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;  // nhiều màu
 
-#/* box-shadow */
+/* box-shadow */
   box-shadow: 5px 10px 5px 10px #000;       // width -> height -> mờ -> độ lan -> màu
   -moz-box-shadow: 5px 10px 5px 10px #000;
   -webkit-box-shadow: 5px 10px 5px 10px #000;
-+ [add]
+  + [add]
   box-shadow: 10px 10px #cc0000 inset;      // Thay độ bóng từ ngoài vào trong sáng
 
-#/* box-sizing */
+/* box-sizing */
   box-sizing: border-box;       // width and height đã bao gồm border
 
-#/* transition (chuyển đối khi có một hành động..:hover làm to nút) */
-+ [*]
+/* transition (chuyển đối khi có một hành động..:hover làm to nút) */
+  + [*]
   transition-timing-function: linear;      // chậm -> nhanh -> chậm (MD)
   transition-timing-function: ease;        // nhanh đều
   transition-timing-function: ease-in;     // chậm chậm
   transition-timing-function: ease-out;    // kết chậm
   transition-timing-function: ease-in-out; // chậm đều
----------------
+-----------
   transition-property: width;  // xác định hiệu ứng chuyển đổi cho thuộc tính
   transition-duration: 2s;     // time
   transition-timing-function: linear;
   transition-delay: 1s;
-+ [Viết tắt]
+  + [Viết tắt]
   transition: width 2s linear 1s;
 
-#/* transform (chuyển đổi 2 chiều, 3 chiều, xoay, nghiêng, ...) */
+/* transform (chuyển đổi 2 chiều, 3 chiều, xoay, nghiêng, ...) */
   transform: rotate();       // xoay thành phần theo kim đồng hồ      
              translate()     // di chuyển thanh phần nằm ngang lên or xún
              scale()         // ảnh hưởng đến kích thước pt
              sKewX(),sKewy() // nghiêng yếu tố sang trái or phải
              matrix()        // chuyển đổi 2D or 3D
----------
+-----------
   transform: scale(20) skew(-20deg);
   transform: rotate(45deg) translate(24px, 25px)
 }
-#/* Animations (xác định một chuyển động.. a -> b) */
-+ [*]()
+/* Animations (xác định một chuyển động.. a -> b) */
+  + [*]()
   {animation-timing-function: linear;}      // chậm -> nhanh -> chậm (MD)
   {animation-timing-function: ease;}        // nhanh đều
   {animation-timing-function: ease-in;}     // đều chậm
   {animation-timing-function: ease-out;}    // kết chậm
   {animation-timing-function: ease-in-out;} // chậm đều
----------------
-// mã animation
+-----------
+/*  mã animation */
 @keyframes example {
   0%   {background-color: red; left:0px; top:0px;}
   25%  {background-color: yellow; left:200px; top:0px;}
@@ -158,12 +159,11 @@ input[type=submit]
 }
 
 {
-
-#/* Background gradient && ie */
+/* Background gradient && ie */
   background: linear-gradient(to right, rgba(35, 173, 56, .9) 0%, rgba(173, 202, 85, .9) 100%); 
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#23ad38', endColorstr='#adca55', GradientType=1)";
 
-#/* Background */
+/* Background */
 // nhiều img
   background-image: url(img_flwr.gif), url(paper.gif);
   background-position: right bottom, left top;
@@ -175,9 +175,11 @@ input[type=submit]
 
 // chia lại tỉ lệ ảnh
   background-size: cover or contain
-
 }
-#/* font-face */
+```
+
+## VD support 
+/* font-face */
 @font-face {
   font-family: 'MyriadPro-Regular';
   src: url('fonts/MyriadPro-Regular.eot');
@@ -188,9 +190,6 @@ input[type=submit]
   font-weight: normal;
   font-style: normal;
 }
-
-###-------------------------------------------- ADD VD --------------------------------------------
-
 "http://osvaldas.info/flexbox-based-responsive-equal-height-blocks-with-javascript-fallback" //(google: flex equal height)
 .list {
   display: -webkit-flex;
