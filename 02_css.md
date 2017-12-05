@@ -56,26 +56,30 @@ input[type=submit]
 ```
 ##  CS3
 -moz-     // filefox
+
 -o-       // opera
+
 -ms-      // ie
+
 -webkit-  // chrome & safari
 
-/* Border-img */      ie11 >>
-/* Column*/           (cột văn bản trong div) ie10 >>
-/* filter */          (lọc img) ie13
-/* User Interface */  (giao diện người dùng) ie13
-/* display: flex; */  ie11 >>
+- Border-img      ie11 >>
+- Column          (cột văn bản trong div) ie10 >>
+- filter          (lọc img) ie13
+- User Interface  (giao diện người dùng) ie13
+- display: flex;  ie11 >>
 ---------------------------------------------
-/* border-radius */
+- border-radius
 -----------
 
-/* rgba */
+- rgba
 -----------
 
-/* opacity */
+- opacity
 -----------
 
-/* text */
+- text
+```css
 // text-overflow (giới hạn và thay text)
   text-overflow: clip;       // Xén bớt vùng text
   text-overflow: ellipsis;   // giới hạn vs thay = 3 chấm ! chạy được trên 1 dòng 
@@ -89,23 +93,27 @@ input[type=submit]
   word-break: break-all; // hết đoạn ngắt chữ xuống hàng
   word-break: hyphenate; // hết từ xuống hàng tại gạch nối thích hợp
   word-break: normal;    // mặc định cho từ
-
-/* text-shadow */
+  ```
+- text-shadow
+```css
   text-shadow: 0 0 3px blue;  // width -> height -> mờ -> màu
   + [add]
   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;  // nhiều màu
-
-/* box-shadow */
+```
+- box-shadow
+```css
   box-shadow: 5px 10px 5px 10px #000;       // width -> height -> mờ -> độ lan -> màu
   -moz-box-shadow: 5px 10px 5px 10px #000;
   -webkit-box-shadow: 5px 10px 5px 10px #000;
   + [add]
   box-shadow: 10px 10px #cc0000 inset;      // Thay độ bóng từ ngoài vào trong sáng
-
-/* box-sizing */
+```
+- box-sizing
+```css
   box-sizing: border-box;       // width and height đã bao gồm border
-
-/* transition (chuyển đối khi có một hành động..:hover làm to nút) */
+```
+- transition (chuyển đối khi có một hành động..:hover làm to nút) 
+```css
   + [*]
   transition-timing-function: linear;      // chậm -> nhanh -> chậm (MD)
   transition-timing-function: ease;        // nhanh đều
@@ -119,8 +127,9 @@ input[type=submit]
   transition-delay: 1s;
   + [Viết tắt]
   transition: width 2s linear 1s;
-
-/* transform (chuyển đổi 2 chiều, 3 chiều, xoay, nghiêng, ...) */
+```
+- transform (chuyển đổi 2 chiều, 3 chiều, xoay, nghiêng, ...)
+```css
   transform: rotate();       // xoay thành phần theo kim đồng hồ      
              translate()     // di chuyển thanh phần nằm ngang lên or xún
              scale()         // ảnh hưởng đến kích thước pt
@@ -129,8 +138,9 @@ input[type=submit]
 -----------
   transform: scale(20) skew(-20deg);
   transform: rotate(45deg) translate(24px, 25px)
-}
-/* Animations (xác định một chuyển động.. a -> b) */
+```
+- Animations (xác định một chuyển động.. a -> b)
+```css
   + [*]()
   {animation-timing-function: linear;}      // chậm -> nhanh -> chậm (MD)
   {animation-timing-function: ease;}        // nhanh đều
@@ -138,7 +148,7 @@ input[type=submit]
   {animation-timing-function: ease-out;}    // kết chậm
   {animation-timing-function: ease-in-out;} // chậm đều
 -----------
-/*  mã animation */
+>  mã animation
 @keyframes example {
   0%   {background-color: red; left:0px; top:0px;}
   25%  {background-color: yellow; left:200px; top:0px;}
@@ -160,11 +170,14 @@ input[type=submit]
 }
 
 {
-/* Background gradient && ie */
+  ```
+- Background gradient && ie
+```css
   background: linear-gradient(to right, rgba(35, 173, 56, .9) 0%, rgba(173, 202, 85, .9) 100%); 
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#23ad38', endColorstr='#adca55', GradientType=1)";
-
-/* Background */
+```
+- Background
+```css
 // nhiều img
   background-image: url(img_flwr.gif), url(paper.gif);
   background-position: right bottom, left top;
