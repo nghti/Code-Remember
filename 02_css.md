@@ -30,11 +30,11 @@ body {
 ## Select tag a pro
 http://lea.verou.me/demos/nth.html
 
-### chọn 1 input
+#### chọn 1 input
 ```css
 input[type=submit]
 ```
-### chọn con
+#### chọn con
 ```css
 :first-child         // chọn con đầu tiên và cha duy nhất
 :last-child          // chọn con cuối cùng và cha duy nhất
@@ -193,7 +193,8 @@ input[type=submit]
 ```
 
 ## VD support 
-/* font-face */
+- font-face
+```css
 @font-face {
   font-family: 'MyriadPro-Regular';
   src: url('fonts/MyriadPro-Regular.eot');
@@ -204,7 +205,10 @@ input[type=submit]
   font-weight: normal;
   font-style: normal;
 }
-"http://osvaldas.info/flexbox-based-responsive-equal-height-blocks-with-javascript-fallback" //(google: flex equal height)
+```
+- flex equal height
+"http://osvaldas.info/flexbox-based-responsive-equal-height-blocks-with-javascript-fallback"
+```css
 .list {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -218,8 +222,9 @@ input[type=submit]
   display: -ms-flexbox;
   display: flex;
 }
-
-/*custom icon check*/
+```
+- custom icon check
+```css
 .check01 {
   label {
     padding-left: 35px;
@@ -248,8 +253,9 @@ input[type=submit]
     height: 28px;
   }
 }
-
-/* bg-css */
+```
+- bg-css
+```css
 div {
   display: block;
   width: 41px; 
@@ -260,4 +266,4 @@ div {
 }
 
 <span  style="background: url('../img/profile/cover-edit.png') no-repeat;"></span>
-
+```
