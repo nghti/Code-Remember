@@ -5,6 +5,7 @@
 
 ### width
 http://getbootstrap.com/docs/4.0/layout/grid/#grid-options
+
 .container ( mobile first )
 ```css
 <  576px(.col)(auto)
