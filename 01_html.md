@@ -1,4 +1,4 @@
-👉 STUDY HTML 👈
+👉 HTML 👈
 
 ## HTML >> XHTML
 - Thêm một XHTML <! DOCTYPE> vào dòng đầu tiên của mỗi trang
