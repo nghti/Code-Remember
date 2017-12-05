@@ -1,25 +1,26 @@
 # CSS
 
 ##  Thẻ chưa nhớ
-### font-smoothing (mịn chữ)
+#### font-smoothing (mịn chữ)
 -webkit-font-smoothing: antialiased;
 
 -moz-osx-font-smoothing: grayscale;
 
-### cách text
+#### cách text
 word-spacing: -6px; 		//	cách chữ
+
 letter-spacing: 8px; 		//	cách từ
 
-### hiển thì chuột
+#### hiển thì chuột
 cursor					        //	cursor: pointer;
 
-### width %
+#### width %
 width: calc(100%/4);
 
-### height auto css
+#### height auto css
 height: calc(100vh);
 
-### responsive size pc = ipa
+#### responsive size pc = ipa
 ```css
 @media only screen and (max-width: 768px) and (min-width: 481px)
 body {
@@ -52,7 +53,7 @@ input[type=submit]
 
 :gt                  // lớn hơn >> all
 :lt                  // nhỏ hơn >> all
-
+```
 ##  CS3
 -moz-     // filefox
 -o-       // opera
