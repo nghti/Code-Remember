@@ -4,8 +4,8 @@
 > Hệ thống lưới 12 cột *
 
 ### width
-.container ( mobile first )
 http://getbootstrap.com/docs/4.0/layout/grid/#grid-options
+.container ( mobile first )
 ```css
 <  576px(.col)(auto)
 >= 576px(.col-sm-*)(540px)
