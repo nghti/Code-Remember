@@ -131,9 +131,10 @@ $(window).on('load resize', function() {
   functionmy02();
 });
 ```
-###-------------------------------------------- js plusgin --------------------------------------------
-//---------- bxslider ----------/
-"http://bxslider.com/"
+## js plusgin
+### bxslider
+http://bxslider.com/
+```html
 <ul class="slider">
   <li><a href="#" target="_blank"><img src="http://placehold.it/480x480" alt=""></a></li>
   <li><a href="#" target="_blank"><img src="http://placehold.it/480x480" alt=""></a></li>
@@ -142,8 +143,9 @@ $(window).on('load resize', function() {
   <li><a href="#" target="_blank"><img src="http://placehold.it/480x480" alt=""></a></li>
   <li><a href="#" target="_blank"><img src="http://placehold.it/480x480" alt=""></a></li>
 </ul>
-
-# tùy chỉnh width
+```
+- Tùy chỉnh width
+```js
 $(document).ready(function (){
 
   var settings = function() {
@@ -202,8 +204,9 @@ $(document).ready(function (){
   sldr = $('.slider1').bxSlider(settings());
   $(window).on('resize', resizeHandler);
 });
-
-# chỉ trên mobile
+```
+- Chỉ trên mobile
+```js
 $(document).ready(function($) { 
    var slider2 =  $('.slider1').bxSlider({
       slideWidth: 650,
@@ -227,16 +230,17 @@ $(document).ready(function($) {
   }
     $(window).on("load resize", slideResponsive01);
 });
-
-//---------- height auto List Box ----------/
-"http://blog.webcreativepark.net/2013/10/21-112000.html"
+```
+### height auto List Box
+http://blog.webcreativepark.net/2013/10/21-112000.html
+```js
 $(document).ready(function () { 
   $('.list_feature li p').heightLine(); 
 });
-
-//---------- counterUp ----------/
-"https://github.com/bfintal/Counter-Up"
-
+```
+### counterUp
+https://github.com/bfintal/Counter-Up
+```js
 $(function() {
   jQuery(document).ready(function( $ ) {
       $('.counter').counterUp({
@@ -245,12 +249,14 @@ $(function() {
       });
   });
 });
-
-//---------- table reponsive mobile ----------/
+```
+### table reponsive mobile
+```html
 <table class="responsive">
 
 </table>
-
+```
+```html
 //---------- BackToTop ----------/
 "https://markgoodyear.com/labs/scrollup/?theme=image"
 
@@ -281,11 +287,9 @@ $(function() {
 //---------- slider ----------/
 
 //---------- thay thế chuỗi [pc, sp] ----------/
-
-
-#////////////////////////////////////////////////////////////////////////////////////////////////////////////
-#////////////////////////////////////////////////////////////////////////////////////////////////////////////
-#////////////////////////////////////////////////////////////////////////////////////////////////////////////
+```
+## Note 2
+```js
 -----------------------------------------------//
 .animate()          // Thực hiện một hình ảnh động (animate) tùy chỉnh của một tập hợp các thuộc tính css.
 -----------------------------------------------//
@@ -401,14 +405,9 @@ $(function() {
 .innerWidth()       --> Lấy giá trị chiều rộng của thành phần phù hợp, chiều cao này không bao gồm border hay margin.
 .outerHeight()      --> Lấy giá trị chiều cao của thành phần phù hợp, chiều cao này bao gồm border, padding.
 .outerWidth()       --> Lấy giá trị chiều rộng của thành phần phù hợp, chiều rộng này bao gồm border, padding.
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////@/@////@////@///////@////@/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////@///////@////@////@/////@///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////@/@////@/@/@//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+```
+### Note 3
+```js
 .jquery             --> Xác định một thành phần có phải là jQuery object hay không. Xác định phiên bản hiện tại của jQuery đang chạy trong trang. // phải js o vs version ?
 .load()             --> Load sự kiện javascript. Load dữ liệu từ server sau đó đặt HTML trở lại từ các thành phần được chọn. // lấy db server về
 
@@ -554,3 +553,4 @@ $(function() {
 .innerWidth()       --> Lấy giá trị chiều rộng của thành phần phù hợp, chiều cao này không bao gồm border hay margin.
 .outerHeight()      --> Lấy giá trị chiều cao của thành phần phù hợp, chiều cao này bao gồm border, padding.
 .outerWidth()       --> Lấy giá trị chiều rộng của thành phần phù hợp, chiều rộng này bao gồm border, padding.
+```
