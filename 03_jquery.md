@@ -1,34 +1,31 @@
 👉 JQUERY 👈
 
-## default
+## Note
 ```JS
 $ <=> jQuery                       // 2js jQuery.noConflict()
 $(document).ready(function(){...}) // thực thi khi HTML được nạp và DOM đã sẵn sàng
-$(window).resize(function(){...})  // thực thi khi trang hoàn chỉnh được nạp đầy đủ, bao gồm tất cả các khung, các đối tượng và hình ảnh
+$(window).resize(function(){...})  // thực thi khi trang hoàn chỉnh được nạp đầy đủ,
+bao gồm tất cả các khung, các đối tượng và hình ảnh
 $(window).width() <= 768           // responsive
 ```
 ## Select
-
+```js
 $(':button')    // chọn form 
 .............>> CSS
-
-###-------------------------------------------- event --------------------------------------------
+```
+## event
+```js
 click() - hover() - scroll()
-
-live() > thay bằng 1.7 > on()  // sử lý một hoặc nhiều sự kiện đính kèm // bind(), delegate() như on có thể bị như live()
-
+live() > thay bằng 1.7 > on()  // sử lý một hoặc nhiều sự kiện đính kèm 
+                               // bind(), delegate() như on có thể bị như live()
 die()  > thay bằng 1.9 > off() // hủy bỏ sự kiện // unbind() như die()
-
 load() > dk sử dụng ở 1.8      // load page
-
 trigger()                      // kick hoạt sự kiện được chọn
-
 change()                       // thay đổi only form
-
 focus()                        // focusin(), focusout()
-
-###-------------------------------------------- Hiệu ứng --------------------------------------------
-
+```
+## Hiệu ứng
+```js
 animate()     // hình ảnh động tùy chỉnh bằng css
 ex: 
 $('button').click(function(){
@@ -61,74 +58,47 @@ queue()       // thực hiện chức năng hàng đợi dk chọn
 
 finish()      // loại bỏ tất cả chức năng tiếp theo rồi xong lun
 stop()        // tạm dừng chức năng
-
-###-------------------------------------------- thuộc tính HTML/CSS --------------------------------------------
+```
+## thuộc tính HTML/CSS
+```js
 addClass() - removeClass() - toggleClass() 
 
 attr()        // lấy giá trị or gán giá trị(nhiều thuộc tính)
-
 offset()      // thiết lập or trả về vị trí của tp dk chọn
-
 scrollTop()   // trả về vị trí của scroll
-
 val()         // trả về phương pháp hoặc đặt thuộc tính giá trị của các thành phần được chọn.
-
 append()      // tạo yếu tố mới và chèn vào sau tp
- 
 remove()      // xóa tp dk chọn
-
 empty()       // xóa pt con của tp dk chọn
-
 window.open() // mở cửa sổ mới
- 
-###-------------------------------------------- Tìm --------------------------------------------
-
+```
+## Tìm
+```js
 each            // thực hiện hành động cho mỗi phần tử, mỗi lần 1pt dùng this
-
 replace('','')  // tìm và thay chuỗi
-
 indexOf()       // tìm kiếm chuỗi
-
 first()         // đầu
-
 last()          // cuối
-
 eq()            // chọn (1) >>
-
 filter()        // chọn dt có lọc
-
 not()           // không phải chọn đó
-
 find()          // tìm All con của list-cha tùy chỉnh
-
 has()           // xác định con 
-
 hasClass()      // tìm trong TP có class đó ko  
-
 next()          // chọn anh chị sau nó
-
 nextAll()       // tất cả anh chị sau nó
-
 nextUntil()     // tất cả anh chị sau nó đến tùy chỉnh
-
 prev()          // xác định chọn trước                
-
 prevAll()       // chọn trước all             
-
 prevUntil()     // chọn trước nó đến gần trước   
-
 parent()        // chọn cha mẹ đâu tiên của nó 
-
 patrents()      // all chua or tùy chỉnh chọn cha nào đó
-
 parentsUntil()  // tùy chỉnh chọn nó đến cha
-
 children ()     // chọn all con trực tiếp or tùy chọn con
-
 siblings ()     // all anh, chị or lọc tìm anh, chị tùy chỉnh                                 
-
-###-------------------------------------------- responsive --------------------------------------------
-
+```
+## responsive
+```js
 var f = false;
 function functionmy01() {
   if (!f) {
@@ -160,9 +130,7 @@ $(window).on('load resize', function() {
   functionmy01();
   functionmy02();
 });
-
-###-------------------------------------------- Ajax --------------------------------------------
-load('file');
+```
 ###-------------------------------------------- js plusgin --------------------------------------------
 //---------- bxslider ----------/
 "http://bxslider.com/"
