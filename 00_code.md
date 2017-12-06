@@ -1,36 +1,43 @@
-###----------------------------------  👉 Front End Developer 👈 --------------------------------------------------
-
+👉 Front End Developer 👈
+```html
 Front End * Animation : GreenSock, Velocityjs, Mojs
 					* Logic     : AngularJS, Reactjs, Backbonejs 
+```
+## I work web
 
-reponsive web * ADAPTIVE WEB DESIGN
-							* RESPONSIVE WEB DESIGN
-
-#### I work web
 http://www.yms.ac.jp/
+
 http://www.sapporo.belle.ac.jp/p/belles-snap/
+
 http://www.takayama.ac.jp/lp/feature/
 
 http://www.subaru.jp/event/2016/odaiba/
+
 http://sp.subaru.jp/event/2016/odaiba/
+
 http://ichinomiya-surftown.jp/
+
 http://lalaphoto.jp/
+
 http://lalaphoto.jp/sp/
 
-#### Hoc framework mới
+## Hoc framework mới
+```html
 - Đắm chiềm vào nó.
 - Vui vẽ, thích thú với như chơi với thứ mình tạo ra.
 - ko cam kết nhiều thơi gian, chỉ cần cam kết ít như việc danh cho face..
 - nghĩ chậm, nghĩ kĩ làm bước nhỏ sẽ học tốt hơn.
+```
 
-##---------------------------------- Neolab --------------------------------------------------------
+## Neolab
+```html
 comment bitbucket =>
 EM-1499: [TB]Fix js menu
+```
+## Framgia
+-Interview at Framgia
 
-##---------------------------------- Framgia --------------------------------------------------------
-﻿### Interview at Framgia
-
-Dựa vào skill ghi trong CV để hỏi.
+-Dựa vào skill ghi trong CV để hỏi.
 + cv trên cty của e là ji? trình bày quy trình lam việc?
 + dùng ji để trao đổi file?
 + dùng ji để code css?
@@ -42,63 +49,6 @@ Dựa vào skill ghi trong CV để hỏi.
 
 + Angular đã dùng qua chưa? dùng thế nào?
 + JS có tự viết nhiều ko? plugins?
-
-###----------------------------------  👉 Gulp 👈 --------------------------------------------------
-#plugin
-gulp = require('gulp'),                      //-- start gulp
-sass = require('gulp-sass'),                 //-- start sass -> css
-pug = require('gulp-pug'),                   //-- start pug -> html
-sourcemaps = require('gulp-sourcemaps');     //   create sourcemaps
-postcssdiscardcomments = require('postcss-discard-comments'); // bo comments trong code
-changed = require('gulp-changed'),           //-- only start file changed
-cssmqpacker = require('css-mqpacker');       --// gom @media
-plumber = require('gulp-plumber');           //--   fix error cmd start
-connect = require('gulp-connect'),           //-- save load web
-autoprefixer = require('gulp-autoprefixer'), //-- fix css -> css3 trinh duyet 
-postcsscssnext = require('postcss-cssnext'); //   fix cs4 -> css trinh duyet
-rucksack = require('gulp-rucksack');         //   tao tool ngan gon
-postcss = require('gulp-postcss'),           //   all postcss
-lost = require('lost'),                      //--
-bem = require('postcss-bem');                //--
-concat = require('gulp-concat');             //
-rename = require('gulp-rename');             //
-uglify = require('gulp-uglify');             //
-
-###----------------------------------  👉 NPM 👈 --------------------------------------------------
-#init
-npm init
-
-npm install express ejs --save
-
-npm install react react-dom --save
-
-npm install babel-core babel-loader babel-preset-es2015 babel-preset-react --save-dev
---
-npm install redux --save
-
-npm install react-redux --save
-
-#npm
-npm install -g gulp 
-
-npm install --save-dev gulp
-
-npm install --save-dev gulp-uglify
-...
-npm install // create node_modules
-
-gulp (name)
-
-#yarn
-npm install yarn -g
-
-yarn <=> npm install
-
-gulp
-
-(ReacJS)
-
-npm start
 
 ###----------------------------------  👉 Github 👈 -----------------------------------------------------
 (*) git config --global user.email "nghti8020@gmail.com" 
