@@ -1,5 +1,5 @@
 👉 REACT 👈
-
+```html
 1  Basic Rules                                // Done
 2  Class vs React.createClass vs stateless    // Done
 3  Mixins                                     // Done
@@ -15,9 +15,9 @@
 13 Methods                                    // Done
 14 Ordering                                   // 2
 15 isMounted                                  // Done
-
-components: 
-...
+```
+## components
+```html
 action:      chứa hành động
 constants:   chứa biến hằng số
 helpers:     chứa các hàm hổ trợ
@@ -28,7 +28,7 @@ routes:      chứa link (react-router)
 styles:      chứa css
 utils:       chứa tạp
 validations: chứa xác nhận
-
+```
 ## Vi sao dùng redux
 
 ### Nếu ko
