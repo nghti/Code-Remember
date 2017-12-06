@@ -43,46 +43,6 @@ Dựa vào skill ghi trong CV để hỏi.
 + Angular đã dùng qua chưa? dùng thế nào?
 + JS có tự viết nhiều ko? plugins?
 
-###----------------------------------  👉 REACT 👈 --------------------------------------------------
-EX:
-+ Login
-+ Register
-+ Forgot password
-+ List danh sách, click vào detail
-+ Like 1 article+ ...
-+ Thêm, sửa, xóa nữa
-
-components: 
-...
-action:      chứa hành động
-constants:   chứa biến hằng số
-helpers:     chứa các hàm hổ trợ
-images:      chứa ảnh
-middleware:  chứa trung gian (lang)
-reducers:    chứa các option mới thay đổi của action 
-routes:      chứa link (react-router)
-styles:      chứa css
-utils:       chứa tạp
-validations: chứa xác nhận
-
-# vi sao dùng redux
-# ko
--thay đổi state của component trên cùng từ component dưới cùng sẽ thông qua nhiều handlefunction sẽ rối handlefuntion
--nhiều component sử dụng 1 state nếu ta thực thi 1 sự kiện nào đó sẽ làm thay đổi state của nhiều component khác
-# dùng
-'sẽ quản lý tất cả state tại store'
--component lấy state trực tiếp ko phải thông qua component khác
--nếu mun thay đổi nhiều component ta có thể chỉ sét state 1 lần ở store
-
--
-store.dispatch: chạy action ra store mới
-subscribe     : thay đổi store sẽ chạy
-combineReducers: liên kết nhiều component
-Provider      : chạy store
-connect: chia sẽ state ở store ko dùng =>
-.propTypes    : khai báo kiểu biến cho props
-activeClassName="active" : access sẽ update class active
-
 ###----------------------------------  👉 Gulp 👈 --------------------------------------------------
 #plugin
 gulp = require('gulp'),                      //-- start gulp

@@ -1,4 +1,5 @@
-###----------------------------------  👉 REACT 👈 --------------------------------------------------
+👉 REACT 👈
+
 1  Basic Rules                                // Done
 2  Class vs React.createClass vs stateless    // Done
 3  Mixins                                     // Done
@@ -15,14 +16,6 @@
 14 Ordering                                   // 2
 15 isMounted                                  // Done
 
-EX:
-+ Login
-+ Register
-+ Forgot password
-+ List danh sách, click vào detail
-+ Like 1 article+ ...
-+ Thêm, sửa, xóa nữa
-
 components: 
 ...
 action:      chứa hành động
@@ -36,11 +29,15 @@ styles:      chứa css
 utils:       chứa tạp
 validations: chứa xác nhận
 
-# vi sao dùng redux
-# ko
+## Vi sao dùng redux
+
+### Nếu ko
+```html
 -thay đổi state của component trên cùng từ component dưới cùng sẽ thông qua nhiều handlefunction sẽ rối handlefuntion
 -nhiều component sử dụng 1 state nếu ta thực thi 1 sự kiện nào đó sẽ làm thay đổi state của nhiều component khác
-# dùng
+```
+### Nếu dùng
+```html
 'sẽ quản lý tất cả state tại store'
 -component lấy state trực tiếp ko phải thông qua component khác
 -nếu mun thay đổi nhiều component ta có thể chỉ sét state 1 lần ở store
@@ -53,3 +50,4 @@ Provider      : chạy store
 connect: chia sẽ state ở store ko dùng =>
 .propTypes    : khai báo kiểu biến cho props
 activeClassName="active" : access sẽ update class active
+```
