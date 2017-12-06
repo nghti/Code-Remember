@@ -31,12 +31,12 @@ validations: chứa xác nhận
 ```
 ## Vi sao dùng redux
 
-### Nếu ko
+#### Nếu ko
 ```html
 -thay đổi state của component trên cùng từ component dưới cùng sẽ thông qua nhiều handlefunction sẽ rối handlefuntion
 -nhiều component sử dụng 1 state nếu ta thực thi 1 sự kiện nào đó sẽ làm thay đổi state của nhiều component khác
 ```
-### Nếu dùng
+#### Nếu dùng
 ```html
 'sẽ quản lý tất cả state tại store'
 -component lấy state trực tiếp ko phải thông qua component khác
