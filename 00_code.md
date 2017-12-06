@@ -1,7 +1,8 @@
 👉 Front End Developer 👈
 ```html
-Front End * Animation : GreenSock, Velocityjs, Mojs
-					* Logic     : AngularJS, Reactjs, Backbonejs 
+Front End 
+* Animation : GreenSock, Velocityjs, Mojs
+* Logic     : AngularJS, Reactjs, Backbonejs 
 ```
 ## I work web
 
