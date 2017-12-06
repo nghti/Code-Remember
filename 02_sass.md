@@ -1,32 +1,8 @@
-#####--------------------------------------------  STUDY SASS  --------------------------------------------
-#####--------------------------------------------  BEM  --------------------------------------------
-/// @alias element
-@mixin e($element) {
-    &__#{$element} {
-        @content;
-    }
-}
-/// @alias modifier
-@mixin m($modifier) {
-    &--#{$modifier} {
-        @content;
-    }
-}
-/// Rewriting our previous example with our brand new mixins alias
-.menu {
-    ...
+# SASS
 
-    @include e('item') {
-        ...
-    }
-
-    @include m('fixed') {
-        ...
-    }
-}
-#####--------------------------------------------  Sass  --------------------------------------------
-sass -> (nhanh, dễ quản lý ... css )
-###/ * Quy tắc xếp chồng (Nested Rules) ^^ Tốt nhất <= 4 lớp * /
+> sass -> (nhanh, dễ quản lý ... css )
+## Quy tắc xếp chồng (Nested Rules) ^^ Tốt nhất <= 4 lớp
+```css
 .menu {
  	li {
  		float: right;
@@ -38,9 +14,9 @@ sass -> (nhanh, dễ quản lý ... css )
 		}
  	}
 }
-
->> ex: kết nối
-
+```
+### ex: kết nối
+```css
 .menu {
   &-sidebar {
     border: 1px solid;
@@ -51,9 +27,9 @@ sass -> (nhanh, dễ quản lý ... css )
 .menu-sidebar {
   border: 1px solid;
 }
-
->> ex: kết nối x
-
+```
+### ex: kết nối x
+```css
 .funky {
   font: {
     family: fantasy;
@@ -66,9 +42,9 @@ sass -> (nhanh, dễ quản lý ... css )
   font-family: fantasy;
   font-size: 30em;
 }
-
->> ex: kết nối x 2
-
+```
+### ex: kết nối x 2
+```css
 .funky {
   font: 20px/24px fantasy {
     weight: bold;
@@ -80,8 +56,9 @@ sass -> (nhanh, dễ quản lý ... css )
   font: 20px/24px fantasy;
   font-weight: bold;
 }
-
-###/ * Sử dụng biến (Varibles) – $tên-biến * /
+```
+## Sử dụng biến (Varibles) – $tên-biến
+```css
 $shadow: 5px 5px 5px #000000;
 
 -> user
@@ -97,8 +74,9 @@ $shadow: 5px 5px 5px #000000;
 .sidebar {
   width: $width;
 }
-
-###/ * Quy tắc Mixin – @mixin tên_mix * /
+```
+## Quy tắc Mixin – @mixin tên_mix
+```css
 @mixin float-left {
 float: left;
 margin: 10px;
@@ -118,8 +96,9 @@ margin: $margin;
 .class_1 {
 @include float-left(left, 10px)
 }
-
-###/ * Extends – Kế thừa @extend tên_class * /
+```
+## Extends – Kế thừa @extend tên_class
+```css
 .button_1 {
 shadow:inset 0px 1px 0px 0px #ffffff;
 -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -130,9 +109,9 @@ shadow:inset 0px 1px 0px 0px #ffffff;
 -> user
 .button_2 { @extend .button_1; }
 .button_3 { @extend .button_1; }
-
->> Vùng chọn %name
-
+```
+### Vùng chọn %name
+```css
 %button_1 {
 color: red;
 margin: 10px;
@@ -140,11 +119,10 @@ margin: 10px;
 
 -> user
 .button_1 { @extend %button_1; }
-
-###/ * Các mệnh đề điều kiện trong SASS * /
-
->> Điều kiện @if
-
+```
+## Các mệnh đề điều kiện trong SASS
+### Điều kiện @if
+```css
 $type: monster;
 p {
   @if $type == ocean {
@@ -162,9 +140,9 @@ p {
 p {
   color: green; 
 }
-
->> Điều kiện @for
-
+```
+### Điều kiện @for
+```css
 @for $i from 1 through 3 {
   .item-#{$i} { width: 2em * $i; }
 }
@@ -176,9 +154,9 @@ p {
   width: 4em; }
 .item-3 {
   width: 6em; }
-
->> Điều kiện @each
-
+```
+### Điều kiện @each
+```css
 @each $animal in puma, sea-slug, egret, salamander {
   .#{$animal}-icon {
     background-image: url('/images/#{$animal}.png');
@@ -194,9 +172,9 @@ p {
   background-image: url('/images/egret.png'); }
 .salamander-icon {
   background-image: url('/images/salamander.png'); }
-
->> Điều kiện while
-
+```
+### Điều kiện while
+```css
 $i: 6;
 @while $i > 0 {
   .item-#{$i} { width: 2em * $i; }
@@ -212,6 +190,6 @@ $i: 6;
 
 .item-2 {
   width: 4em; }
-
+```
 
 
