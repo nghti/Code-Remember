@@ -1,5 +1,5 @@
 👉 Javascript 👈
-
+```html
 1  Types                                // Done
 2  References                           // Done
 3  Objects                              // 2
@@ -38,9 +38,10 @@
 36 Chat With Us About JavaScript        // ...
 37 Contributors                         // ...
 38 License                              // ...
-
+```
 ## Browser environment (Môi trường trình duyệt)
 ### Browser objects (Đối tượng trình duyệt)
+```js
 var title = document.title;
 var href = window.location.href;
 
@@ -53,17 +54,20 @@ console.log('in ra text');
 console.error('in ra lỗi');
 console.info('in ra thông tin');
 console.warn('in ra chú ý');
-
+```
 ### Variables & Types (biến và loại)
 #### Number
+```js
 var s = 2;
 #### String
 var c = "You're empty.\nSo are you.";
 #### Boolean
 var dung = true;
+
 var sai = false;
 #### Null and Undefined
 var neo;                                 // Type is undefined (Không xác định)
+
 neo = null;                              // Type is object (đối tượng)
 
 ## Arrays (mảng)
