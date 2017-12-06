@@ -78,8 +78,8 @@ $shadow: 5px 5px 5px #000000;
 ## Quy tắc Mixin – @mixin tên_mix
 ```css
 @mixin float-left {
-float: left;
-margin: 10px;
+  float: left;
+  margin: 10px;
 }
 
 -> user
@@ -88,21 +88,21 @@ margin: 10px;
 >> ex
 
 @mixin float-left($float,$margin) {
-float: $float;
-margin: $margin;
+  float: $float;
+  margin: $margin;
 }
 
 -> user
 .class_1 {
-@include float-left(left, 10px)
+  @include float-left(left, 10px)
 }
 ```
 ## Extends – Kế thừa @extend tên_class
 ```css
 .button_1 {
-shadow:inset 0px 1px 0px 0px #ffffff;
--moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
--webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  shadow:inset 0px 1px 0px 0px #ffffff;
+  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
 ......
 }
 
@@ -113,8 +113,8 @@ shadow:inset 0px 1px 0px 0px #ffffff;
 ### Vùng chọn %name
 ```css
 %button_1 {
-color: red;
-margin: 10px;
+  color: red;
+  margin: 10px;
 }
 
 -> user
