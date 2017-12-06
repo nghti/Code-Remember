@@ -1,4 +1,5 @@
-#####------------------------------------------ STUDY Javascript -------------------------------------------
+👉 Javascript 👈
+
 1  Types                                // Done
 2  References                           // Done
 3  Objects                              // 2
@@ -38,8 +39,8 @@
 37 Contributors                         // ...
 38 License                              // ...
 
-###------------------------------------------ * Browser environment (Môi trường trình duyệt) * -------------
-##-------------------------------------> Browser objects (Đối tượng trình duyệt)
+## Browser environment (Môi trường trình duyệt)
+### Browser objects (Đối tượng trình duyệt)
 var title = document.title;
 var href = window.location.href;
 
@@ -53,27 +54,27 @@ console.error('in ra lỗi');
 console.info('in ra thông tin');
 console.warn('in ra chú ý');
 
-##-------------------------------------> Variables & Types (biến và loại)
-#--------------| Number
+### Variables & Types (biến và loại)
+#### Number
 var s = 2;
-#--------------| String
+#### String
 var c = "You're empty.\nSo are you.";
-#--------------| Boolean
+#### Boolean
 var dung = true;
 var sai = false;
-#--------------| Null and Undefined
+#### Null and Undefined
 var neo;                                 // Type is undefined (Không xác định)
 neo = null;                              // Type is object (đối tượng)
 
-###------------------------------------------ * Arrays (mảng) * --------------------------------------------
-##-------------------------------------> Creating
+## Arrays (mảng)
+### Creating
 var a = [];                              // không có yếu tố / []
 var b = new Array();                     // ~~~~~~~~~~~~~~~
 var c = [,,,,];                          // 4 yếu tố, tất cả undefined / []
 var d = new Array(4);                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~
 var e = ["the", 1, true];                // 3 yếu tố khác nhau của các loại / ["the", 1, true]
 var f = new Array("the", 1, true);       // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-##-------------------------------------> Reading and writing
+### Reading and writing
 var a = ["white"];                       // Bắt đầu với một mảng một phần tử / ["white"]
 var b = a[0];                            // b => white
 var c = a[100];                          // c => undefined (no error)
@@ -83,7 +84,7 @@ a[i] = 3;                                // a => ["white", 3.14, 3]
 a[i + 1] = "rabbit";                     // a => ["white", 3.14, 3, "rabbit"]
 a[a[i]] = a[0];                          // a => ["white", 3.14, 3, "white"]
 var d = a.length;                        // d => 4 / đếm pt
-##-------------------------------------> Adding and deleting
+### Adding and deleting
 var a = ["follow", "the", "white", "rabbit"];
 
 var b = a.pop();                         // a => ["follow", "the", "white"]           // xóa pt cuối
@@ -99,8 +100,8 @@ var f = a.splice(2, 1);                  // a => ["FOLLOW", "the", "RABBIT"]    
 var g = a.splice(1, 2, "ME");            // a => ["FOLLOW", "ME"]                     // thêm pt chọn
                                          // g => ["the", "RABBIT"]
                               
-###------------------------------------------ * Operators (vận hành) * -----------------------------------------
-##-------------------------------------> Arithmetics (toán tử)
+## Operators (vận hành)
+### Arithmetics (toán tử)
 var a = 6 + 4;                           // a => 10
 var b = -a;                              // b => -10
 var c = 6 - 4;                           // c => 2
@@ -115,24 +116,24 @@ var m = 10 / 3                           // m => 3.3333333333333335
 var n = 10 % 3                           // n => 1
 
 var o = "Dodge" + " " + "this."          // o => "Dodge this.";
-##-------------------------------------> Equality (bằng)
+### Equality (bằng)
 var a = "2" == 2;                        // a => true  / == tương đối
 var b = "2" != 2;                        // b => false
 
 var c = "2" === 2;                       // c => false  / === tuyệt đối
 var d = "2" !== 2;                       // d => true
-##-------------------------------------> Strict equality (so sánh)
+### Strict equality (so sánh)
 var a = 2 > 2;                           // a => false
 var b = 2 <= 2;                          // b => true
 var c = "2" >= 2;                        // c => true
 var d = 2 < 2;                           // d => false
 var e = 2 <= 2;                          // e => true
 var f = 'abc' < 'def'                    // f => true
-##-------------------------------------> Logical (hợp lý)
+### Logical (hợp lý)
 var a = true && false;                   // a => false
 var b = true || false;                   // b => true
 var c = !true;                           // c => false
-##-------------------------------------> Bitwise (số bit) *
+### Bitwise (số bit) *
 var a = 42 & 2                           // a =>          2  (AND)
 var b =  7 | 2                           // b =>          2  (OR)
 var c =  7 ^ 2                           // c =>          7  (OR)
@@ -141,7 +142,7 @@ var e =  1 << 3                          // e =>          8  (Shift left)
 var f =  8 >> 2                          // f =>          2  (Shift right)
 var g = -1 >>  2                         // g =>         -1
 var h = -1 >>> 2                         // h => 1073741823  (Shift right with zero fill)
-##-------------------------------------> Assignment (chuyển đổi)
+### Assignment (chuyển đổi)
 var a = 1, b = 0;
 a += b                                   // a = a + b
 a -= b                                   // a = a - b
@@ -155,13 +156,13 @@ a &= b                                   // a = a & b
 a |= b                                   // a = a | b
 a ^= b                                   // a = a ^ b
 
-#--------------| in array
+#### in array
 var a = [1,9,4];
 var b = (2 in a);                        // b => true (có 3 pt)
 var c = (9 in a);                        // c => false
 var d = (length in a);                   // d => true
 
-#--------------| typeof // xem kiểu
+#### typeof // xem kiểu
 var a = 3;
 var b = typeof a;                        // b => "number"
 var c = "";
@@ -169,8 +170,8 @@ var d = typeof c;                        // d => "string"
 var e = true;
 var f = typeof e;                        // f => "boolean"
 
-###------------------------------------------ * Type conversions (Loại chuyển đổi) * -----------------------------------------
-##-------------------------------------> Explicit (Minh bạch)
+## Type conversions (Loại chuyển đổi)
+### Explicit (Minh bạch)
 // to Number
 var a = Number("10");                    // a => 10
 var b = Number(false);                   // b =>  0
@@ -187,7 +188,7 @@ var a = Boolean(10);                     // a => true
 var b = Boolean(0);                      // b => false
 var c = Boolean(0.3);                    // c => true
 var d = Boolean("true");                 // d => true
-##-------------------------------------> Implicit (ngầm)
+### Implicit (ngầm)
 // to Number
 var a = +"10";                           // a => 10
 var b = "10" >> 0;                       // b => 10
@@ -204,7 +205,7 @@ var a = !!'morpheus';                    // a => true
 var b = !!'';                            // b => false
 var c = !!'0';                           // c => true
 var d = !!'1';                           // d => true
-##-------------------------------------> Summary (Tóm lược)
+### Summary (Tóm lược)
 Value                           String                                Number                                  Boolean
 
 undefined......................."undefined"...........................NaN.....................................false
@@ -224,8 +225,8 @@ Infinity........................"Infinity"......................................
 [9] (1 numeric elt)............."9"...................................9.......................................true
 ['a'] (any other array).........use join() method.....................NaN.....................................true
 
-###------------------------------------------ * Statements (câu lệnh) * -----------------------------------------
-##-------------------------------------> if/else
+## Statements (câu lệnh)
+### if/else
 if (username == null) {                   // if username is null or undefined,
   username = "Trinity";                   // define it
 }
@@ -237,7 +238,7 @@ if (bulletCount === 1) {
 }
 
 var bulletCount = (bulletCount === 1) ? "bullet" : "bullets";
-##-------------------------------------> switch
+### switch
 var quote;
 switch (quote) {
   case 'Smith':
@@ -250,7 +251,7 @@ switch (quote) {
     quote = 'What is the Matrix?';
     break;
 }
-##-------------------------------------> loops
+### loops
 for (var i = 0; i < 10; i++) {
   doSomething();
 }
@@ -265,13 +266,13 @@ var count = 100;
 do {
   doSomething();
 } while (--count > 0);
-##-------------------------------------> for...in loops
+### for...in loops
 var a = [123, 456, 789];
 for (var i in a) {                        // DO NOT use with arrays
   doSomething(a[i]);
 }
 
-###------------------------------------------ * Simple functions (Chức năng đơn giản) * -----------------------------------------
+## Simple functions (Chức năng đơn giản)
 function functionName(var1, var2, var3) { // no variable types
   /*
     Some code here
@@ -292,8 +293,8 @@ function useArgs(var1, var2, var3) {
 
 var b = useArgs("Déjà", "vu");             // b => " Déjà vu", var3 = undefined
 
-###------------------------------------------ * Variable scope (Phạm vi biến) * -----------------------------------------
-##-------------------------------------> Global vs local
+## Variable scope (Phạm vi biến)
+### Global vs local
 var name = "Andy";                         // not in a function => variable is global
 
 function foo() {
@@ -305,7 +306,7 @@ foo();
 var a = lastName;                          // ReferenceError lastName is not defined
                                            // can not access local variable "lastName"
 
-##-------------------------------------> Do not forget var (đừng quên var)
+### Do not forget var (đừng quên var)
 var i = 1;
 function foo() {
   var i = 3;
@@ -322,8 +323,8 @@ foo();
 var a = i;                                // a => 3
 var b = j;                                // b => 4
 
-#####------------------------------------------ EX Javascript -----------------------------------------
-#--------------| // EX in nhap
+## EX Javascript
+### EX in nhap
 <input type="text" id="nut" />
 <input type="button" value="click" onclick="xin_chao()" /> 
 
@@ -333,7 +334,7 @@ function xin_chao()
     // document.getElementById("1").innerHTML=Date();
     documen.getElemnetById('nut').value;
 }
-#--------------| // EX if/else
+### EX if/else
 <input type="button" value="chẵn lẻ" onclick="chan_le()" /> 
 
 function chan_le() {
@@ -346,7 +347,7 @@ function chan_le() {
   return result;
 }
 
-#--------------| // // EX if ... else
+### EX if ... else
 <input type="button" value="học lực" onclick="hoc_luc()" /> 
 
 function hoc_luc() {
@@ -363,7 +364,7 @@ function hoc_luc() {
   return result; 
 }
 
-#--------------| // EX swich case
+### EX swich case
 <input type="button" value="điểm số" onclick="diem_so()" /> 
 
 function diem_so() {
@@ -382,7 +383,7 @@ function diem_so() {
   return result;
 }
 
-#--------------| // EX for and do/while
+### EX for and do/while
 <input type="button" value="tính tích" onclick="tinh_tich()" /> 
 
 function tinh_tich() {
@@ -404,7 +405,7 @@ function tinh_tich() {
   return result;
 }
 
-#--------------| // EX while
+### EX while
 <input type="button" value="tính tích2" onclick="tinh_tich2()" /> 
 
 function tinh_tich2() {
@@ -419,7 +420,7 @@ function tinh_tich2() {
   alert(tich); 
 }
 
-#--------------| // EX kiểm tra 
+### EX kiểm tra 
 <input type="button" value="kiểm tra" onclick="kiem_tra()" /> 
 
 function kiem_tra() {
@@ -436,7 +437,7 @@ function kiem_tra() {
   alert(iMax);
 }
 
-#--------------| // EX kiểm tra 2
+### EX kiểm tra 2
 <input type="button" value="kiểm tra 2" onclick="kiem_tra2()" />   
 
 function kiem_tra2() {
@@ -452,7 +453,7 @@ function kiem_tra2() {
   alert(iMax);
 }
 
-#--------------| // EX vẽ ô
+### EX vẽ ô
 function hcn() {
   cd=prompt("Mời bạn nhập chiều dài cho cạnh dài","nhập đây...");
   cn=prompt("mời bạn nhập độ rộng cho cạnh ngắn","nhập đây...");
@@ -471,7 +472,7 @@ function hcn() {
   document.write('</table >');
 }
 
-#--------------| // EX Neolab
+### EX Neolab
 
 $(document).ready(function (){
   for(var i=1;i<=100;i++, msg=""){
