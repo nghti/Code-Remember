@@ -8,12 +8,9 @@
 # Layout
 ## Overview ( Tổng quan )
 ### [Responsive breakpoints](http://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints/)
-
 > Viết css => @include media-breakpoint-$
 
-### Z-index
-http://getbootstrap.com/docs/4.0/layout/overview/#z-index/
-
+### [Z-index](http://getbootstrap.com/docs/4.0/layout/overview/#z-index/)
 > Giúp các Components tránh đè nhau
 
 ## Grid
