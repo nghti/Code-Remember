@@ -14,9 +14,7 @@
 > Giúp các Components tránh đè nhau
 
 ## Grid
-### Option layout
-http://getbootstrap.com/docs/4.0/layout/grid/#grid-options
-
+### [Option layout](http://getbootstrap.com/docs/4.0/layout/grid/#grid-options)
 > .container ( mobile first )
 ```css
 <  576px(.col)(auto)
@@ -39,55 +37,46 @@ http://getbootstrap.com/docs/4.0/layout/grid/#grid-options
 .col-auto [ .col-$-auto ] : none
 ```
 ## Flex
-### Alignment ( Căn chỉnh )
-http://getbootstrap.com/docs/4.0/layout/grid/#alignment
+### [Alignment](http://getbootstrap.com/docs/4.0/layout/grid/#alignment)
+> Căn chỉnh thành phần
 ```css
 .justify- [ justify-$ ] : Trai, giua, phai, cách đôi
 .align- [ align-$ ] : Tren, giua, duoi, 1hang
 .flex- [ flex-$ ] : ?
 ```
-### Reordering ( Xắp xếp lại )
+### Reordering
+> Xắp xếp vs tùy chỉnh
 ```css
 .order-* ( .order-first ) [ order-$-* ] : Thứ tự trước sau
 .offset-* [ offset-$-* ] : margin-left
 ```
-## Media object
-http://getbootstrap.com/docs/4.0/layout/media-object/
-
+## [Media object](http://getbootstrap.com/docs/4.0/layout/media-object/)
 > Layout box thông tin hình
 
-## //-If have time- Utilities for layout ( Tiện ích )
-> http://getbootstrap.com/docs/4.0/layout/utilities-for-layout/
+## //-If have time- [Utilities for layout](http://getbootstrap.com/docs/4.0/layout/utilities-for-layout/)
+> Tiện ích thêm
 
 # Content
-## Reboot ( Chung về content )
-http://getbootstrap.com/docs/4.0/content/reboot/
 
-## Typography
-http://getbootstrap.com/docs/4.0/content/typography/
+## [Reboot](http://getbootstrap.com/docs/4.0/content/reboot/)
+> Giới thiệu chung về content
 
+## [Typography](http://getbootstrap.com/docs/4.0/content/typography/)
 > Global settings, Kiểu chữ headings, text, lists ...
 
-## //-If have time- Code ( Add )
-> http://getbootstrap.com/docs/4.0/content/code/
+## //-If have time- [Code](http://getbootstrap.com/docs/4.0/content/code/)
+> Xem them
 
-## Images
-http://getbootstrap.com/docs/4.0/content/images/
-
+## [Images](http://getbootstrap.com/docs/4.0/content/images/)
 > Tùy chỉnh ảnh
 
-## Tables
-http://getbootstrap.com/docs/4.0/content/tables/
-
+## [Tables](http://getbootstrap.com/docs/4.0/content/tables/)
 > Tùy chỉnh bảng
 
-## Figures
-http://getbootstrap.com/docs/4.0/content/figures/
-
+## [Figures](http://getbootstrap.com/docs/4.0/content/figures/)
 > Text phụ ảnh
 
 # Components
-
 > Demo có JS
 
 + Alerts ( Cảnh báo theo màu )
@@ -113,7 +102,6 @@ http://getbootstrap.com/docs/4.0/content/figures/
 + Tooltips ( Show text cho cái Click )
 
 # Utilities
-
 > Class Tiện ích
 
 + Borders ( Trái, phải, màu, radius ... )
