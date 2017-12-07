@@ -1,6 +1,6 @@
 👉 ++++++++++++++ BOOTSTRAP ++++++++++++++ 👈
 
-1. [Layout](Layout)
+1. [Layout](#layout)
 1. [Content](#Content)
 1. [Components](#Components)
 1. [Utilities](#Utilities)
