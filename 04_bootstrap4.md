@@ -1,9 +1,9 @@
 👉 ++++++++++++++ BOOTSTRAP ++++++++++++++ 👈
 
 1. [Layout](#layout)
-1. [Content](#Content)
-1. [Components](#Components)
-1. [Utilities](#Utilities)
+1. [Content](#content)
+1. [Components](#components)
+1. [Utilities](#utilities)
 
 # Layout
 ## Overview ( Tổng quan )
