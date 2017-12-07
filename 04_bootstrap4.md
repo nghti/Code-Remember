@@ -7,8 +7,7 @@
 
 # Layout
 ## Overview ( Tổng quan )
-### Responsive breakpoints
-http://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints/
+### [Responsive breakpoints](http://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints/)
 
 > Viết css => @include media-breakpoint-$
 
