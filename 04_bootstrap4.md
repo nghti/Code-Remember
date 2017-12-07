@@ -58,26 +58,32 @@
 
 # Content
 
-## [Reboot](http://getbootstrap.com/docs/4.0/content/reboot/)
+- [Reboot](http://getbootstrap.com/docs/4.0/content/reboot/)
+
 > Giới thiệu chung về content
 
-## [Typography](http://getbootstrap.com/docs/4.0/content/typography/)
+- [Typography](http://getbootstrap.com/docs/4.0/content/typography/)
+
 > Global settings, Kiểu chữ headings, text, lists ...
 
-## //-If have time- [Code](http://getbootstrap.com/docs/4.0/content/code/)
+- //-If have time- [Code](http://getbootstrap.com/docs/4.0/content/code/)
+
 > Xem them
 
-## [Images](http://getbootstrap.com/docs/4.0/content/images/)
+- [Images](http://getbootstrap.com/docs/4.0/content/images/)
+
 > Tùy chỉnh ảnh
 
-## [Tables](http://getbootstrap.com/docs/4.0/content/tables/)
+- [Tables](http://getbootstrap.com/docs/4.0/content/tables/)
+
 > Tùy chỉnh bảng
 
-## [Figures](http://getbootstrap.com/docs/4.0/content/figures/)
+- [Figures](http://getbootstrap.com/docs/4.0/content/figures/)
+
 > Text phụ ảnh
 
 # Components
-> Demo có JS
+> [Demo có JS](http://getbootstrap.com/docs/4.0/components/alerts/)
 
 + Alerts ( Cảnh báo theo màu )
 + Badges ( Danh hiệu cho text có màu trong padding )
@@ -102,7 +108,7 @@
 + Tooltips ( Show text cho cái Click )
 
 # Utilities
-> Class Tiện ích
+> [Class Tiện ích](http://getbootstrap.com/docs/4.0/utilities/borders/)
 
 + Borders ( Trái, phải, màu, radius ... )
 + Clearfix ( = )
