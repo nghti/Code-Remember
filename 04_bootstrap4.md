@@ -10,7 +10,7 @@ http://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints/
 ### Z-index
 http://getbootstrap.com/docs/4.0/layout/overview/#z-index/
 
-> Các Components tránh đè nhau
+> Giúp các Components tránh đè nhau
 
 ## Grid
 ### Option layout
@@ -41,8 +41,8 @@ http://getbootstrap.com/docs/4.0/layout/grid/#grid-options
 ### Alignment ( Căn chỉnh )
 http://getbootstrap.com/docs/4.0/layout/grid/#alignment
 ```css
-.justify- [ justify-$ ] : Trai giua, phai, cách đôi
-.align- [ align-$ ] : Tren, giua, duoi, 1hang, 
+.justify- [ justify-$ ] : Trai, giua, phai, cách đôi
+.align- [ align-$ ] : Tren, giua, duoi, 1hang
 .flex- [ flex-$ ] : ?
 ```
 ### Reordering ( Xắp xếp lại )
@@ -55,7 +55,7 @@ http://getbootstrap.com/docs/4.0/layout/media-object/
 
 > Layout box thông tin hình
 
-## Utilities for layout ( Tiện ích ) - If have time
+## //-If have time- Utilities for layout ( Tiện ích )
 > http://getbootstrap.com/docs/4.0/layout/utilities-for-layout/
 
 # ---- Content ---
@@ -67,17 +67,23 @@ http://getbootstrap.com/docs/4.0/content/typography/
 
 > Global settings, Kiểu chữ headings, text, lists ...
 
-## Code ( Add ) - If have time
+## //-If have time- Code ( Add )
 > http://getbootstrap.com/docs/4.0/content/code/
 
-## Images ( Option ảnh )
+## Images
 http://getbootstrap.com/docs/4.0/content/images/
 
-## Tables ( Option Bảng )
+> Tùy chỉnh ảnh
+
+## Tables
 http://getbootstrap.com/docs/4.0/content/tables/
 
-## Figures ( Text phụ ảnh ) - If have time
-> http://getbootstrap.com/docs/4.0/content/figures/
+> Tùy chỉnh bảng
+
+## Figures
+http://getbootstrap.com/docs/4.0/content/figures/
+
+> Text phụ ảnh
 
 # ---- Components ( Demo có JS ) ----
 
