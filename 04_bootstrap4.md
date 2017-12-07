@@ -39,7 +39,6 @@
 .col [ .col-$ ] : 100%
 .col-auto [ .col-$-auto ] : none
 ```
-#### Flex
 - [Alignment](http://getbootstrap.com/docs/4.0/layout/grid/#alignment)
 
 > Căn chỉnh thành phần
@@ -55,10 +54,14 @@
 .order-* ( .order-first ) [ order-$-* ] : Thứ tự trước sau
 .offset-* [ offset-$-* ] : margin-left
 ```
-#### [Media object](http://getbootstrap.com/docs/4.0/layout/media-object/)
+
+#### More
+- [Media object](http://getbootstrap.com/docs/4.0/layout/media-object/)
+
 > Layout box thông tin hình
 
-#### //-If have time- [Utilities for layout](http://getbootstrap.com/docs/4.0/layout/utilities-for-layout/)
+- //-If have time- [Utilities for layout](http://getbootstrap.com/docs/4.0/layout/utilities-for-layout/)
+
 > Tiện ích thêm
 
 # Content
