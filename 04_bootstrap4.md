@@ -6,15 +6,18 @@
 1. [Utilities](#utilities)
 
 # Layout
-## Overview ( Tổng quan )
-### [Responsive breakpoints](http://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints/)
+#### Overview ( Tổng quan )
+- [Responsive breakpoints](http://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints/)
+
 > Viết css => @include media-breakpoint-$
 
-### [Z-index](http://getbootstrap.com/docs/4.0/layout/overview/#z-index/)
+- [Z-index](http://getbootstrap.com/docs/4.0/layout/overview/#z-index/)
+
 > Giúp các Components tránh đè nhau
 
-## Grid
-### [Option layout](http://getbootstrap.com/docs/4.0/layout/grid/#grid-options)
+#### Grid
+- [Option layout](http://getbootstrap.com/docs/4.0/layout/grid/#grid-options)
+
 > .container ( mobile first )
 ```css
 <  576px(.col)(auto)
@@ -31,29 +34,31 @@
 
 .w-100 ( breaks div )
 ```
-### col-$-*
+- col-$-*
 ```css
 .col [ .col-$ ] : 100%
 .col-auto [ .col-$-auto ] : none
 ```
-## Flex
-### [Alignment](http://getbootstrap.com/docs/4.0/layout/grid/#alignment)
+#### Flex
+-[Alignment](http://getbootstrap.com/docs/4.0/layout/grid/#alignment)
+
 > Căn chỉnh thành phần
 ```css
 .justify- [ justify-$ ] : Trai, giua, phai, cách đôi
 .align- [ align-$ ] : Tren, giua, duoi, 1hang
 .flex- [ flex-$ ] : ?
 ```
-### Reordering
+- Reordering
+
 > Xắp xếp vs tùy chỉnh
 ```css
 .order-* ( .order-first ) [ order-$-* ] : Thứ tự trước sau
 .offset-* [ offset-$-* ] : margin-left
 ```
-## [Media object](http://getbootstrap.com/docs/4.0/layout/media-object/)
+#### [Media object](http://getbootstrap.com/docs/4.0/layout/media-object/)
 > Layout box thông tin hình
 
-## //-If have time- [Utilities for layout](http://getbootstrap.com/docs/4.0/layout/utilities-for-layout/)
+#### //-If have time- [Utilities for layout](http://getbootstrap.com/docs/4.0/layout/utilities-for-layout/)
 > Tiện ích thêm
 
 # Content
