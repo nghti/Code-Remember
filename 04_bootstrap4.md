@@ -44,7 +44,8 @@ http://getbootstrap.com/docs/4.0/layout/grid/#alignment
 # All
 ## layout
 ### Responsive breakpoints
-@include media-breakpoint-
+> @include media-breakpoint-
+
 http://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints/
 
 ### Z-index
@@ -52,6 +53,7 @@ http://getbootstrap.com/docs/4.0/layout/overview/#z-index/
 
 ### Media object
 > Layout thông tin hình
+
 http://getbootstrap.com/docs/4.0/layout/media-object/
 
 ### Utilities for layout ( Tiện ích ) - If have time
@@ -63,6 +65,7 @@ http://getbootstrap.com/docs/4.0/content/reboot/
 
 ### Typography
 > Global settings, Kiểu chữ headings, text, lists ...
+
 http://getbootstrap.com/docs/4.0/content/typography/
 
 ### Code ( Add ) - If have time
