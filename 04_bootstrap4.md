@@ -1,11 +1,11 @@
 👉 ++++++++++++++ BOOTSTRAP ++++++++++++++ 👈
 
-1. [Layout](#---- Layout ----)
+1. [Layout](#Layout)
 1. [Content](#Content)
 1. [Components](#Components)
 1. [Utilities](#Utilities)
 
-# ---- Layout ----
+# Layout
 ## Overview ( Tổng quan )
 ### Responsive breakpoints
 http://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints/
@@ -63,7 +63,7 @@ http://getbootstrap.com/docs/4.0/layout/media-object/
 ## //-If have time- Utilities for layout ( Tiện ích )
 > http://getbootstrap.com/docs/4.0/layout/utilities-for-layout/
 
-# ---- Content ---
+# Content
 ## Reboot ( Chung về content )
 http://getbootstrap.com/docs/4.0/content/reboot/
 
@@ -90,7 +90,9 @@ http://getbootstrap.com/docs/4.0/content/figures/
 
 > Text phụ ảnh
 
-# ---- Components ( Demo có JS ) ----
+# Components
+
+> Demo có JS
 
 + Alerts ( Cảnh báo theo màu )
 + Badges ( Danh hiệu cho text có màu trong padding )
@@ -114,7 +116,9 @@ http://getbootstrap.com/docs/4.0/content/figures/
 + Scrollspy ( Scroll các kiểu menu )
 + Tooltips ( Show text cho cái Click )
 
-# ---- Utilities ( Class Tiện ích ) ----
+# Utilities
+
+> Class Tiện ích
 
 + Borders ( Trái, phải, màu, radius ... )
 + Clearfix ( = )
