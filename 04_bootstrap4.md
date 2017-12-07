@@ -1,8 +1,7 @@
-# BOOTSTRAP 4
+👉 BOOTSTRAP 👈
 
-## Grid
-> Hệ thống lưới 12 cột *
-
+# Only Grid
+## layout
 ### width
 http://getbootstrap.com/docs/4.0/layout/grid/#grid-options
 
@@ -27,6 +26,7 @@ http://getbootstrap.com/docs/4.0/layout/grid/#grid-options
 
 .col-auto [ .col-$-auto ] : none
 
+## Flex
 ### Alignment ( Căn chỉnh )
 http://getbootstrap.com/docs/4.0/layout/grid/#alignment
 
@@ -41,6 +41,39 @@ http://getbootstrap.com/docs/4.0/layout/grid/#alignment
 
 .offset-* [ offset-$-* ] : margin-left
 
+# All
+## layout
+### Responsive breakpoints
+@include media-breakpoint-
+http://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints/
+
+### Z-index
+http://getbootstrap.com/docs/4.0/layout/overview/#z-index/
+
+### Media object
+> Layout thông tin hình
+http://getbootstrap.com/docs/4.0/layout/media-object/
+
+### Utilities for layout ( Tiện ích ) - If have time
+http://getbootstrap.com/docs/4.0/layout/utilities-for-layout/
+
 ## Content
+### Reboot ( Chung về content )
+http://getbootstrap.com/docs/4.0/content/reboot/
+
+### Typography
+> Global settings, Kiểu chữ headings, text, lists ...
+http://getbootstrap.com/docs/4.0/content/typography/
+
+### Code ( Add ) - If have time
+http://getbootstrap.com/docs/4.0/content/code/
+
+### Images ( Option ảnh )
+http://getbootstrap.com/docs/4.0/content/images/
+
+### Tables ( Option Bảng )
+http://getbootstrap.com/docs/4.0/content/tables/
+
+### Figures ( Text phụ ảnh ) - If have time
 
 ## Components
