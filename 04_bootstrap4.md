@@ -47,7 +47,7 @@
 .align- [ align-$ ] : Tren, giua, duoi, 1hang
 .flex- [ flex-$ ] : ?
 ```
-- Reordering
+- [Reordering](http://getbootstrap.com/docs/4.0/utilities/borders/)
 
 > Xắp xếp vs tùy chỉnh
 ```css
