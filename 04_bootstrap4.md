@@ -40,7 +40,7 @@
 .col-auto [ .col-$-auto ] : none
 ```
 #### Flex
--[Alignment](http://getbootstrap.com/docs/4.0/layout/grid/#alignment)
+- [Alignment](http://getbootstrap.com/docs/4.0/layout/grid/#alignment)
 
 > Căn chỉnh thành phần
 ```css
