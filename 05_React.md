@@ -62,6 +62,6 @@ sẽ làm thay đổi state của nhiều component khác
 - Nếu dùng
 ```html
 - sẽ quản lý tất cả state tại store
--component lấy state trực tiếp ko phải thông qua component khác
--nếu mun thay đổi nhiều component ta có thể chỉ sét state 1 lần ở store
+- component lấy state trực tiếp ko phải thông qua component khác
+- nếu mun thay đổi nhiều component ta có thể chỉ sét state 1 lần ở store
 ```
