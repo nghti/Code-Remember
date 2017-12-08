@@ -73,3 +73,33 @@ xl, xlarge: 1920dp
     backgroundColor: theme.palette.secondary.A400,
 },
 ```
+
+## Component Demos
+> [Demo All](https://material-ui-next.com/demos/app-bar/)
+
+- App Bar (`header menu <=> SP`)
+- Autocomplete (`Gõ tùy chọn được đề xuất`) 
+- Avatars (`Hình, chữ, icon radius`) 
+- Badge (`huy hiệu số cho icon`) 
+- Bottom Navigation (`button menu <=> SP`) 
+- Buttons (`All botton`) 
+- Cards (`Thẻ detail`) 
+- Chips (`All tag`) 
+- Dialogs (`Giống <=> modal`) 
+- Dividers (`List menu (info icon)`) 
+- Drawe (`option menu (hide/show)`) 
+- Grid List (`Show list img (option)`) 
+- Lists (`Giống Dividers + Thêm menu con ...`) 
+- Menus (`Click show list menu`) 
+- Paper (`Trang in`) 
+- Pickers (`Data pickers`) 
+- Popovers (`Nội dung hiện thêm`) 
+- Progress (`Show loading, dowload ...`) 
+- Selection Controls (`Option (Checkboxes, Radio buttons, Switches)`) 
+- Selects (`Option`) 
+- Snackbars (`Hiển thị 1 massage dưới cùng or show option massage`) 
+- Stepper (`Tiến độ qua các bước 1 > 2 > 3`) 
+- Tables (`Option`) 
+- Tabs (`Option`) 
+- Text Fields (`All label`) 
+- Tooltips (`Option`) 
