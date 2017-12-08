@@ -4,10 +4,11 @@
 1. [Customization](#customization)
 1. [Themes](#themes)
 
-#Getting Started
+# Getting Started
 - [Example Projects](https://material-ui-next.com/getting-started/example-projects/#example-projects)
 
-#Customization
+# Customization
+
 - Overrides(ghi đè)
 
 + [Overriding with class names](https://material-ui-next.com/customization/overrides/#overriding-with-class-names)
@@ -19,7 +20,7 @@
 
 - [CSS in JS](https://material-ui-next.com/customization/css-in-js/)
 
-#Guides
+# Guides
 - [api](https://material-ui-next.com/guides/api/)
 - [Minimizing Bundle Size](https://material-ui-next.com/guides/minimizing-bundle-size/)
 ```js
@@ -36,12 +37,12 @@ yarn add material-ui-next@npm:material-ui@next
 ```
 - [Right-to-left](https://material-ui-next.com/guides/right-to-left/)
 
-#Style
+# Style
 - [Color](https://material-ui-next.com/style/color/#color)
 - [Font Icon](https://material-ui-next.com/style/icons/)
 - [typography](https://material-ui-next.com/style/typography/#typography)
 
-#Layout
+# Layout
 - Breakpoints
 + xs, extra-small: 360dp
 + sm, small: 600dp
