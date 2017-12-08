@@ -2,7 +2,9 @@
 
 1. [Getting Started](#getting-started)
 1. [Customization](#customization)
-1. [Themes](#themes)
+1. [Guides](#guides)
+1. [Style](style)
+1. [Layout](layout)
 
 # Getting Started
 - [Example Projects](https://material-ui-next.com/getting-started/example-projects/#example-projects)
