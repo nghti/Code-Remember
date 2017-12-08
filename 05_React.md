@@ -1,6 +1,6 @@
 # REACT
 
-> Mô Tả Toongr quan
+> Mô Tả Tổng quan
 ```html
 - nhận action từ người dung (click, onChange, lifecycle..)
 - dispatch đến 1 action (TYPE, DATA)
@@ -61,16 +61,7 @@ sẽ làm thay đổi state của nhiều component khác
 ```
 - Nếu dùng
 ```html
-'sẽ quản lý tất cả state tại store'
+- sẽ quản lý tất cả state tại store
 -component lấy state trực tiếp ko phải thông qua component khác
 -nếu mun thay đổi nhiều component ta có thể chỉ sét state 1 lần ở store
-
--
-store.dispatch: chạy action ra store mới
-subscribe     : thay đổi store sẽ chạy
-combineReducers: liên kết nhiều component
-Provider      : chạy store
-connect: chia sẽ state ở store ko dùng =>
-.propTypes    : khai báo kiểu biến cho props
-activeClassName="active" : access sẽ update class active
 ```
