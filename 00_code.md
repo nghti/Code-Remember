@@ -1,11 +1,10 @@
-👉 Front End Developer 👈
+# Front End Developer
 ```html
 Front End 
 * Animation : GreenSock, Velocityjs, Mojs
-* Logic     : AngularJS, Reactjs, Backbonejs 
+* Logic     : AngularJS, `Reactjs`, Backbonejs 
 ```
 ## I work web
-
 http://www.yms.ac.jp/
 
 http://www.sapporo.belle.ac.jp/p/belles-snap/
@@ -30,11 +29,6 @@ http://lalaphoto.jp/sp/
 - nghĩ chậm, nghĩ kĩ làm bước nhỏ sẽ học tốt hơn.
 ```
 
-## Neolab
-```html
-comment bitbucket =>
-EM-1499: [TB]Fix js menu
-```
 ## Framgia
 -Interview at Framgia
 
