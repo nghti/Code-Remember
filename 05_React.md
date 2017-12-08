@@ -1,4 +1,15 @@
-👉 REACT 👈
+# REACT
+
+> Mô Tả
+```html
+- nhận action từ người dung (click, onChange, lifecycle..)
+- dispatch đến 1 action (TYPE, DATA)
+- Ở Reducer, dựa vào TYPE, update DATA
+- STATE change, được update lên STORE
+- DONE
+```
+
+## [Folow aribnb](https://github.com/airbnb/javascript/tree/master/react)
 ```html
 1  Basic Rules                                // Done
 2  Class vs React.createClass vs stateless    // Done
@@ -17,6 +28,10 @@
 15 isMounted                                  // Done
 ```
 ## components
+- Trong React  có 2 loại Component
+    + Stateful Component 
+    + Stateless Component
+
 ```html
 action:      chứa hành động
 constants:   chứa biến hằng số
@@ -29,16 +44,22 @@ styles:      chứa css
 utils:       chứa tạp
 validations: chứa xác nhận
 ```
-## Vi sao dùng redux
 
-#### Nếu ko
+- Containers
+    + một khung lớn bao bọc các components nhỏ trong 1 màng hình
+    + chỉ chứa dispatch , mapstate và phân phát cho components dùng
+    + components chỉ chưa views
+    + dễ sửa vs nhìn gọn hơn
+
+## Vi sao dùng redux
+- Nếu ko
 ```html
 - thay đổi state của component trên cùng từ component dưới cùng
 sẽ thông qua nhiều handlefunction sẽ rối handlefuntion
 - nhiều component sử dụng 1 state nếu ta thực thi 1 sự kiện nào đó 
 sẽ làm thay đổi state của nhiều component khác
 ```
-#### Nếu dùng
+- Nếu dùng
 ```html
 'sẽ quản lý tất cả state tại store'
 -component lấy state trực tiếp ko phải thông qua component khác
