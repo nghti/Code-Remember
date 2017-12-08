@@ -9,6 +9,10 @@
 - DONE
 ```
 
+## QUICK START
+> Demo cơ bản
+- bitbuket -> react -> react-basic
+
 ## [Folow aribnb](https://github.com/airbnb/javascript/tree/master/react)
 ```html
 1  Basic Rules                                // Done
