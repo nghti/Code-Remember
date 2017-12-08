@@ -1,4 +1,4 @@
-#Material-UI
+# Material-UI
 
 1. [Getting Started](#getting-started)
 1. [Customization](#customization)
@@ -10,11 +10,11 @@
 - [Example Projects](https://material-ui-next.com/getting-started/example-projects/#example-projects)
 
 ## Customization
-- Overrides(ghi đè)
+- Overrides ( ghi đè )
    + [Overriding with class names](https://material-ui-next.com/customization/overrides/#overriding-with-class-names)
    + [Overriding with classes](https://material-ui-next.com/customization/overrides/#overriding-with-classes)
    + [Overriding with inline-style](https://material-ui-next.com/customization/overrides/#overriding-with-inline-style)
-   + [dùng lại](https://material-ui-next.com/customization/overrides/#2-specific-variation-of-a-component)
+   + [Dùng lại](https://material-ui-next.com/customization/overrides/#2-specific-variation-of-a-component)
 
 - Themes
    + [MuiThemeProvider](https://material-ui-next.com/customization/themes/)
@@ -45,12 +45,13 @@ yarn add material-ui-next@npm:material-ui@next
 
 ## Layout
 - Breakpoints
-   + xs, extra-small: 360dp
-   + sm, small: 600dp
-   + md, medium: 960dp
-   + lg, large: 1280dp
-   + xl, xlarge: 1920dp
-
+```css
+xs, extra-small: 360dp
+sm, small: 600dp
+md, medium: 960dp
+lg, large: 1280dp
+xl, xlarge: 1920dp
+```
 - Grid
    + spacing: padding các div
    + xs, sm, md, lg, and xl: wid % các div & mobile firt
