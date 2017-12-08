@@ -8,15 +8,14 @@
 - [Example Projects](https://material-ui-next.com/getting-started/example-projects/#example-projects)
 
 # Customization
-
 - Overrides(ghi đè)
+   + [Overriding with class names](https://material-ui-next.com/customization/overrides/#overriding-with-class-names)
+   + [Overriding with classes](https://material-ui-next.com/customization/overrides/#overriding-with-classes)
+   + [Overriding with inline-style](https://material-ui-next.com/customization/overrides/#overriding-with-inline-style)
+   + [dùng lại](https://material-ui-next.com/customization/overrides/#2-specific-variation-of-a-component)
 
-+ [Overriding with class names](https://material-ui-next.com/customization/overrides/#overriding-with-class-names)
-+ [Overriding with classes](https://material-ui-next.com/customization/overrides/#overriding-with-classes)
-+ [Overriding with inline-style](https://material-ui-next.com/customization/overrides/#overriding-with-inline-style)
-+ [dùng lại](https://material-ui-next.com/customization/overrides/#2-specific-variation-of-a-component)
 - Themes
-+ [MuiThemeProvider](https://material-ui-next.com/customization/themes/)
+   + [MuiThemeProvider](https://material-ui-next.com/customization/themes/)
 
 - [CSS in JS](https://material-ui-next.com/customization/css-in-js/)
 
@@ -44,23 +43,23 @@ yarn add material-ui-next@npm:material-ui@next
 
 # Layout
 - Breakpoints
-+ xs, extra-small: 360dp
-+ sm, small: 600dp
-+ md, medium: 960dp
-+ lg, large: 1280dp
-+ xl, xlarge: 1920dp
+   + xs, extra-small: 360dp
+   + sm, small: 600dp
+   + md, medium: 960dp
+   + lg, large: 1280dp
+   + xl, xlarge: 1920dp
 
-- Grid ************
-+ spacing: padding các div
-+ xs, sm, md, lg, and xl: wid % các div & mobile firt
-+ Auto-layout: nếu xs không có giá trị
-+ layout: containers => items
-+ Interactive: https://material-ui-next.com/layout/grid/#interactive
+- Grid
+   + spacing: padding các div
+   + xs, sm, md, lg, and xl: wid % các div & mobile firt
+   + Auto-layout: nếu xs không có giá trị
+   + layout: containers => items
+   + Interactive: https://material-ui-next.com/layout/grid/#interactive
 
 - Hidden
-+ xlUp: ẩn all dưới trừ XL
-+ xsDown: ẩn all trên trừ XS
-+ only="lg": ẩn chính nó & only={['sm', 'lg']} cho nhiều trường hợp
+   + xlUp: ẩn all dưới trừ XL
+   + xsDown: ẩn all trên trừ XS
+   + only="lg": ẩn chính nó & only={['sm', 'lg']} cho nhiều trường hợp
 
 - CSS in JS
 ```css
