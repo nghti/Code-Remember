@@ -1,6 +1,6 @@
 # REACT
 
-> Mô Tả
+> Mô Tả Toongr quan
 ```html
 - nhận action từ người dung (click, onChange, lifecycle..)
 - dispatch đến 1 action (TYPE, DATA)
@@ -32,6 +32,7 @@
     + Stateful Component 
     + Stateless Component
 
+- Tên thư mục
 ```html
 action:      chứa hành động
 constants:   chứa biến hằng số
@@ -44,7 +45,6 @@ styles:      chứa css
 utils:       chứa tạp
 validations: chứa xác nhận
 ```
-
 - Containers
     + một khung lớn bao bọc các components nhỏ trong 1 màng hình
     + chỉ chứa dispatch , mapstate và phân phát cho components dùng
