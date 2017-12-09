@@ -1,40 +1,49 @@
 # CSS
 
-##  Thẻ chưa nhớ
-#### font-smoothing (mịn chữ)
+##  Thẻ Cần nhớ
+- font-smoothing (mịn chữ)
+```css
 -webkit-font-smoothing: antialiased;
-
 -moz-osx-font-smoothing: grayscale;
+```
 
-#### Cách text
+- spacing
+```css
 word-spacing: -6px; 		//	cách chữ
-
 letter-spacing: 8px; 		//	cách từ
+```
 
-#### Hiển thì chuột
+- Hiển thì chuột
+```css
 cursor					        //	cursor: pointer;
+```
 
-#### width %
+- width %
+```css
 width: calc(100%/4);
+```
 
-#### height auto css
+- height auto css
+```css
 height: calc(100vh);
+```
 
-#### Responsive size pc = ipa
+- Responsive size pc = ipa
 ```css
 @media only screen and (max-width: 768px) and (min-width: 481px)
 body {
     min-width: 1144px;
 }
 ```
+
 ## Select tag a pro
 http://lea.verou.me/demos/nth.html
 
-#### Chọn 1 input
+- Chọn 1 input
 ```css
 input[type=submit]
 ```
-#### Chọn con
+- Chọn con
 ```css
 :first-child         // chọn con đầu tiên và cha duy nhất
 :last-child          // chọn con cuối cùng và cha duy nhất
@@ -54,29 +63,23 @@ input[type=submit]
 :gt                  // lớn hơn >> all
 :lt                  // nhỏ hơn >> all
 ```
+
 ##  CS3
 ```css
 -moz-     // filefox
 -o-       // opera
 -ms-      // ie
 -webkit-  // chrome & safari
-```
------------
+---------------
 - Border-img      ie11 >>
 - Column          (cột văn bản trong div) ie10 >>
 - filter          (lọc img) ie13
 - User Interface  (giao diện người dùng) ie13
 - display: flex;  ie11 >>
----------------------------------------------
+---------------
 - border-radius
------------
-
 - rgba
------------
-
 - opacity
------------
-
 - text
 ```css
 // text-overflow (giới hạn và thay text)
@@ -92,21 +95,25 @@ input[type=submit]
    word-break: break-all; // hết đoạn ngắt chữ xuống hàng
    word-break: hyphenate; // hết từ xuống hàng tại gạch nối thích hợp
    word-break: normal;    // mặc định cho từ
-  ```
+```
+
 - text-shadow
 ```css
   text-shadow: 0 0 3px blue;                      // width -> height -> mờ -> màu
   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;  // nhiều màu
 ```
+
 - box-shadow
 ```css
   box-shadow: 5px 10px 5px 10px #000;             // width -> height -> mờ -> độ lan -> màu
   box-shadow: 10px 10px #cc0000 inset;            // Thay độ bóng từ ngoài vào trong sáng
 ```
+
 - box-sizing
 ```css
   box-sizing: border-box;                         // width and height đã bao gồm border
 ```
+
 - transition (chuyển đối khi có một hành động..:hover làm to nút) 
 ```css
   + [*]
@@ -123,6 +130,7 @@ input[type=submit]
   + [Viết tắt]
   transition: width 2s linear 1s;
 ```
+
 - transform (chuyển đổi 2 chiều, 3 chiều, xoay, nghiêng, ...)
 ```css
   transform: rotate();       // xoay thành phần theo kim đồng hồ      
@@ -134,6 +142,7 @@ input[type=submit]
   transform: scale(20) skew(-20deg);
   transform: rotate(45deg) translate(24px, 25px)
 ```
+
 - Animations (xác định một chuyển động.. a -> b)
 ```css
   + [*]()
@@ -166,11 +175,13 @@ input[type=submit]
 
 {
   ```
+
 - Background gradient && ie
 ```css
   background: linear-gradient(to right, rgba(35, 173, 56, .9) 0%, rgba(173, 202, 85, .9) 100%); 
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#23ad38', endColorstr='#adca55', GradientType=1)";
 ```
+
 - Background
 ```css
 // nhiều img
@@ -200,6 +211,7 @@ input[type=submit]
   font-style: normal;
 }
 ```
+
 - flex equal height
 "http://osvaldas.info/flexbox-based-responsive-equal-height-blocks-with-javascript-fallback"
 ```css
@@ -217,6 +229,7 @@ input[type=submit]
   display: flex;
 }
 ```
+
 - custom icon check
 ```css
 .check01 {
@@ -248,6 +261,7 @@ input[type=submit]
   }
 }
 ```
+
 - bg-css
 ```css
 div {
