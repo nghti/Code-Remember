@@ -9,21 +9,16 @@
 - Trích dẫn tất cả các giá trị thuộc tính
 
 ## HTML4
-  - Form
-  + name        
-    `in html4`
+- Form
+  + name `in html4`
 
-  + type        
-    `in html4`
+  + type `in html4`
 
-  + required    
-    `field là bắt buộc`
+  + required `field là bắt buộc`
 
-  + placeholder 
-    `text mờ trên textbox`
+  + placeholder `text mờ trên textbox`
 
-  + autofocus   
-    `focus đầu tiên trong form`
+  + autofocus `focus đầu tiên trong form`
 
 - table
 ```html
@@ -32,6 +27,7 @@ rowspan="2" // số hàng
 ```
 
 ## HTML5 có gì mới
+- Cơ bản
 ```html
 - khai báo đơn giản         // <!DOCTYPE html>, <meta charset="UTF-8">
 - các thẻ ngữ ngĩa new      // <header>, <footer>, ...
@@ -53,10 +49,10 @@ rowspan="2" // số hàng
 - <mark>    // làm nổi bật văn bản.
 ```
 
-- đa phương tiện
+- Đa phương tiện
   + audio
   + video
 
-- đồ họa
+- Đồ họa
   + svg
   + canvas
