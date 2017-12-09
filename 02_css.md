@@ -70,6 +70,7 @@ input[type=submit]
 -o-       // opera
 -ms-      // ie
 -webkit-  // chrome & safari
+```
 ---------------
 - Border-img      ie11 >>
 - Column          (cột văn bản trong div) ie10 >>
