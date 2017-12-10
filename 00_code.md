@@ -23,30 +23,15 @@ http://lalaphoto.jp/sp/
 
 ## Hoc framework mới
 ```html
-- Đắm chiềm vào nó.
-- Vui vẽ, thích thú với như chơi với thứ mình tạo ra.
-- ko cam kết nhiều thơi gian, chỉ cần cam kết ít như việc danh cho face..
+- Đắm chìm vào nó.
+- Vui vẻ, thích thú với như chơi với thứ mình tạo ra.
+- ko cam kết nhiều thơi gian, chỉ cần cam kết ít như việc danh cho facebook
 - nghĩ chậm, nghĩ kĩ làm bước nhỏ sẽ học tốt hơn.
+- Khi dùng phải tận dụng tối đa nó, đọc nghiền ngẫn kỹ, tránh việc viết lại vô ích
 ```
 
-## Framgia
--Interview at Framgia
-
--Dựa vào skill ghi trong CV để hỏi.
-+ cv trên cty của e là ji? trình bày quy trình lam việc?
-+ dùng ji để trao đổi file?
-+ dùng ji để code css?
-+ đã từng thiết kế web chưa
-+ css3 + html5 (vd) ,xml chưa
-+ Đã từng sử dụng Bootstrap chưa?
-+ Đã dùng ji ngoài Bootstrap chưa?
-+ Mô tả viết JS cái click vs fixmenu như thế nào?
-
-+ Angular đã dùng qua chưa? dùng thế nào?
-+ JS có tự viết nhiều ko? plugins?
-
-### Localhost
-#### localhost window
+## Localhost
+### localhost window
 - vhosts
 ```html
 xampp\apache\conf\httpd.conf
@@ -74,7 +59,7 @@ Listen 8081
   AddType text/html .html .shtml 
   AddOutputFilter INCLUDES .html .shtml 
 ```
-#### localhost mac
+### localhost mac
 - hosts
 ```html
 sudo nano -w /private/etc/hosts
@@ -89,7 +74,7 @@ etc/extra/httpd-vhosts.conf
 iMAC1s-iMac:~ imac1$ cd /Applications/XAMPP/htdocs/wohnungssuche/trunk_pro
 iMAC1s-iMac:trunk_pro imac1$ sudo chmod -R 777 *
 ```
-### Phonegap
+## Phonegap
 - creater phonegap
 ```html
 iMAC1s-iMac:~ imac1$ cd 588
@@ -104,7 +89,7 @@ iMAC1s-iMac:hello imac1$ cordova platform add ios
 iMAC1s-iMac:hello imac1$ cordova build ios
 open -> project(platforms/ios) -> run
 ```
-### App Ionic
+## App Ionic
 - creater ionic
 ```html
 iMAC1s-iMac:~ imac1$ sudo npm install -g cordova ionic
@@ -126,14 +111,14 @@ iMAC1s-iMac:myApp imac1$ ionic platform add ios
 iMAC1s-iMac:myApp imac1$ ionic build ios
 iMAC1s-iMac:myApp imac1$ ionic emulate ios
 ```
-### Nodejs
+## Nodejs
 - nodejs
 ```html
 iMAC1s-iMac:root1 imac1$ sudo mongod
 and
 iMAC1s-iMac:root1 imac1$ node server.js
 ```
-### Show hidden files (like htaccess) in Mac OS X
+## Show hidden files (like htaccess) in Mac OS X
 ```html
 iMAC1s-iMac:~ imac1$ defaults write com.apple.finder AppleShowAllFiles TRUE
 iMAC1s-iMac:~ imac1$ killall Finder
