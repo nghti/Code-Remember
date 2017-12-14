@@ -1,34 +1,56 @@
 # SASS
+`sass -> (nhanh, dễ quản lý ... css )`
 
-> sass -> (nhanh, dễ quản lý ... css )
-## Quy tắc xếp chồng (Nested Rules) ^^ Tốt nhất <= 4 lớp
+## Varibles - Sử dụng biến
+> Dùng tốt nhất với màu sắc
+
+ - $tên-biến
+```css
+$shadow: 5px 5px 5px #000000;
+
+.post_title {
+  text-shadow: $shadow
+}
+```
+
+- !global (toàn cầu)
+```css
+.main {
+  $width: 5em !global;
+  width: $width;
+}
+.sidebar {
+  width: $width;
+}
+```
+
+## Nesting - xếp chồng
+> Tốt nhất <= 3 lớp
+
 ```css
 .menu {
  	li {
  		float: right;
-		a {
-		  color: #fff;
-			&:hover,&:visited {
-			text-decoration: none;
-			}
-		}
  	}
+  a {
+    color: #fff;
+    &:hover,&:visited {
+    text-decoration: none;
+    }
+  }
 }
 ```
-### ex: kết nối
+
+- ex: kết nối
 ```css
 .menu {
   &-sidebar {
     border: 1px solid;
   }
 }
-
--> css
-.menu-sidebar {
-  border: 1px solid;
-}
 ```
-### ex: kết nối x
+
+- ex: kết nối x
 ```css
 .funky {
   font: {
@@ -36,94 +58,98 @@
     size: 30em;
   }
 }
-
--> css
-.funky {
-  font-family: fantasy;
-  font-size: 30em;
-}
 ```
-### ex: kết nối x 2
+
+- ex: kết nối x 2
 ```css
 .funky {
   font: 20px/24px fantasy {
     weight: bold;
   }
 }
-
--> css
-.funky {
-  font: 20px/24px fantasy;
-  font-weight: bold;
-}
 ```
-## Sử dụng biến (Varibles) – $tên-biến
-```css
-$shadow: 5px 5px 5px #000000;
 
--> user
-.post_title {text-shadow: $shadow}
+## Partials
+> Nên tách 'sass' ra từng phần nhỏ để dễ quản lý
 
->> ex: !global(toàn cầu)
+> '_partial.scss' biết đây chỉ là file ko build ra css
 
-.main {
-  $width: 5em !global;
-  width: $width;
-}
+> dung '@import' tổng hợp file lại với nhau
 
-.sidebar {
-  width: $width;
-}
-```
-## Quy tắc Mixin – @mixin tên_mix
+## Mixin – @mixin
+- ex1
 ```css
 @mixin float-left {
   float: left;
   margin: 10px;
 }
 
--> user
 .class { @include float-left;}
+```
 
->> ex
+- ex2
+``css
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
 
+.box { @include border-radius(10px); }
+``
+
+- ex3
+```css
 @mixin float-left($float,$margin) {
   float: $float;
   margin: $margin;
 }
 
--> user
-.class_1 {
+.nav {
   @include float-left(left, 10px)
 }
 ```
-## Extends – Kế thừa @extend tên_class
+
+## Extends – Kế thừa
 ```css
-.button_1 {
-  shadow:inset 0px 1px 0px 0px #ffffff;
-  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
-  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
-......
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
 }
 
--> user
-.button_2 { @extend .button_1; }
-.button_3 { @extend .button_1; }
-```
-### Vùng chọn %name
-```css
-%button_1 {
-  color: red;
-  margin: 10px;
+.error {
+  @extend .message;
+  border-color: red;
 }
 
--> user
-.button_1 { @extend %button_1; }
+.warning {
+  @extend .message;
+  border-color: yellow;
+}
 ```
+
+## Operators - Tính toán
+```css
+.container { width: 100%; }
+
+.article {
+  float: left;
+  width: 600px / 960px * 100%;
+}
+
+.aside {
+  float: right;
+  width: 300px / 960px * 100%;
+}
+```
+
 ## Các mệnh đề điều kiện trong SASS
 ### Điều kiện @if
 ```css
 $type: monster;
+
 p {
   @if $type == ocean {
     color: blue;
@@ -136,18 +162,21 @@ p {
   }
 }
 
--> css
+-> `Build`
+
 p {
   color: green; 
 }
 ```
+
 ### Điều kiện @for
 ```css
 @for $i from 1 through 3 {
   .item-#{$i} { width: 2em * $i; }
 }
 
--> css
+-> `Build`
+
 .item-1 {
   width: 2em; }
 .item-2 {
@@ -155,6 +184,7 @@ p {
 .item-3 {
   width: 6em; }
 ```
+
 ### Điều kiện @each
 ```css
 @each $animal in puma, sea-slug, egret, salamander {
@@ -163,7 +193,8 @@ p {
   }
 }
 
--> css
+-> `Build`
+
 .puma-icon {
   background-image: url('/images/puma.png'); }
 .sea-slug-icon {
@@ -173,6 +204,7 @@ p {
 .salamander-icon {
   background-image: url('/images/salamander.png'); }
 ```
+
 ### Điều kiện while
 ```css
 $i: 6;
@@ -181,7 +213,8 @@ $i: 6;
   $i: $i - 2;
 }
 
--> css
+-> `Build`
+
 .item-6 {
   width: 12em; }
 
