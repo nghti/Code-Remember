@@ -124,7 +124,7 @@
 + Colors ( Text, padding, box ... )
 + Display property ( Ẩn/hiện nhiều kiểu inline, block ... )
 + Embeds ( Nhúng video, slideshow ... )
-+ Flex ( Giống ^Alignment^ ... có thể cemter navigation )
++ `Flex` ( xắp xếp và Align đối tượng div ... có thể cemter navigation )
 + Float ( = )
 + Image replacement ( Thay ảnh cho text )
 + Position ( Fixed top, Fixed bottom ... )
