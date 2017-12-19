@@ -1,4 +1,4 @@
-👉 CMD 👈
+# CMD
 ## Basic
 git config --global user.email "nghti8020@gmail.com" 
 
