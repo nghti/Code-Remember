@@ -30,6 +30,12 @@ http://lalaphoto.jp/sp/
 - Khi dùng phải tận dụng tối đa nó để tránh việc viết lại vô ích
 ```
 
+## Làm dự án
+- apply tối đa OOCSS & BEM
+- html mỗi page phải có 1 class cha riêng 
+- Bootstrap đã có sẵn class OOCSS rồi chỉ viết thêm khi cần thiết ( 2 nguyên tắc )
+- style page apply BEM và chỉ sử dụng trong class cha riêng khi style cái riêng của page đó thôi
+
 ## Localhost
 ### localhost window
 - vhosts
