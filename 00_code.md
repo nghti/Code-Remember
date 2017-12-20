@@ -31,10 +31,15 @@ http://lalaphoto.jp/sp/
 ```
 
 ## Làm dự án
-- apply tối đa OOCSS & BEM
-- html mỗi page phải có 1 class cha riêng 
-- Bootstrap đã có sẵn class OOCSS rồi chỉ viết thêm khi cần thiết ( 2 nguyên tắc )
-- style page apply BEM và chỉ sử dụng trong class cha riêng khi style cái riêng của page đó thôi
+- sử dụng OOCSS ( 2 nguyên tắc ) & BEM ( class nối )
+- mỗi trang 1 class cha riêng 
+- Bootstrap đã có nhiều class OOCSS nhưng có thể viết thêm OOCSS riêng
+
+> Khi style một đối tượng
+
++ `sử dụng class OOCSS` nhưng nếu không có thì `Tạo thêm class OOCSS` nếu muốn dùng lại
++ sử dụng `BEM` để tạo box chung có thể dùng lại được
++ dùng `class cha riêng` kết hợp `OOCSS` hoặc `BEM` tạo style chỉ riêng page đó
 
 ## Localhost
 ### localhost window
