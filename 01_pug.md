@@ -11,6 +11,7 @@
 ## [Code](https://pugjs.org/language/code.html)
 > Viết js trong pug
 - Unbuffered Code: `Như vong lặp for`
+- Viết 1 li chạy nhiều li
 
 ## [Comments](https://pugjs.org/language/comments.html)
 - Có 3 kiểu
