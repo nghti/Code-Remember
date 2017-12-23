@@ -1,5 +1,28 @@
 # CSS
 
+## Guilde
+```html
+- Thuật ngữ
++ Khai báo
++ Selector
++ Thuộc tính
+
+- CSS
++ Quy cách
++ Chú thích
++ OOCSS và BEM
++ ID Selector
++ JavaScript hook
++ Đường viền
+
+- Sass
++ Cú pháp
++ Thứ tự
++ Biến
++ Mixins
++ Mở rộng directive
++ Selector lồng nhau
+```
 ##  Thẻ Cần nhớ
 - font-smoothing (mịn chữ)
 ```css
