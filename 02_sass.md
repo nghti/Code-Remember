@@ -29,9 +29,9 @@ $shadow: 5px 5px 5px #000000;
 
 ```css
 .menu {
- 	li {
- 		float: right;
- 	}
+  li {
+    float: right;
+  }
   a {
     color: #fff;
     &:hover,&:visited {
@@ -88,7 +88,7 @@ $shadow: 5px 5px 5px #000000;
 ```
 
 - ex2
-``css
+```css
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;

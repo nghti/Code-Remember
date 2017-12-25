@@ -65,6 +65,15 @@ git add -A && git commit -m "Ghi chú Commit" && git push origin master
 ```
 ## master
 
+git conflict
+
+```html
+git add .
+git commit -m "commit conflict"
+git pull origin develop
+> fix file conflict
+```
+
 git fetch (Lấy source server đè source local)
 
 ```html
