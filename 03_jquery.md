@@ -16,13 +16,13 @@ $(':button')    // chọn form
 ## event
 ```js
 click() - hover() - scroll()
-live() > thay bằng 1.7 > on()  // sử lý một hoặc nhiều sự kiện đính kèm 
-                               // bind(), delegate() như on có thể bị như live()
-die()  > thay bằng 1.9 > off() // hủy bỏ sự kiện // unbind() như die()
-load() > dk sử dụng ở 1.8      // load page
-trigger()                      // kick hoạt sự kiện được chọn
-change()                       // thay đổi only form
-focus()                        // focusin(), focusout()
+live()    [ thay bằng 1.7 > on() ]   // sử lý một hoặc nhiều sự kiện đính kèm 
+                                     // bind(), delegate() như on có thể bị như live()
+die()     [thay bằng 1.9 > off()]    // hủy bỏ sự kiện // unbind() như die()
+load()    [dk sử dụng ở 1.8]         // load page
+trigger()                            // kick hoạt sự kiện được chọn
+change()                             // thay đổi only form
+focus()                              // focusin(), focusout()
 ```
 ## Hiệu ứng
 ```js
