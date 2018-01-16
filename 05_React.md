@@ -39,11 +39,13 @@
 - Tên thư mục
 ```html
 action:      chứa hành động
+components:  chứa thành phần của web
 constants:   chứa biến hằng số
+reducers:    chứa các option mới thay đổi của action 
+
 helpers:     chứa các hàm hổ trợ
 images:      chứa ảnh
 middleware:  chứa trung gian (lang)
-reducers:    chứa các option mới thay đổi của action 
 routes:      chứa link (react-router)
 styles:      chứa css
 utils:       chứa tạp

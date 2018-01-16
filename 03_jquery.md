@@ -16,13 +16,13 @@ $(':button')    // chọn form
 ## event
 ```js
 click() - hover() - scroll()
-live() > thay bằng 1.7 > on()  // sử lý một hoặc nhiều sự kiện đính kèm 
-                               // bind(), delegate() như on có thể bị như live()
-die()  > thay bằng 1.9 > off() // hủy bỏ sự kiện // unbind() như die()
-load() > dk sử dụng ở 1.8      // load page
-trigger()                      // kick hoạt sự kiện được chọn
-change()                       // thay đổi only form
-focus()                        // focusin(), focusout()
+live()    [thay bằng 1.7 > on()]     // sử lý một hoặc nhiều sự kiện đính kèm 
+                                     // bind(), delegate() như on có thể bị như live()
+die()     [thay bằng 1.9 > off()]    // hủy bỏ sự kiện // unbind() như die()
+load()    [dk sử dụng ở 1.8]         // load page
+trigger()                            // kick hoạt sự kiện được chọn
+change()                             // thay đổi only form
+focus()                              // focusin(), focusout()
 ```
 ## Hiệu ứng
 ```js
@@ -92,7 +92,7 @@ prev()          // xác định chọn trước
 prevAll()       // chọn trước all             
 prevUntil()     // chọn trước nó đến gần trước   
 parent()        // chọn cha mẹ đâu tiên của nó 
-patrents()      // all chua or tùy chỉnh chọn cha nào đó
+patrents()      // all cha or tùy chỉnh chọn cha nào đó
 parentsUntil()  // tùy chỉnh chọn nó đến cha
 children ()     // chọn all con trực tiếp or tùy chọn con
 siblings ()     // all anh, chị or lọc tìm anh, chị tùy chỉnh                                 

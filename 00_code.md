@@ -25,9 +25,10 @@ http://lalaphoto.jp/sp/
 ```html
 - Đắm chìm vào nó.
 - Vui vẻ, thích thú với như chơi với thứ mình tạo ra.
-- Ko cam kết nhiều thơi gian, chỉ cần cam kết ít như việc danh cho facebook
+- Ko cam kết nhiều thơi gian, chỉ cần cam kết ít như việc danh cho facebook.
 - Vào trang chủ của nó, nghĩ chậm, nghĩ kĩ làm bước nhỏ sẽ học tốt hơn.
-- Khi dùng phải tận dụng tối đa nó để tránh việc viết lại vô ích
+- Khi dùng phải tận dụng tối đa nó để tránh việc viết lại vô ích.
+- Khi search phải dùng đúng từ khó `có thể dùng googledich để trợ giúp sẽ tìm tốt hơn`
 ```
 
 ## Làm dự án
