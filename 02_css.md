@@ -118,7 +118,7 @@ input[type=submit]
 - transition (chuyển đối khi có một hành động..:hover làm to nút) 
 ```css
   + [*]
-  transition-timing-function: linear;      // chậm -> nhanh -> chậm (MD)
+  transition-timing-function: linear;      // chậm -> nhanh -> chậm (Default)
   transition-timing-function: ease;        // nhanh đều
   transition-timing-function: ease-in;     // chậm chậm
   transition-timing-function: ease-out;    // kết chậm
@@ -130,6 +130,9 @@ input[type=submit]
   transition-delay: 1s;
   + [Viết tắt]
   transition: width 2s linear 1s;
+  + [*]
+  Transition + Transform
+  
 ```
 
 - transform (chuyển đổi 2 chiều, 3 chiều, xoay, nghiêng, ...)
