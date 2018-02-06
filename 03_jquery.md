@@ -8,6 +8,31 @@ $(window).resize(function(){...})  // thực thi khi trang hoàn chỉnh đượ
 bao gồm tất cả các khung, các đối tượng và hình ảnh
 $(window).width() <= 768           // responsive
 ```
+
+## import Js
+
+### in HTML 
+```js
+<script type="text/javascript">
+  ...
+</script>
+```
+
+### in file JS
+```js
+  function Hello()
+  {
+      alert("Hello, World");
+  }
+
+  Hello();
+
+  $(window).on('load resize', function() {
+    Hello();
+  });
+  
+```
+
 ## Select
 ```js
 $(':button')    // chọn form 
