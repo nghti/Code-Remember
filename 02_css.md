@@ -1,35 +1,5 @@
 # CSS
-
-## Guilde
-```html
-- Thuật ngữ
-+ Khai báo
-+ Selector
-+ Thuộc tính
-
-- CSS
-+ Quy cách
-+ Chú thích
-+ OOCSS và BEM
-+ ID Selector
-+ JavaScript hook
-+ Đường viền
-
-- Sass
-+ Cú pháp
-+ Thứ tự
-+ Biến
-+ Mixins
-+ Mở rộng directive
-+ Selector lồng nhau
-```
 ##  Thẻ Cần nhớ
-- font-smoothing (mịn chữ)
-```css
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-```
-
 - spacing
 ```css
 word-spacing: -6px; 		//	cách chữ
@@ -41,17 +11,18 @@ letter-spacing: 8px; 		//	cách từ
 cursor					        //	cursor: pointer;
 ```
 
-- width %
+- Tính toán
 ```css
 width: calc(100%/4);
 ```
 
-- height auto css
+- Responsive theo chiều cao
 ```css
-height: calc(100vh);
+height: 100vh;
+width: 100vw;
 ```
 
-- Responsive size pc = ipa
+- Responsive size pc = ipad
 ```css
 @media only screen and (max-width: 768px) and (min-width: 481px)
 body {
@@ -60,7 +31,8 @@ body {
 ```
 
 ## Select tag a pro
-http://lea.verou.me/demos/nth.html
+
+[Demo](http://lea.verou.me/demos/nth.html)
 
 - Chọn 1 input
 ```css
@@ -95,15 +67,33 @@ input[type=submit]
 -webkit-  // chrome & safari
 ```
 ---------------
+- border-radius
+- rgba
+- opacity
+---------------
 - Border-img      ie11 >>
 - Column          (cột văn bản trong div) ie10 >>
 - filter          (lọc img) ie13
 - User Interface  (giao diện người dùng) ie13
 - display: flex;  ie11 >>
 ---------------
-- border-radius
-- rgba
-- opacity
+- display: flex;  ie11 >>
+  - flex container
+    + flex-direction: sắp xếp lại thứ tự trái >< phải, trên >< dưới
+    + flex-wrap: co dãng trên 1 dòng, tràn xún vs tràn lên
+    + flex-flow: <‘flex-direction’> || <‘flex-wrap’> : kết hợp cả 2
+    + justify-content: ![img](https://cdn.css-tricks.com/wp-content/uploads/2013/04/justify-content-2.svg)
+    + align-items: ![img](https://cdn.css-tricks.com/wp-content/uploads/2014/05/align-items.svg)
+    + align-content: ![img](https://css-tricks.com/wp-content/uploads/2013/04/align-content.svg)
+
+  - flex items
+    + order: integer; default is 0
+    + flex-grow: number;  default 0 , số  2 wid gấp đôi 1
+    + flex-shrink: number;  default 1 , ngược với flex-grow
+    + flex-basis: length | auto; default auto , độ dài của PT
+    + flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] Kết hợp nhiều
+    + align-self: ![img](https://css-tricks.com/wp-content/uploads/2014/05/align-self.svg) 
+
 - text
 ```css
 // text-overflow (giới hạn và thay text)
