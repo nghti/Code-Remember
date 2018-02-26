@@ -1,44 +1,22 @@
 # CSS
-##  Thẻ Cần nhớ
-- spacing
+## Thẻ Cần nhớ
 ```css
-word-spacing: -6px; 		//	cách chữ
-letter-spacing: 8px; 		//	cách từ
+word-spacing: -6px;     // Cách chữ
+letter-spacing: 8px;    // Cách từ
+cursor: pointer;        // Hiển thì chuột
+width: calc(100%/4);    // Tính toán
+height: 100vh;          // Full height
+width: 100vw;           // Full width
 ```
-
-- Hiển thì chuột
-```css
-cursor					        //	cursor: pointer;
-```
-
-- Tính toán
-```css
-width: calc(100%/4);
-```
-
-- Responsive theo chiều cao
-```css
-height: 100vh;
-width: 100vw;
-```
-
-- Responsive size pc = ipad
-```css
-@media only screen and (max-width: 768px) and (min-width: 481px)
-body {
-    min-width: 1144px;
-}
-```
-
 ## Select tag a pro
 
-[Demo](http://lea.verou.me/demos/nth.html)
+-  [Chọn](http://lea.verou.me/demos/nth.html)
 
-- Chọn 1 input
+- Chọn 1
 ```css
 input[type=submit]
 ```
-- Chọn con
+- Chọn child
 ```css
 :first-child         // chọn con đầu tiên và cha duy nhất
 :last-child          // chọn con cuối cùng và cha duy nhất
@@ -59,7 +37,7 @@ input[type=submit]
 :lt                  // nhỏ hơn >> all
 ```
 
-##  CS3
+##  CS3 NEW 
 ```css
 -moz-     // filefox
 -o-       // opera
@@ -75,7 +53,6 @@ input[type=submit]
 - Column          (cột văn bản trong div) ie10 >>
 - filter          (lọc img) ie13
 - User Interface  (giao diện người dùng) ie13
-- display: flex;  ie11 >>
 ---------------
 - display: flex;  ie11 >>
   - flex container
@@ -148,7 +125,7 @@ input[type=submit]
   
 ```
 
-- transform (chuyển đổi 2 chiều, 3 chiều, xoay, nghiêng, ...)
+- transform (chuyển đổi 2 chiều, 3 chiều, xoay, nghiêng, kích thước PT ...)
 ```css
   transform: rotate();       // xoay thành phần theo kim đồng hồ      
              translate()     // di chuyển thanh phần nằm ngang lên or xún
