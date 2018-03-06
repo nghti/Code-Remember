@@ -11,6 +11,7 @@ width: 100vw;           // Full width
 
 ## Fafe CSS Default 
 [default](http://nimbupani.com/safe-css-defaults.html)
+[All](https://stackoverflow.com/questions/15901030/reset-remove-css-styles-for-element-only)
 
 ## Select tag a pro
 
