@@ -76,6 +76,8 @@ git pull origin develop
 
 git fetch (Lấy source server đè source local)
 
+git push origin HEAT (Chinh nhanh do)
+
 ```html
 git fetch <Tên nhánh>
 ```
