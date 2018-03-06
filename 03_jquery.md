@@ -1,4 +1,4 @@
-👉 JQUERY 👈
+# JQUERY
 
 ## Note
 ```JS

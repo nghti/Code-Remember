@@ -8,6 +8,10 @@ width: calc(100%/4);    // Tính toán
 height: 100vh;          // Full height
 width: 100vw;           // Full width
 ```
+
+## Fafe CSS Default 
+[default](http://nimbupani.com/safe-css-defaults.html)
+
 ## Select tag a pro
 
 -  [Chọn](http://lea.verou.me/demos/nth.html)
