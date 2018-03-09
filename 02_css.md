@@ -9,12 +9,18 @@ height: 100vh;          // Full height
 width: 100vw;           // Full width
 ```
 
+## Priority in css
+> [Page](https://marksheet.io/css-priority.html)
+
+> [Question](https://stackoverflow.com/questions/1637343/what-are-the-priorities-among-css-selectors)
+
 ## Fafe CSS Default 
-[default](http://nimbupani.com/safe-css-defaults.html)
-[All](https://stackoverflow.com/questions/15901030/reset-remove-css-styles-for-element-only)
+> [Default](http://nimbupani.com/safe-css-defaults.html)
+
+> [All](https://stackoverflow.com/questions/15901030/reset-remove-css-styles-for-element-only)
 
 ## Select tag a pro
-
+> [pseudo là gì](http://vietjack.com/css/pseudo_element_trong_css.jsp)
 -  [Chọn](http://lea.verou.me/demos/nth.html)
 
 - Chọn 1
@@ -43,6 +49,7 @@ input[type=submit]
 ```
 
 ##  CS3 NEW 
+> [Vendor prefix](https://kipalog.com/posts/Tai-sao-mot-so-thuoc-tinh-trong-CSS3-phai-them-Vendor-prefixes-nhu--moz----webkit---o----ms--)
 ```css
 -moz-     // filefox
 -o-       // opera
@@ -211,8 +218,7 @@ input[type=submit]
 }
 ```
 
-- flex equal height
-"http://osvaldas.info/flexbox-based-responsive-equal-height-blocks-with-javascript-fallback"
+- [Flex equal height](http://osvaldas.info/flexbox-based-responsive-equal-height-blocks-with-javascript-fallback)
 ```css
 .list {
   display: -webkit-flex;

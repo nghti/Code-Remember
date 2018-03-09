@@ -1,4 +1,4 @@
-# HTML
+# [HTML](http://hocwebchuan.com/reference/tag/tag_doctype.php)
 
 ## HTML >> XHTML
 - Thêm một XHTML <! DOCTYPE> vào dòng đầu tiên của mỗi trang
