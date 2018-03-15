@@ -19,6 +19,9 @@ width: 100vw;           // Full width
 
 > [All](https://stackoverflow.com/questions/15901030/reset-remove-css-styles-for-element-only)
 
+## CSS properties
+> [Question](https://stackoverflow.com/questions/5612302/which-css-properties-are-inherited)
+
 ## Select tag a pro
 > [pseudo là gì](http://vietjack.com/css/pseudo_element_trong_css.jsp)
 -  [Chọn](http://lea.verou.me/demos/nth.html)

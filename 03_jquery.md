@@ -20,10 +20,10 @@ $(window).width() <= 768           // responsive
 
 ### in file JS
 ```js
-  function Hello()
+  $(function Hello()
   {
       alert("Hello, World");
-  }
+  });
 
   Hello();
 
@@ -35,7 +35,7 @@ $(window).width() <= 768           // responsive
 
 ## Select
 ```js
-$(':button')    // chọn form 
+$(':button')    // chọn 
 .............>> CSS
 ```
 ## event
@@ -74,15 +74,15 @@ slideUp()     // ẩn trượt
 slideDown()   // hiên trượt
 slideToggle() // ẩn hiện trượt
 
-clearQueue()  // ngưng hiệu ứng
+// clearQueue()  // ngưng hiệu ứng
 
-delay()       // trì hoãn time (option)
+// delay()       // trì hoãn time (option)
 
-dequeue()     // loại bỏ chức năng tiếp theo của hàng đợi và sau đó thực hiện chức năng
-queue()       // thực hiện chức năng hàng đợi dk chọn
+// dequeue()     // loại bỏ chức năng tiếp theo của hàng đợi và sau đó thực hiện chức năng
+// queue()       // thực hiện chức năng hàng đợi dk chọn
 
-finish()      // loại bỏ tất cả chức năng tiếp theo rồi xong lun
-stop()        // tạm dừng chức năng
+// finish()      // loại bỏ tất cả chức năng tiếp theo rồi xong lun
+// stop()        // tạm dừng chức năng
 ```
 ## thuộc tính HTML/CSS
 ```js
@@ -114,13 +114,13 @@ next()          // chọn anh chị sau nó
 nextAll()       // tất cả anh chị sau nó
 nextUntil()     // tất cả anh chị sau nó đến tùy chỉnh
 prev()          // xác định chọn trước                
-prevAll()       // chọn trước all             
-prevUntil()     // chọn trước nó đến gần trước   
-parent()        // chọn cha mẹ đâu tiên của nó 
-patrents()      // all cha or tùy chỉnh chọn cha nào đó
-parentsUntil()  // tùy chỉnh chọn nó đến cha
-children ()     // chọn all con trực tiếp or tùy chọn con
-siblings ()     // all anh, chị or lọc tìm anh, chị tùy chỉnh                                 
+// prevAll()       // chọn trước all             
+// prevUntil()     // chọn trước nó đến gần trước   
+// parent()        // chọn cha mẹ đâu tiên của nó 
+// patrents()      // all cha or tùy chỉnh chọn cha nào đó
+// parentsUntil()  // tùy chỉnh chọn nó đến cha
+// children ()     // chọn all con trực tiếp or tùy chọn con
+// siblings ()     // all anh, chị or lọc tìm anh, chị tùy chỉnh                                 
 ```
 ## responsive
 ```js
