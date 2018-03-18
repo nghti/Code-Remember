@@ -1,10 +1,10 @@
 # Front End Developer
 ```html
 Front End 
-* Animation : GreenSock, Velocityjs, Mojs
-* Logic     : AngularJS, `Reactjs`, Backbonejs 
+* Markup Developer       : HTML, CSS, Jquery
+* Frontend Developer     : Javascrip( AngularJS, Reactjs, Backbonejs )
 ```
-## I work web
+## I created the web
 http://www.yms.ac.jp/
 
 http://www.sapporo.belle.ac.jp/p/belles-snap/
@@ -21,7 +21,7 @@ http://lalaphoto.jp/
 
 http://lalaphoto.jp/sp/
 
-## Hoc framework mới
+## Cách hoc framework mới
 ```html
 - Đắm chìm vào nó.
 - Vui vẻ, thích thú với như chơi với thứ mình tạo ra.
@@ -31,17 +31,17 @@ http://lalaphoto.jp/sp/
 - Khi search phải dùng đúng từ khó `có thể dùng googledich để trợ giúp sẽ tìm tốt hơn`
 ```
 
-## Làm dự án
-- sử dụng OOCSS ( 2 nguyên tắc ) & BEM ( class nối )
+## Khi làm dự án
+- sử dụng `OOCSS` ( 2 nguyên tắc ) & `BEM` ( class nối )
 - mỗi trang 1 class cha riêng 
-- Bootstrap đã có nhiều class OOCSS nhưng có thể viết thêm OOCSS riêng
+- `Bootstrap` đã có nhiều class `OOCSS` nhưng có thể viết thêm `OOCSS` riêng
+- Khi `style` một đối tượng
+- `sử dụng class OOCSS` nhưng nếu không có thì `Tạo thêm class OOCSS` nếu muốn dùng lại
+- sử dụng `BEM` để tạo box chung có thể dùng lại được
+- dùng `class cha riêng` kết hợp `OOCSS` hoặc `BEM` tạo style chỉ riêng page đó
 
-> Khi style một đối tượng
 
-+ `sử dụng class OOCSS` nhưng nếu không có thì `Tạo thêm class OOCSS` nếu muốn dùng lại
-+ sử dụng `BEM` để tạo box chung có thể dùng lại được
-+ dùng `class cha riêng` kết hợp `OOCSS` hoặc `BEM` tạo style chỉ riêng page đó
-
+---
 ## Localhost
 ### localhost window
 - vhosts
