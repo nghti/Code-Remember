@@ -8,7 +8,9 @@
 - Thay đổi tất cả tên thuộc tính chữ thường
 - Trích dẫn tất cả các giá trị thuộc tính
 
-## HTML4
+## TAG [inline/block](https://www.w3schools.com/html/html_blocks.asp)
+
+## HTML4 need remember
 - Form
   + name `in html4`
 

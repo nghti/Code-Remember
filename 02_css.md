@@ -9,22 +9,21 @@ height: 100vh;          // Full height
 width: 100vw;           // Full width
 ```
 
-## Priority in css
+## Priority in css ( `độ ưu tiên` )
 > [Page](https://marksheet.io/css-priority.html)
 
 > [Question](https://stackoverflow.com/questions/1637343/what-are-the-priorities-among-css-selectors)
 
-## Fafe CSS Default 
+## Fafe CSS Default ( `Giá trị mặc định` )
 > [Default](http://nimbupani.com/safe-css-defaults.html)
 
 > [All](https://stackoverflow.com/questions/15901030/reset-remove-css-styles-for-element-only)
 
-## CSS properties
+## CSS properties ( `Kế thừa` )
 > [Question](https://stackoverflow.com/questions/5612302/which-css-properties-are-inherited)
-
-## Select tag a pro
-> [pseudo là gì](http://vietjack.com/css/pseudo_element_trong_css.jsp)
--  [Chọn](http://lea.verou.me/demos/nth.html)
+## Select tag a pro ( `bộ chọn` )
+- [Pseudo](http://vietjack.com/css/pseudo_element_trong_css.jsp) ( `phần tử giả` )
+-  [Demo chọn](http://lea.verou.me/demos/nth.html)
 
 - Chọn 1
 ```css
@@ -52,7 +51,7 @@ input[type=submit]
 ```
 
 ##  CS3 NEW 
-> [Vendor prefix](https://kipalog.com/posts/Tai-sao-mot-so-thuoc-tinh-trong-CSS3-phai-them-Vendor-prefixes-nhu--moz----webkit---o----ms--)
+> [Vendor prefix](https://kipalog.com/posts/Tai-sao-mot-so-thuoc-tinh-trong-CSS3-phai-them-Vendor-prefixes-nhu--moz----webkit---o----ms--) ( `tiền tố của trình duyệt` )
 ```css
 -moz-     // filefox
 -o-       // opera
@@ -60,16 +59,53 @@ input[type=submit]
 -webkit-  // chrome & safari
 ```
 ---------------
+> Tag đã dùng
 - border-radius
 - rgba
 - opacity
 ---------------
-- Border-img      ie11 >>
-- Column          (cột văn bản trong div) ie10 >>
+> Tag có thể dùng
+- border-img      ie11 >>
+- column          (cột văn bản trong div) ie10 >>
 - filter          (lọc img) ie13
-- User Interface  (giao diện người dùng) ie13
+- user Interface  (giao diện người dùng) ie13
 ---------------
-- display: flex;  ie11 >>
+> Tag đang dùng
+
+- text
+```css
+text-overflow ( giới hạn và thay text )
+text-overflow: clip;       // Xén bớt vùng text
+text-overflow: ellipsis;   // giới hạn vs thay = 3 chấm ! chạy được trên 1 dòng 
+text-overflow: 'còn tiếp'; // Cắt đoạn text ... và thay bằng đoạn text khác
+
+word-wrap ( từ xuống hàng )
+word-wrap: break-word; // Những từ quá dài sẽ xuống hàng.
+word-wrap: normal;     // mặc định cho word-wrap.
+
+word-break ( chữ xuống hàng )
+word-break: break-all; // hết đoạn ngắt chữ xuống hàng
+word-break: hyphenate; // hết từ xuống hàng tại gạch nối thích hợp
+word-break: normal;    // mặc định cho từ
+```
+
+- text-shadow
+```css
+text-shadow: 0 0 3px blue;                      // width -> height -> mờ -> màu
+text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;  // nhiều màu
+```
+
+- box-shadow
+```css
+box-shadow: 5px 10px 5px 10px #000;             // width -> height -> mờ -> độ lan -> màu
+box-shadow: 10px 10px #cc0000 inset;            // Thay độ bóng từ ngoài vào trong sáng
+```
+
+- box-sizing
+```css
+box-sizing: border-box;                         // width and height đã bao gồm border
+```
+- display: flex; ( `ie11 >>` )
   - flex container
     + flex-direction: sắp xếp lại thứ tự trái >< phải, trên >< dưới
     + flex-wrap: co dãng trên 1 dòng, tràn xún vs tràn lên
@@ -86,41 +122,7 @@ input[type=submit]
     + flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] Kết hợp nhiều
     + align-self: ![img](https://css-tricks.com/wp-content/uploads/2014/05/align-self.svg) 
 
-- text
-```css
-// text-overflow (giới hạn và thay text)
-   text-overflow: clip;       // Xén bớt vùng text
-   text-overflow: ellipsis;   // giới hạn vs thay = 3 chấm ! chạy được trên 1 dòng 
-   text-overflow: 'còn tiếp'; // Cắt đoạn text ... và thay bằng đoạn text khác
-
-// word-wrap (từ xuống hàng)
-   word-wrap: break-word; // Những từ quá dài sẽ xuống hàng.
-   word-wrap: normal;     // mặc định cho word-wrap.
-
-// word-break (chữ xuống hàng)
-   word-break: break-all; // hết đoạn ngắt chữ xuống hàng
-   word-break: hyphenate; // hết từ xuống hàng tại gạch nối thích hợp
-   word-break: normal;    // mặc định cho từ
-```
-
-- text-shadow
-```css
-  text-shadow: 0 0 3px blue;                      // width -> height -> mờ -> màu
-  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;  // nhiều màu
-```
-
-- box-shadow
-```css
-  box-shadow: 5px 10px 5px 10px #000;             // width -> height -> mờ -> độ lan -> màu
-  box-shadow: 10px 10px #cc0000 inset;            // Thay độ bóng từ ngoài vào trong sáng
-```
-
-- box-sizing
-```css
-  box-sizing: border-box;                         // width and height đã bao gồm border
-```
-
-- transition (chuyển đối khi có một hành động..:hover làm to nút) 
+- transition ( `chuyển đối khi có một hành động..:hover làm to nút` ) 
 ```css
   + [*]
   transition-timing-function: linear;      // chậm -> nhanh -> chậm (Default)
@@ -140,7 +142,7 @@ input[type=submit]
   
 ```
 
-- transform (chuyển đổi 2 chiều, 3 chiều, xoay, nghiêng, kích thước PT ...)
+- transform ( c`huyển đổi 2 chiều, 3 chiều, xoay, nghiêng, kích thước PT ...` )
 ```css
   transform: rotate();       // xoay thành phần theo kim đồng hồ      
              translate()     // di chuyển thanh phần nằm ngang lên or xún
@@ -152,7 +154,7 @@ input[type=submit]
   transform: rotate(45deg) translate(24px, 25px)
 ```
 
-- Animations (xác định một chuyển động.. a -> b)
+- Animations ( `xác định một chuyển động.. a -> b` )
 ```css
   + [*]()
   {animation-timing-function: linear;}      // chậm -> nhanh -> chậm (MD)
@@ -181,8 +183,6 @@ input[type=submit]
 {
   animation: example 5s linear 2s infinite alternate;
 }
-
-{
   ```
 
 - Background gradient && ie

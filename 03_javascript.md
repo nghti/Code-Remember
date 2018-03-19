@@ -1,4 +1,4 @@
-👉 Javascript 👈
+# Javascript
 ```html
 1  Types                                // Done
 2  References                           // Done
@@ -39,8 +39,8 @@
 37 Contributors                         // ...
 38 License                              // ...
 ```
-## Browser environment (Môi trường trình duyệt)
-### Browser objects (Đối tượng trình duyệt)
+## Browser environment ( `Môi trường trình duyệt` )
+### Browser objects ( `Đối tượng trình duyệt` )
 ```js
 var title = document.title;
 var href = window.location.href;
@@ -55,7 +55,7 @@ console.error('in ra lỗi');
 console.info('in ra thông tin');
 console.warn('in ra chú ý');
 ```
-### Variables & Types (biến và loại)
+### Variables & Types ( `biến và loại` )
 #### Number
 ```js
 var s = 2;
@@ -74,7 +74,7 @@ var sai = false;
 var neo;                                 // Type is undefined (Không xác định)
 neo = null;                              // Type is object (đối tượng)
 ```
-## Arrays (mảng)
+## Arrays ( `mảng` )
 ### Creating
 ```js
 var a = [];                              // không có yếu tố / []
@@ -113,8 +113,8 @@ var f = a.splice(2, 1);        // a => ["FOLLOW", "the", "RABBIT"]          // x
 var g = a.splice(1, 2, "ME");  // a => ["FOLLOW", "ME"]                     // thêm pt chọn
                                // g => ["the", "RABBIT"]
 ```            
-## Operators (vận hành)
-### Arithmetics (toán tử)
+## Operators ( `vận hành` )
+### Arithmetics ( `toán tử` )
 ```js
 var a = 6 + 4;                           // a => 10
 var b = -a;                              // b => -10
@@ -131,7 +131,7 @@ var n = 10 % 3                           // n => 1
 
 var o = "Dodge" + " " + "this."          // o => "Dodge this.";
 ```
-### Equality (bằng)
+### Equality ( `bằng` )
 ```js
 var a = "2" == 2;                        // a => true  / == tương đối
 var b = "2" != 2;                        // b => false
@@ -139,7 +139,7 @@ var b = "2" != 2;                        // b => false
 var c = "2" === 2;                       // c => false  / === tuyệt đối
 var d = "2" !== 2;                       // d => true
 ```
-### Strict equality (so sánh)
+### Strict equality ( `so sánh` )
 ```js
 var a = 2 > 2;                           // a => false
 var b = 2 <= 2;                          // b => true
@@ -148,13 +148,13 @@ var d = 2 < 2;                           // d => false
 var e = 2 <= 2;                          // e => true
 var f = 'abc' < 'def'                    // f => true
 ```
-### Logical (hợp lý)
+### Logical ( `hợp lý` )
 ```js
 var a = true && false;                   // a => false
 var b = true || false;                   // b => true
 var c = !true;                           // c => false
 ```
-### Bitwise (số bit)
+### Bitwise ( `số bit` )
 ```js
 var a = 42 & 2                           // a =>          2  (AND)
 var b =  7 | 2                           // b =>          2  (OR)
@@ -165,7 +165,7 @@ var f =  8 >> 2                          // f =>          2  (Shift right)
 var g = -1 >>  2                         // g =>         -1
 var h = -1 >>> 2                         // h => 1073741823  (Shift right with zero fill)
 ```
-### Assignment (chuyển đổi)
+### Assignment ( `chuyển đổi` )
 ```js
 var a = 1, b = 0;
 a += b                                   // a = a + b
@@ -187,7 +187,7 @@ var b = (2 in a);                        // b => true (có 3 pt)
 var c = (9 in a);                        // c => false
 var d = (length in a);                   // d => true
 ```
-#### typeof // xem kiểu
+#### typeof ( `xem kiểu` )
 ```js
 var a = 3;
 var b = typeof a;                        // b => "number"
@@ -196,8 +196,8 @@ var d = typeof c;                        // d => "string"
 var e = true;
 var f = typeof e;                        // f => "boolean"
 ```
-## Type conversions (Loại chuyển đổi)
-### Explicit (Minh bạch)
+## Type conversions ( `loại chuyển đổi` )
+### Explicit ( `minh bạch` )
 ```js
 // to Number
 var a = Number("10");                    // a => 10
@@ -215,7 +215,9 @@ var a = Boolean(10);                     // a => true
 var b = Boolean(0);                      // b => false
 var c = Boolean(0.3);                    // c => true
 var d = Boolean("true");                 // d => true
-### Implicit (ngầm)
+```
+### Implicit ( `ngầm` )
+```js
 // to Number
 var a = +"10";                           // a => 10
 var b = "10" >> 0;                       // b => 10
@@ -233,7 +235,7 @@ var b = !!'';                            // b => false
 var c = !!'0';                           // c => true
 var d = !!'1';                           // d => true
 ```
-### Summary (Tóm lược)
+### Summary ( `Tóm lược` )
 ```js
 Value                           String                     Number                                  Boolean
 
@@ -254,7 +256,7 @@ Infinity........................"Infinity"......................................
 [9] (1 numeric elt)............."9"..........................9.......................................true
 ['a'] (any other array).........use join() method............NaN.....................................true
 ```
-## Statements (câu lệnh)
+## Statements ( `câu lệnh` )
 ### if/else
 ```js
 if (username == null) {                   // if username is null or undefined,
@@ -308,7 +310,7 @@ for (var i in a) {                        // DO NOT use with arrays
   doSomething(a[i]);
 }
 ```
-## Simple functions (Chức năng đơn giản)
+## Simple functions ( `Chức năng đơn giản` )
 ```js
 function functionName(var1, var2, var3) { // no variable types
   /*
@@ -330,7 +332,7 @@ function useArgs(var1, var2, var3) {
 
 var b = useArgs("Déjà", "vu");             // b => " Déjà vu", var3 = undefined
 ```
-## Variable scope (Phạm vi biến)
+## Variable scope ( `Phạm vi biến` )
 ### Global vs local
 ```js
 var name = "Andy";                         // not in a function => variable is global
@@ -344,7 +346,7 @@ foo();
 var a = lastName;                          // ReferenceError lastName is not defined
                                            // can not access local variable "lastName"
 ```
-### Do not forget var (đừng quên var)
+### Do not forget var ( `đừng quên var` )
 ```js
 var i = 1;
 function foo() {
