@@ -14,7 +14,7 @@ width: 100vw;           // Full width
 
 > [Question](https://stackoverflow.com/questions/1637343/what-are-the-priorities-among-css-selectors)
 
-## Fafe CSS Default ( `Giá trị mặc định` )
+## Safe CSS Default ( `Giá trị mặc định` )
 > [Default](http://nimbupani.com/safe-css-defaults.html)
 
 > [All](https://stackoverflow.com/questions/15901030/reset-remove-css-styles-for-element-only)
@@ -105,10 +105,10 @@ box-shadow: 10px 10px #cc0000 inset;            // Thay độ bóng từ ngoài 
 ```css
 box-sizing: border-box;                         // width and height đã bao gồm border
 ```
-- display: flex; ( `ie11 >>` )
+- [display: flex;](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) ( `ie11 >>` )
   - flex container
     + flex-direction: sắp xếp lại thứ tự trái >< phải, trên >< dưới
-    + flex-wrap: co dãng trên 1 dòng, tràn xún vs tràn lên
+    + flex-wrap: co dãng trên dòng, tràn xún vs tràn lên
     + flex-flow: <‘flex-direction’> || <‘flex-wrap’> : kết hợp cả 2
     + justify-content: ![img](https://cdn.css-tricks.com/wp-content/uploads/2013/04/justify-content-2.svg)
     + align-items: ![img](https://cdn.css-tricks.com/wp-content/uploads/2014/05/align-items.svg)
@@ -121,6 +121,292 @@ box-sizing: border-box;                         // width and height đã bao g�
     + flex-basis: length | auto; default auto , độ dài của PT
     + flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] Kết hợp nhiều
     + align-self: ![img](https://css-tricks.com/wp-content/uploads/2014/05/align-self.svg) 
+
+
+- [display: grid;](https://css-tricks.com/snippets/css/complete-guide-grid/) ( `ie11 >>` )
+  - Grid Container
+    - grid-template-columns
+    - grid-template-rows
+      ```css
+      .container {
+        grid-template-columns: 40px 50px auto 50px 40px;
+        grid-template-rows: 25% 100px auto;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-numbers.png)
+      ```css
+      .container {
+        grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+        grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-names.png)
+    
+    - grid-template-areas
+      ```css
+      .container {
+        grid-template-areas: 
+          "<grid-area-name> | . | none | ..."
+          "...";
+      }
+      ```
+
+    - grid-template ( Viết tắt cho 3 cái trên )
+
+    - grid-column-gap
+    - grid-row-gap
+      ```css
+      .container {
+        grid-template-columns: 100px 50px 100px;
+        grid-template-rows: 80px auto 80px; 
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-column-row-gap.png)
+    
+    - grid-gap ( Viết tắt cho grid-row-gap and grid-column-gap )
+
+    - justify-items
+      ```css
+      .container {
+        justify-items: start;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-justify-items-start.png)
+      ```css
+      .container{
+        justify-items: end;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-justify-items-end.png)
+      ```css
+      .container {
+        justify-items: center;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-justify-items-center.png)
+      ```css
+      .container {
+        justify-items: stretch;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-justify-items-stretch.png)
+    - align-items
+      ```css
+      .container {
+        align-items: start;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-align-items-start.png)
+      ```css
+      .container {
+        align-items: end;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-align-items-end.png)
+      ```css
+      .container {
+        align-items: center;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-align-items-center.png)
+      ```css
+      .container {
+        align-items: stretch;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-align-items-stretch.png)
+    - justify-content
+      ```css
+      .container {
+        justify-content: start;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-justify-content-start.png)
+      ```css
+      .container {
+        justify-content: end;	
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-justify-content-end.png)
+      ```css
+      .container {
+        justify-content: center;	
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-justify-content-center.png)
+      ```css
+      .container {
+        justify-content: stretch;	
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-justify-content-stretch.png)
+      ```css
+      .container {
+        justify-content: space-around;	
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-justify-content-space-around.png)
+      ```css
+      .container {
+        justify-content: space-between;	
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-justify-content-space-between.png)
+      ```css
+      .container {
+        justify-content: space-evenly;	
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-justify-content-space-evenly.png)
+    - align-content
+      ```css
+      .container {
+        align-content: start;	
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-align-content-start.png)
+      ```css
+      .container {
+        align-content: end;	
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-align-content-end.png)
+      ```css
+      .container {
+        align-content: center;	
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-align-content-center.png)
+      ```css
+      .container {
+        align-content: stretch;	
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-align-content-stretch.png)
+      ```css
+      .container {
+        align-content: space-around;	
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-align-content-space-around.png)
+      ```css
+      .container {
+        align-content: space-between;	
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-align-content-space-between.png)
+      ```css
+      .container {
+        align-content: space-evenly;	
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-align-content-space-evenly.png)
+    - grid-auto-columns
+    - grid-auto-rows
+      ```css
+      .container {
+        grid-template-columns: 60px 60px;
+        grid-template-rows: 90px 90px
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-auto.png)
+
+    - grid-auto-flow
+
+    - grid ( Viết tắt cho All )
+  - Grid Items
+    - grid-column-start
+    - grid-column-end
+    - grid-row-start
+    - grid-row-end
+      ```css
+      .item-a {
+        grid-column-start: 2;
+        grid-column-end: five;
+        grid-row-start: row1-start
+        grid-row-end: 3
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-start-end-a.png)
+      ```css
+      .item-b {
+        grid-column-start: 1;
+        grid-column-end: span col4-start;
+        grid-row-start: 2
+        grid-row-end: span 2
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/11/grid-start-end-b.png)
+    - grid-column ( Viết tắt trên )
+    - grid-row ( Viết tắt trên )
+      ```css
+      .item-c {
+        grid-column: 3 / span 2;
+        grid-row: third-line / 4;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-start-end-c.png)
+    - grid-area
+      ```css
+      .item-d {
+        grid-area: 1 / col4-start / last-line / 6
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-start-end-d.png)
+    - justify-self
+      ```css
+      .item-a {
+        justify-self: start;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-justify-self-start.png)
+      ```css
+      .item-a {
+        justify-self: end;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-justify-self-end.png)
+      ```css
+      .item-a {
+        justify-self: center;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-justify-self-center.png)
+      ```css
+      .item-a {
+        justify-self: stretch;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-justify-self-stretch.png)
+    - align-self
+      ```css
+      .item-a {
+        align-self: start;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-align-self-start.png)
+      ```css
+      .item-a {
+        align-self: end;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-align-self-end.png)
+      ```css
+      .item-a {
+        align-self: center;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-align-self-center.png)
+      ```css
+      .item-a {
+        align-self: stretch;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-align-self-stretch.png)
+
+
 
 - transition ( `chuyển đối khi có một hành động..:hover làm to nút` ) 
 ```css
