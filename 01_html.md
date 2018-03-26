@@ -1,35 +1,29 @@
 # [HTML](http://hocwebchuan.com/reference/tag/tag_doctype.php)
 
-## HTML >> XHTML
-- Thêm một XHTML <! DOCTYPE> vào dòng đầu tiên của mỗi trang
-- Thêm một thuộc tính xmlns đến các yếu tố html của mỗi trang
-- Thay đổi tất cả các tên phần tử thành chữ thường
-- Đóng tất cả các phần tử rỗng
-- Thay đổi tất cả tên thuộc tính chữ thường
-- Trích dẫn tất cả các giá trị thuộc tính
-
-## TAG [inline/block](https://www.w3schools.com/html/html_blocks.asp)
-
-## HTML4 need remember
+### HTML4 need remember
 - Form
-  + name `in html4`
+```html
+type `loại hiện thị`
+required `field là bắt buộc`
+placeholder `text mờ trên textbox`
+autofocus `focus đầu tiên trong form`
+```
 
-  + type `in html4`
-
-  + required `field là bắt buộc`
-
-  + placeholder `text mờ trên textbox`
-
-  + autofocus `focus đầu tiên trong form`
-
-- table
+- Table
 ```html
 colspan="2" // số cột
 rowspan="2" // số hàng
 ```
 
-## HTML5 có gì mới
-- Cơ bản
+### HTML Symbols ( `Ký tự đặt biệt` )
+> [Symbols](http://hocwebchuan.com/reference/tag/symbols.php)
+
+> `&nbsp;`
+
+### HTML TAG
+> [inline/block](https://www.w3schools.com/html/html_blocks.asp)
+
+## HTML5 NEW
 ```html
 - khai báo đơn giản         // <!DOCTYPE html>, <meta charset="UTF-8">
 - các thẻ ngữ ngĩa new      // <header>, <footer>, ...
@@ -38,7 +32,11 @@ rowspan="2" // số hàng
 - yếu tố đa phương tiện new // <audio>, <video>
 ```
 
-- tag
+#### Thẻ ngữ ngĩa
+> Tránh viết nhiều DIV
+
+> Tốt cho seo
+
 ```html
 - <header>  // Định nghĩa khu vực header (phần đầu) của trang.
 - <footer>  // Định nghĩa khu vực footer (phần cuối) của trang.
@@ -51,10 +49,26 @@ rowspan="2" // số hàng
 - <mark>    // làm nổi bật văn bản.
 ```
 
-- Đa phương tiện
+#### [New Input Types](https://www.w3schools.com/html/html5_new_elements.asp)
+```html
+color
+date
+datetime
+datetime-local
+email
+month
+number
+range
+search
+tel
+time
+url
+week
+```
+#### Đa phương tiện
   + audio
   + video
 
-- Đồ họa
+#### Đồ họa
   + svg
   + canvas

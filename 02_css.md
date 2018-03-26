@@ -1,5 +1,5 @@
 # CSS
-## Thẻ Cần nhớ
+### Thẻ Cần nhớ
 ```css
 word-spacing: -6px;     // Cách chữ
 letter-spacing: 8px;    // Cách từ
@@ -8,47 +8,26 @@ width: calc(100%/4);    // Tính toán
 height: 100vh;          // Full height
 width: 100vw;           // Full width
 ```
-
-## Priority in css ( `độ ưu tiên` )
+### Priority in css ( `độ ưu tiên trong css` )
 > [Page](https://marksheet.io/css-priority.html)
 
 > [Question](https://stackoverflow.com/questions/1637343/what-are-the-priorities-among-css-selectors)
 
-## Safe CSS Default ( `Giá trị mặc định` )
+### Safe CSS Default ( `Giá trị mặc định của thẻ` )
 > [Default](http://nimbupani.com/safe-css-defaults.html)
 
 > [All](https://stackoverflow.com/questions/15901030/reset-remove-css-styles-for-element-only)
 
-## CSS properties ( `Kế thừa` )
+### CSS properties ( `Kế thừa của thẻ cha` )
 > [Question](https://stackoverflow.com/questions/5612302/which-css-properties-are-inherited)
-## Select tag a pro ( `bộ chọn` )
-- [Pseudo](http://vietjack.com/css/pseudo_element_trong_css.jsp) ( `phần tử giả` )
--  [Demo chọn](http://lea.verou.me/demos/nth.html)
 
-- Chọn 1
-```css
-input[type=submit]
-```
-- Chọn child
-```css
-:first-child         // chọn con đầu tiên và cha duy nhất
-:last-child          // chọn con cuối cùng và cha duy nhất
+### Pseudo in css ( `Phần tử giả của bộ chọn` )
+> [Pseudo](http://vietjack.com/css/pseudo_element_trong_css.jsp)
 
-:first-of-type       // con con đầu tiên và các cha
-:last-of-type        // con con cuối cùng và các cha
+### Select tag a pro ( `bộ chọn` )
+> [Demo chọn](http://lea.verou.me/demos/nth.html)
 
-:nth-child(even)     // even là chẵn
-:nth-child(odd)      // odd là lẻ
-
-:nth-child(n)        // Chọn thành phần thứ "n" trong cha và tính từ đầu
-:nth-last-child(n)   // Chọn thành phần thứ "n" trong cha và tính từ cuối
-
-:nth-of-type(n)      // Chọn thành phần thứ "n" tính từ đầu
-:nth-last-of-type(n) // Chọn thành phần thứ "n" tính từ cuối
-
-:gt                  // lớn hơn >> all
-:lt                  // nhỏ hơn >> all
-```
+> [Chọn remenber](https://viblo.asia/p/30-css-selectors-can-nho-p1-0bDM6ko6G2X4)
 
 ##  CS3 NEW 
 > [Vendor prefix](https://kipalog.com/posts/Tai-sao-mot-so-thuoc-tinh-trong-CSS3-phai-them-Vendor-prefixes-nhu--moz----webkit---o----ms--) ( `tiền tố của trình duyệt` )
@@ -72,7 +51,7 @@ input[type=submit]
 ---------------
 > Tag đang dùng
 
-- text
+#### text
 ```css
 text-overflow ( giới hạn và thay text )
 text-overflow: clip;       // Xén bớt vùng text
@@ -89,44 +68,150 @@ word-break: hyphenate; // hết từ xuống hàng tại gạch nối thích h�
 word-break: normal;    // mặc định cho từ
 ```
 
-- text-shadow
+#### text-shadow
 ```css
 text-shadow: 0 0 3px blue;                      // width -> height -> mờ -> màu
 text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;  // nhiều màu
 ```
 
-- box-shadow
+#### box-shadow
 ```css
 box-shadow: 5px 10px 5px 10px #000;             // width -> height -> mờ -> độ lan -> màu
 box-shadow: 10px 10px #cc0000 inset;            // Thay độ bóng từ ngoài vào trong sáng
 ```
 
-- box-sizing
+#### box-sizing
 ```css
 box-sizing: border-box;                         // width and height đã bao gồm border
 ```
-- [display: flex;](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) ( `ie11 >>` )
+#### [display: flex;](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) ( `ie11 >>` )
   - flex container
-    + flex-direction: sắp xếp lại thứ tự trái >< phải, trên >< dưới
-    + flex-wrap: co dãng trên dòng, tràn xún vs tràn lên
-    + flex-flow: <‘flex-direction’> || <‘flex-wrap’> : kết hợp cả 2
-    + justify-content: ![img](https://cdn.css-tricks.com/wp-content/uploads/2013/04/justify-content-2.svg)
-    + align-items: ![img](https://cdn.css-tricks.com/wp-content/uploads/2014/05/align-items.svg)
-    + align-content: ![img](https://css-tricks.com/wp-content/uploads/2013/04/align-content.svg)
+    + flex-direction
+      > Xác định hướng
+
+      ```css
+      .container {
+        flex-direction: row | row-reverse | column | column-reverse;
+      }
+      ```
+      ![img](https://css-tricks.com/wp-content/uploads/2013/04/flex-direction2.svg)
+
+    + flex-wrap
+      > Co dãng trên dòng, tràn xún vs tràn lên
+
+      ```css
+      .container{
+        flex-wrap: nowrap | wrap | wrap-reverse;
+      }
+      ```
+      ![img](https://css-tricks.com/wp-content/uploads/2014/05/flex-wrap.svg)
+
+    + flex-flow
+      > kết hợp cả 2 cái trên
+
+      ```css
+      flex-flow: <‘flex-direction’> || <‘flex-wrap’>
+      ```
+
+    + justify-content
+      > Linh hoạt 1 hàng ngang
+
+      ```css
+      .container {
+        justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2013/04/justify-content-2.svg)
+
+    + align-items
+      > Linh hoạt 1 hàng dọc
+
+      ```css
+      .container {
+        align-items: flex-start | flex-end | center | baseline | stretch;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2014/05/align-items.svg)
+
+    + align-content
+      > Linh hoạt khối dọc
+
+      ```css
+      .container {
+        align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+      }
+      ```
+      ![img](https://css-tricks.com/wp-content/uploads/2013/04/align-content.svg)
 
   - flex items
-    + order: integer; default is 0
-    + flex-grow: number;  default 0 , số  2 wid gấp đôi 1
-    + flex-shrink: number;  default 1 , ngược với flex-grow
-    + flex-basis: length | auto; default auto , độ dài của PT
-    + flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] Kết hợp nhiều
-    + align-self: ![img](https://css-tricks.com/wp-content/uploads/2014/05/align-self.svg) 
+    + order
+      > Có thể âm
+
+      ```css
+      .item {
+        order: <integer>; /* default is 0 */
+      }
+      ```
+      ![img](https://css-tricks.com/wp-content/uploads/2013/04/order-2.svg)
+
+    + flex-grow
+      > Số  2 wid gấp đôi 1 và không âm
+
+      ```css
+      .item {
+        flex-grow: <number>; /* default 0 */
+      }
+      ```
+      ![img](https://css-tricks.com/wp-content/uploads/2014/05/flex-grow.svg)
+
+    + flex-shrink  
+      > Ngược với flex-grow và không âm
+
+      ```css
+      .item {
+        flex-shrink: <number>; /* default 1 */
+      }
+      ```
+
+    + flex-basis
+      > Độ dài của phần tử
+
+      ```css
+      .item {
+        flex-basis: <length> | auto; /* default auto */
+      }
+      ```
+
+    + flex
+      > Viết tắt 3 cái trên, Default is 0 1 auto
+
+      ```css
+      .item {
+        flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+      }
+      ```
+
+    + align-self
+      > Thay mặc định để ghi đẻ 1 mục riêng
+
+      ```css
+      .item {
+        align-self: auto | flex-start | flex-end | center | baseline | stretch;
+      }
+      ```
+      ![img](https://css-tricks.com/wp-content/uploads/2014/05/align-self.svg) 
 
 
-- [display: grid;](https://css-tricks.com/snippets/css/complete-guide-grid/) ( `ie11 >>` )
+#### [display: grid;](https://css-tricks.com/snippets/css/complete-guide-grid/) ( `ie11 >>` )
   - Grid Container
     - grid-template-columns
     - grid-template-rows
+      ```css
+      .container {
+        grid-template-columns: <track-size> ... | <line-name> <track-size> ...;
+        grid-template-rows: <track-size> ... | <line-name> <track-size> ...;
+      }
+      ```
       ```css
       .container {
         grid-template-columns: 40px 50px auto 50px 40px;
@@ -150,11 +235,41 @@ box-sizing: border-box;                         // width and height đã bao g�
           "...";
       }
       ```
+      ```css
+      .item-a {
+        grid-area: header;
+      }
+      .item-b {
+        grid-area: main;
+      }
+      .item-c {
+        grid-area: sidebar;
+      }
+      .item-d {
+        grid-area: footer;
+      }
 
-    - grid-template ( Viết tắt cho 3 cái trên )
+      .container {
+        grid-template-columns: 50px 50px 50px 50px;
+        grid-template-rows: auto;
+        grid-template-areas: 
+          "header header header header"
+          "main main . sidebar"
+          "footer footer footer footer";
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-template-areas.png)
 
+    - grid-template
+      > Viết tắt cho 3 cái trên nhưng ko full nên ít dùng
     - grid-column-gap
     - grid-row-gap
+      ```css
+      .container {
+        grid-column-gap: <line-size>;
+        grid-row-gap: <line-size>;
+      }
+      ```
       ```css
       .container {
         grid-template-columns: 100px 50px 100px;
@@ -165,9 +280,28 @@ box-sizing: border-box;                         // width and height đã bao g�
       ```
       ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-column-row-gap.png)
     
-    - grid-gap ( Viết tắt cho grid-row-gap and grid-column-gap )
+    - grid-gap
+      > Viết tắt cho 2 cái trên nên dùng
+      ```css
+      .container {
+        grid-gap: <grid-row-gap> <grid-column-gap>;
+      }
+      ```
+      ```css
+      .container {
+        grid-template-columns: 100px 50px 100px;
+        grid-template-rows: 80px auto 80px; 
+        grid-gap: 10px 15px;
+      }
+      ```
 
     - justify-items
+      > Chú ý vị trí cột màu xanh
+      ```css
+      .container {
+        justify-items: start | end | center | stretch;
+      }
+      ```
       ```css
       .container {
         justify-items: start;
@@ -192,7 +326,15 @@ box-sizing: border-box;                         // width and height đã bao g�
       }
       ```
       ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-justify-items-stretch.png)
+
     - align-items
+      > Chú ý vị trí hàng màu xanh
+
+      ```css
+      .container {
+        align-items: start | end | center | stretch;
+      }
+      ```
       ```css
       .container {
         align-items: start;
@@ -217,7 +359,15 @@ box-sizing: border-box;                         // width and height đã bao g�
       }
       ```
       ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-align-items-stretch.png)
+
     - justify-content
+      > Kích thước lưới với thùng chứa theo chiều ngang
+
+      ```css
+      .container {
+        justify-content: start | end | center | stretch | space-around | space-between | space-evenly;	
+      }
+      ```
       ```css
       .container {
         justify-content: start;
@@ -260,7 +410,15 @@ box-sizing: border-box;                         // width and height đã bao g�
       }
       ```
       ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-justify-content-space-evenly.png)
+
     - align-content
+      > Kích thước lưới với thùng chứa theo chiều dọc
+
+      ```css
+      .container {
+        align-content: start | end | center | stretch | space-around | space-between | space-evenly;	
+      }
+      ```
       ```css
       .container {
         align-content: start;	
@@ -303,24 +461,98 @@ box-sizing: border-box;                         // width and height đã bao g�
       }
       ```
       ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-align-content-space-evenly.png)
+
     - grid-auto-columns
     - grid-auto-rows
+     > Xác định vị trí
+
       ```css
-      .container {
-        grid-template-columns: 60px 60px;
-        grid-template-rows: 90px 90px
+      .item-a {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+      }
+      .item-b {
+        grid-column: 5 / 6;
+        grid-row: 2 / 3;
       }
       ```
-      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-auto.png)
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/implicit-tracks.png)
 
     - grid-auto-flow
 
-    - grid ( Viết tắt cho All )
+      ```css
+      .container {
+        grid-auto-flow: row | column | row dense | column dense
+      }
+      ```
+      ```css
+      .container {
+        display: grid;
+        grid-template-columns: 60px 60px 60px 60px 60px;
+        grid-template-rows: 30px 30px;
+        grid-auto-flow: row;
+      }
+      .item-a {
+        grid-column: 1;
+        grid-row: 1 / 3;
+      }
+      .item-e {
+        grid-column: 5;
+        grid-row: 1 / 3;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-auto-flow-row.png)
+
+      ```css
+      .container {
+        display: grid;
+        grid-template-columns: 60px 60px 60px 60px 60px;
+        grid-template-rows: 30px 30px;
+        grid-auto-flow: column;
+      }
+      ```
+      ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-auto-flow-column.png)
+
+    - grid
+      > Viết tắt cho All
+      ```css
+      .container {
+          grid: none | <grid-template-rows> / <grid-template-columns> | <grid-auto-flow> [<grid-auto-rows> [/ <grid-auto-columns>]];
+      }
+
+      .container {
+        grid: [row1-start] "header header header" 1fr [row1-end]
+              [row2-start] "footer footer footer" 25px [row2-end]
+              / auto 50px auto;
+      }
+
+      < = >
+
+      .container {
+        grid-template-areas: 
+          "header header header"
+          "footer footer footer";
+        grid-template-rows: [row1-start] 1fr [row1-end row2-start] 25px [row2-end];
+        grid-template-columns: auto 50px auto;    
+      }
+      ```
+
   - Grid Items
+
     - grid-column-start
     - grid-column-end
     - grid-row-start
     - grid-row-end
+
+      ```css
+      .item {
+        grid-column-start: <number> | <name> | span <number> | span <name> | auto
+        grid-column-end: <number> | <name> | span <number> | span <name> | auto
+        grid-row-start: <number> | <name> | span <number> | span <name> | auto
+        grid-row-end: <number> | <name> | span <number> | span <name> | auto
+      }
+
+      ```
       ```css
       .item-a {
         grid-column-start: 2;
@@ -339,8 +571,18 @@ box-sizing: border-box;                         // width and height đã bao g�
       }
       ```
       ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/11/grid-start-end-b.png)
-    - grid-column ( Viết tắt trên )
-    - grid-row ( Viết tắt trên )
+
+    - grid-column
+    - grid-row
+
+      > Viết tắt 4 cái trên
+
+      ```css
+      .item {
+        grid-column: <start-line> / <end-line> | <start-line> / span <value>;
+        grid-row: <start-line> / <end-line> | <start-line> / span <value>;
+      }
+      ```
       ```css
       .item-c {
         grid-column: 3 / span 2;
@@ -348,14 +590,33 @@ box-sizing: border-box;                         // width and height đã bao g�
       }
       ```
       ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-start-end-c.png)
+
     - grid-area
+      > Dùng để đặt tên với viết tắt 4 cái trên
+
       ```css
+      .item {
+        grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>;
+      }
+      ```
+      ```css
+      .item-d {
+        grid-area: header
+      }
       .item-d {
         grid-area: 1 / col4-start / last-line / 6
       }
       ```
       ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-start-end-d.png)
+
     - justify-self
+      > Item theo hàng
+
+      ```css
+      .item {
+        justify-self: start | end | center | stretch;
+      }
+      ```
       ```css
       .item-a {
         justify-self: start;
@@ -380,7 +641,15 @@ box-sizing: border-box;                         // width and height đã bao g�
       }
       ```
       ![img](https://cdn.css-tricks.com/wp-content/uploads/2016/03/grid-justify-self-stretch.png)
+
     - align-self
+      > Item theo cột
+
+      ```css
+      .item {
+        align-self: start | end | center | stretch;
+      }
+      ```
       ```css
       .item-a {
         align-self: start;
@@ -408,7 +677,7 @@ box-sizing: border-box;                         // width and height đã bao g�
 
 
 
-- transition ( `chuyển đối khi có một hành động..:hover làm to nút` ) 
+#### transition ( `chuyển đối khi có một hành động..:hover làm to nút` ) 
 ```css
   + [*]
   transition-timing-function: linear;      // chậm -> nhanh -> chậm (Default)
@@ -440,7 +709,7 @@ box-sizing: border-box;                         // width and height đã bao g�
   transform: rotate(45deg) translate(24px, 25px)
 ```
 
-- Animations ( `xác định một chuyển động.. a -> b` )
+#### animations ( `xác định một chuyển động.. a -> b` )
 ```css
   + [*]()
   {animation-timing-function: linear;}      // chậm -> nhanh -> chậm (MD)
@@ -471,13 +740,13 @@ box-sizing: border-box;                         // width and height đã bao g�
 }
   ```
 
-- Background gradient && ie
+#### background gradient && ie
 ```css
   background: linear-gradient(to right, rgba(35, 173, 56, .9) 0%, rgba(173, 202, 85, .9) 100%); 
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#23ad38', endColorstr='#adca55', GradientType=1)";
 ```
 
-- Background
+#### background
 ```css
 // nhiều img
   background-image: url(img_flwr.gif), url(paper.gif);
@@ -492,7 +761,7 @@ box-sizing: border-box;                         // width and height đã bao g�
   background-size: cover or contain
 ```
 
-## VD support 
+## Demo support 
 - font-face
 ```css
 @font-face {
@@ -507,7 +776,7 @@ box-sizing: border-box;                         // width and height đã bao g�
 }
 ```
 
-- [Flex equal height](http://osvaldas.info/flexbox-based-responsive-equal-height-blocks-with-javascript-fallback)
+- [Flex equal height](http://osvaldas.info/flexbox-based-responsive-equal-height-blocks-with-javascript-fallback) (Chiều cao bằng nhau)
 ```css
 .list {
   display: -webkit-flex;
@@ -556,7 +825,7 @@ box-sizing: border-box;                         // width and height đã bao g�
 }
 ```
 
-- bg-css
+- background in css
 ```css
 div {
   display: block;

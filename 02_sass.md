@@ -1,6 +1,18 @@
 # SASS
-`sass -> (nhanh, dễ quản lý ... css )`
+> Nhanh, dễ quản lý ... css, hướng component
 
+## Tree in sass
+
+![img](https://image.prntscr.com/image/cAQneQSfSc6xwJLGhiSE8Q.png)
+
+```css
+- Abstracts: Cấu hình và trợ giúp
+- Base: Công cụ cơ bản
+- Components: Các thành phần
+- Layout: Các phần liên quan đến bố cục
+- Pages: Các kiểu trang cụ thể
+- Vendor: Các thư viện
+```
 ## Varibles - Sử dụng biến
 > Dùng tốt nhất với màu sắc
 
