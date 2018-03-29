@@ -29,7 +29,7 @@ width: 100vw;           // Full width
 
 > [Chọn remenber](https://viblo.asia/p/30-css-selectors-can-nho-p1-0bDM6ko6G2X4)
 
-##  CS3 NEW 
+## CS3 NEW 
 > [Vendor prefix](https://kipalog.com/posts/Tai-sao-mot-so-thuoc-tinh-trong-CSS3-phai-them-Vendor-prefixes-nhu--moz----webkit---o----ms--) ( `tiền tố của trình duyệt` )
 ```css
 -moz-     // filefox
@@ -84,7 +84,23 @@ box-shadow: 10px 10px #cc0000 inset;            // Thay độ bóng từ ngoài 
 ```css
 box-sizing: border-box;                         // width and height đã bao gồm border
 ```
+
 #### [display: flex;](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) ( `ie11 >>` )
+
+```css
+display: flex;
+flex-direction: row | row-reverse | column | column-reverse;
+flex-wrap: nowrap | wrap | wrap-reverse;
+flex-flow: <‘flex-direction’> || <‘flex-wrap’>
+justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+align-items: flex-start | flex-end | center | baseline | stretch;
+align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+.item {
+  order: <integer>; /* default is 0 */
+  flex-grow: <number>; /* default 0 */
+}
+```
+
   - flex container
     + flex-direction
       > Xác định hướng
@@ -161,6 +177,8 @@ box-sizing: border-box;                         // width and height đã bao g�
       .item {
         flex-grow: <number>; /* default 0 */
       }
+
+      .item2 {flex-grow: 2;}
       ```
       ![img](https://css-tricks.com/wp-content/uploads/2014/05/flex-grow.svg)
 
@@ -262,6 +280,7 @@ box-sizing: border-box;                         // width and height đã bao g�
 
     - grid-template
       > Viết tắt cho 3 cái trên nhưng ko full nên ít dùng
+
     - grid-column-gap
     - grid-row-gap
       ```css
@@ -282,6 +301,7 @@ box-sizing: border-box;                         // width and height đã bao g�
     
     - grid-gap
       > Viết tắt cho 2 cái trên nên dùng
+
       ```css
       .container {
         grid-gap: <grid-row-gap> <grid-column-gap>;
@@ -297,6 +317,7 @@ box-sizing: border-box;                         // width and height đã bao g�
 
     - justify-items
       > Chú ý vị trí cột màu xanh
+
       ```css
       .container {
         justify-items: start | end | center | stretch;
@@ -515,6 +536,7 @@ box-sizing: border-box;                         // width and height đã bao g�
 
     - grid
       > Viết tắt cho All
+
       ```css
       .container {
           grid: none | <grid-template-rows> / <grid-template-columns> | <grid-auto-flow> [<grid-auto-rows> [/ <grid-auto-columns>]];
