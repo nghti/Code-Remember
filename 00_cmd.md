@@ -1,5 +1,26 @@
 # CMD
-## Basic
+
+## NPM vs Yarn
+#### init
+```html
+npm init
+```
+
+#### gulp
+```html
+npm install -g gulp 
+gulp
+```
+
+#### npm & yarn
+> [npm > yarn](https://yarnpkg.com/en/docs/migrating-from-npm)
+```html
+npm install yarn -g
+yarn install <=> npm install
+yarn add [package] --dev <=> npm install [package] --save-dev
+yarn start <=> npm start
+```
+## Basic CMD
 git config --global user.email "nghti8020@gmail.com" 
 
 git clone ( `tạo bản sao Sever >> Local` )
