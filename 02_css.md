@@ -88,16 +88,34 @@ box-sizing: border-box;                         // width and height đã bao g�
 #### [display: flex;](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) ( `ie11 >>` )
 
 ```css
-display: flex;
-flex-direction: row | row-reverse | column | column-reverse;
-flex-wrap: nowrap | wrap | wrap-reverse;
-flex-flow: <‘flex-direction’> || <‘flex-wrap’>
-justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
-align-items: flex-start | flex-end | center | baseline | stretch;
-align-content: flex-start | flex-end | center | space-between | space-around | stretch;
-.item {
-  order: <integer>; /* default is 0 */
-  flex-grow: <number>; /* default 0 */
+.container {
+  display: flex;
+
+  flex-direction: row | row-reverse | column | column-reverse;
+
+  flex-wrap: nowrap | wrap | wrap-reverse;
+
+  flex-flow: <‘flex-direction’> || <‘flex-wrap’>
+
+  justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+
+  align-items: flex-start | flex-end | center | baseline | stretch;
+
+  align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+
+  .item {
+    order: <integer>; /* default is 0 */
+
+    flex-grow: <number>; /* default 0 */
+
+    flex-shrink: <number>; /* default 1 */
+
+    flex-basis: <length> | auto; /* default auto */
+
+    flex: 0 1 auto;
+
+    align-self: auto | flex-start | flex-end | center | baseline | stretch;
+  }
 }
 ```
 
@@ -221,6 +239,54 @@ align-content: flex-start | flex-end | center | space-between | space-around | s
 
 
 #### [display: grid;](https://css-tricks.com/snippets/css/complete-guide-grid/) ( `ie11 >>` )
+
+```css
+.container {
+  display: grid;
+  
+  grid-template-columns: <track-size> ... | <line-name> <track-size> ...;
+  grid-template-rows: <track-size> ... | <line-name> <track-size> ...;
+
+  grid-template-areas: 
+    "<grid-area-name> | . | none | ..."
+    "...";
+
+  grid-column-gap: <line-size>;
+  grid-row-gap: <line-size>;
+  grid-gap: <grid-row-gap> <grid-column-gap>;
+
+  justify-items: start | end | center | stretch;
+
+  align-items: start | end | center | stretch;
+
+  justify-content: start | end | center | stretch | space-around | space-between | space-evenly;
+
+  align-content: start | end | center | stretch | space-around | space-between | space-evenly;
+
+
+  grid-auto-flow: row | column | row dense | column dense;
+
+  grid: none
+
+  .item {
+    grid-column-start: <number> | <name> | span <number> | span <name> | auto
+    grid-column-end: <number> | <name> | span <number> | span <name> | auto
+    grid-row-start: <number> | <name> | span <number> | span <name> | auto
+    grid-row-end: <number> | <name> | span <number> | span <name> | auto
+
+    grid-column: <start-line> / <end-line> | <start-line> / span <value>;
+    grid-row: <start-line> / <end-line> | <start-line> / span <value>;
+
+    grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>;
+
+    justify-self: start | end | center | stretch;
+
+    align-self: start | end | center | stretch;
+  }
+
+}
+```
+
   - Grid Container
     - grid-template-columns
     - grid-template-rows
