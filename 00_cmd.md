@@ -121,3 +121,13 @@ git reset ( `lay lai code cu khi da add -A` )
 git stash ( `khi conflicts, lay all server -> local` )
 
 git diff
+
+git luu nhanh
+```html
+git checkout -b LUU
+git add .
+git stash // lưu vô nhanh LUU
+git stash list // Xem có bao nhiêu nhánh lưư
+git stash pop // checkout lại nhánh LUU sẽ lấy lại data
+
+```

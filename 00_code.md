@@ -31,16 +31,6 @@ http://lalaphoto.jp/sp/
 - Khi search phải dùng đúng từ khó `có thể dùng googledich để trợ giúp sẽ tìm tốt hơn`
 ```
 
-## Khi làm dự án
-- sử dụng `OOCSS` ( 2 nguyên tắc ) & `BEM` ( class nối )
-- mỗi trang 1 class cha riêng 
-- `Bootstrap` đã có nhiều class `OOCSS` nhưng có thể viết thêm `OOCSS` riêng
-- Khi `style` một đối tượng
-- `sử dụng class OOCSS` nhưng nếu không có thì `Tạo thêm class OOCSS` nếu muốn dùng lại
-- sử dụng `BEM` để tạo box chung có thể dùng lại được
-- dùng `class cha riêng` kết hợp `OOCSS` hoặc `BEM` tạo style chỉ riêng page đó
-
-
 ---
 ## Localhost
 ### localhost window
