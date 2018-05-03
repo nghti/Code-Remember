@@ -27,6 +27,8 @@ width: 100vw;           // Full width
 ### Select tag a pro ( `bộ chọn` )
 > [Demo chọn](http://lea.verou.me/demos/nth.html)
 
+> [Link](https://viblo.asia/p/30-css-selectors-can-nho-p1-0bDM6ko6G2X4)
+
 > [Chọn remenber](https://viblo.asia/p/30-css-selectors-can-nho-p1-0bDM6ko6G2X4)
 
 ## CS3 NEW 
