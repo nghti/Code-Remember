@@ -113,6 +113,8 @@ git log            // lấy mã
 ```
 git reset --hard ( `lay lai code` )
 
+sudo nano .git/config ( `doi lai git url` )
+
 ```html
 git reset --hard 70cb5a9
 ```
