@@ -3,15 +3,12 @@
 > Mô Tả Tổng quan
 ```html
 - nhận action từ người dung (click, onChange, lifecycle..)
-- dispatch đến 1 action (TYPE, DATA)
-- Ở Reducer, dựa vào TYPE, update DATA
+- dispatch đến 1 `action` (TYPE, DATA)
+-- Ở `Reducer`, dựa vào TYPE, update DATA
+-- Ở `saga`, bắt sự kiện dựa vào TYPE, update DATA sever
 - STATE change, được update lên STORE
 - DONE
 ```
-
-## QUICK START
-> Demo cơ bản
-- bitbuket -> react -> react-basic
 
 ## [Folow aribnb](https://github.com/airbnb/javascript/tree/master/react)
 ```html
@@ -31,26 +28,28 @@
 14 Ordering                                   // 2
 15 isMounted                                  // Done
 ```
-## components
+## structure
+- Tên thư mục
+```html
+- app      --> Tổng `?`
+            + exception  --> Page ngoại lệ ( 404, error )
+            + layouts    --> TP chung ( header, footer )
+            + routes     --> Đường dẫn web
+            + rootReducer.js
+            + rootSaga.js
+            + store.js
+- assets   --> css, img, font
+- common   --> chung `?`
+            + componets  --> TP dùng chung
+- features --> Layout từng page ( layout riêng, store [ actions, reducer, sage ] riêng, components riêng )
+- services --> Link API `?`
+- utils    --> chứa tạp `?`
+- index.js
+```
 - Trong React  có 2 loại Component
     + Stateful Component 
     + Stateless Component
 
-- Tên thư mục
-```html
-action:      chứa hành động
-components:  chứa thành phần của web
-constants:   chứa biến hằng số
-reducers:    chứa các option mới thay đổi của action 
-
-helpers:     chứa các hàm hổ trợ
-images:      chứa ảnh
-middleware:  chứa trung gian (lang)
-routes:      chứa link (react-router)
-styles:      chứa css
-utils:       chứa tạp
-validations: chứa xác nhận
-```
 - Containers
     + một khung lớn bao bọc các components nhỏ trong 1 màng hình
     + chỉ chứa dispatch , mapstate và phân phát cho components dùng
