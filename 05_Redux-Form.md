@@ -1,5 +1,4 @@
-# [Redux Form](https://github.com/erikras/redux-form/)
-[Cơ bản viblo](https://viblo.asia/p/co-ban-ve-redux-form-ORNZqNONl0n)
+#Redux Form
 
 > Gồm ba thành phần chính
 - formReducer : function chịu trách nhiệm cập nhật Redux store dựa trên những thay đổi từ app.
@@ -19,8 +18,6 @@ State được truyền ngược lại đến input component
 ```
 ## Demo
 [React Alicante 2017](https://github.com/erikras/reactalicante2017)
-
-[Demo in stackblitz]()
 
 ```js
 import React from 'react'
