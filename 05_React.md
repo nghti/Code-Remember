@@ -47,6 +47,7 @@
 - index.js
 ```
 - Trong React  có 2 loại Component
+> https://techtalk.vn/blog/posts/tim-hieu-component-trong-reactjs
     + Stateful Component 
     + Stateless Component
 
