@@ -97,7 +97,7 @@ git add .
 git commit -m "commit conflict"
 git push origin develop
 ```
-git push origin HEAT ( `chính nhánh đó` )
+git push origin HEAD ( `chính nhánh đó` )
 
 git fetch ( `Lấy source server đè source local` )
 
