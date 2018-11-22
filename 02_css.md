@@ -927,4 +927,6 @@ div {
 }
 
 <span  style="background: url('../img/profile/cover-edit.png') no-repeat;"></span>
+
+shorthand =>> background: url(path/image.jpg) 0 0/cover no-repeat;
 ```
