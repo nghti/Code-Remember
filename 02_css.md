@@ -94,7 +94,7 @@ box-sizing: border-box;                         // width and height đã bao g�
   display: flex;
 
   flex-direction: row | row-reverse | column | column-reverse;
-
+  > Xác định hướng
   flex-wrap: nowrap | wrap | wrap-reverse;
 
   flex-flow: <‘flex-direction’> || <‘flex-wrap’>
