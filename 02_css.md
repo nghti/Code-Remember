@@ -130,7 +130,7 @@ box-sizing: border-box;                         // width and height đã bao g�
         flex-direction: row | row-reverse | column | column-reverse;
       }
       ```
-      ![img](https://css-tricks.com/wp-content/uploads/2013/04/flex-direction2.svg)
+      ![img](https://css-tricks.com/wp-content/uploads/2018/10/flex-direction.svg)
 
     + flex-wrap
       > Co dãng trên dòng, tràn xún vs tràn lên
