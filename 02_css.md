@@ -140,7 +140,7 @@ box-sizing: border-box;                         // width and height đã bao g�
         flex-wrap: nowrap | wrap | wrap-reverse;
       }
       ```
-      ![img](https://css-tricks.com/wp-content/uploads/2014/05/flex-wrap.svg)
+      ![img](https://css-tricks.com/wp-content/uploads/2018/10/flex-wrap.svg)
 
     + flex-flow
       > kết hợp cả 2 cái trên
