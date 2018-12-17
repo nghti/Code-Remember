@@ -157,7 +157,7 @@ box-sizing: border-box;                         // width and height đã bao g�
         justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
       }
       ```
-      ![img](https://cdn.css-tricks.com/wp-content/uploads/2013/04/justify-content-2.svg)
+      ![img](https://css-tricks.com/wp-content/uploads/2018/10/justify-content.svg)
 
     + align-items
       > Linh hoạt 1 hàng dọc
@@ -167,7 +167,7 @@ box-sizing: border-box;                         // width and height đã bao g�
         align-items: flex-start | flex-end | center | baseline | stretch;
       }
       ```
-      ![img](https://cdn.css-tricks.com/wp-content/uploads/2014/05/align-items.svg)
+      ![img](https://css-tricks.com/wp-content/uploads/2018/10/align-items.svg)
 
     + align-content
       > Linh hoạt khối dọc
@@ -177,7 +177,7 @@ box-sizing: border-box;                         // width and height đã bao g�
         align-content: flex-start | flex-end | center | space-between | space-around | stretch;
       }
       ```
-      ![img](https://css-tricks.com/wp-content/uploads/2013/04/align-content.svg)
+      ![img](https://css-tricks.com/wp-content/uploads/2018/10/align-content.svg)
 
   - flex items
     + order
@@ -188,7 +188,7 @@ box-sizing: border-box;                         // width and height đã bao g�
         order: <integer>; /* default is 0 */
       }
       ```
-      ![img](https://css-tricks.com/wp-content/uploads/2013/04/order-2.svg)
+      ![img](https://css-tricks.com/wp-content/uploads/2018/10/order.svg)
 
     + flex-grow
       > Số  2 wid gấp đôi 1 và không âm
@@ -200,7 +200,7 @@ box-sizing: border-box;                         // width and height đã bao g�
 
       .item2 {flex-grow: 2;}
       ```
-      ![img](https://css-tricks.com/wp-content/uploads/2014/05/flex-grow.svg)
+      ![img](https://css-tricks.com/wp-content/uploads/2018/10/flex-grow.svg)
 
     + flex-shrink  
       > Ngược với flex-grow và không âm
@@ -237,7 +237,7 @@ box-sizing: border-box;                         // width and height đã bao g�
         align-self: auto | flex-start | flex-end | center | baseline | stretch;
       }
       ```
-      ![img](https://css-tricks.com/wp-content/uploads/2014/05/align-self.svg) 
+      ![img](https://css-tricks.com/wp-content/uploads/2018/10/align-self.svg) 
 
 
 #### [display: grid;](https://css-tricks.com/snippets/css/complete-guide-grid/) ( `ie11 >>` )
