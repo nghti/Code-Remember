@@ -94,29 +94,30 @@ box-sizing: border-box;                         // width and height đã bao g�
   display: flex;
 
   flex-direction: row | row-reverse | column | column-reverse;
-  > Xác định hướng
+  |- Xác định hướng
   flex-wrap: nowrap | wrap | wrap-reverse;
-
+  |- Co dãng trên dòng, tràn xún vs tràn lên
   flex-flow: <‘flex-direction’> || <‘flex-wrap’>
-
+  |- kết hợp cả 2 cái trên
   justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
-
+  |- Linh hoạt 1 hàng ngang
   align-items: flex-start | flex-end | center | baseline | stretch;
-
+  |- Linh hoạt 1 hàng dọc
   align-content: flex-start | flex-end | center | space-between | space-around | stretch;
-
+  |- Linh hoạt khối dọc
   .item {
     order: <integer>; /* default is 0 */
-
+    |- Có thể âm
     flex-grow: <number>; /* default 0 */
-
+    |- Số 2 wid gấp đôi 1 và không âm
     flex-shrink: <number>; /* default 1 */
-
+    |- Ngược với flex-grow và không âm
     flex-basis: <length> | auto; /* default auto */
-
+    |- Độ dài của phần tử
     flex: 0 1 auto;
-
+    |- Viết tắt 3 cái trên, Default is 0 1 auto
     align-self: auto | flex-start | flex-end | center | baseline | stretch;
+    |- Thay mặc định để ghi đẻ 1 mục riêng
   }
 }
 ```
