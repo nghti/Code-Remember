@@ -277,8 +277,7 @@ box-sizing: border-box;                         // width and height đã bao g�
       |- Linh hoạt dọc cho khối lưới
 
   grid-auto-flow: row | column | row dense | column dense;
-
-  grid: none
+      |- Dòng chảy của lưới
 
   .item {
     grid-column-start: <number> | <name> | span <number> | span <name> | auto
