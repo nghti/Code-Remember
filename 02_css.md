@@ -297,7 +297,7 @@ box-sizing: border-box;                         // width and height đã bao g�
     |- Vị trí của box trong item theo hàng
 
     align-self: start | end | center | stretch;
-    |- V
+    |- Vị trí của box trong item theo cột
   }
 
 }
