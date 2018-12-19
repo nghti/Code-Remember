@@ -247,25 +247,34 @@ box-sizing: border-box;                         // width and height đã bao g�
 .container {
   display: grid;
   
-  grid-template-columns: <track-size> ... | <line-name> <track-size> ...;
-  grid-template-rows: <track-size> ... | <line-name> <track-size> ...;
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 25% 100px auto;
+      |- Chia cột vs hàng
 
   grid-template-areas: 
-    "<grid-area-name> | . | none | ..."
-    "...";
-
-  grid-column-gap: <line-size>;
-  grid-row-gap: <line-size>;
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+      |- Đặt tên chia lưới
+      
+  grid-column-gap: 10px;
+      |- Margin cho cột
+  grid-row-gap: 15px;
+      |- Margin cho hàng
+      
   grid-gap: <grid-row-gap> <grid-column-gap>;
 
   justify-items: start | end | center | stretch;
+      |- linh hoạt từng box hàng ngang trong lưới
 
   align-items: start | end | center | stretch;
-
+      |- Linh hoạt từng box hàng dọc trong lưới
+      
   justify-content: start | end | center | stretch | space-around | space-between | space-evenly;
+      |- Linh hoạt ngang cho khối lưới
 
   align-content: start | end | center | stretch | space-around | space-between | space-evenly;
-
+      |- Linh hoạt dọc cho khối lưới
 
   grid-auto-flow: row | column | row dense | column dense;
 
