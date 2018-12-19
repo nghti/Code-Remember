@@ -265,10 +265,10 @@ box-sizing: border-box;                         // width and height đã bao g�
   grid-gap: <grid-row-gap> <grid-column-gap>;
 
   justify-items: start | end | center | stretch;
-      |- linh hoạt từng box hàng ngang trong lưới
+      |- linh hoạt từng item hàng ngang trong lưới
 
   align-items: start | end | center | stretch;
-      |- Linh hoạt từng box hàng dọc trong lưới
+      |- Linh hoạt từng item hàng dọc trong lưới
       
   justify-content: start | end | center | stretch | space-around | space-between | space-evenly;
       |- Linh hoạt ngang cho khối lưới
