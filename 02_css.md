@@ -284,15 +284,20 @@ box-sizing: border-box;                         // width and height đã bao g�
     grid-column-end: <number> | <name> | span <number> | span <name> | auto
     grid-row-start: <number> | <name> | span <number> | span <name> | auto
     grid-row-end: <number> | <name> | span <number> | span <name> | auto
-
+    |- Xác định vị trí và kích thước item
+    
     grid-column: <start-line> / <end-line> | <start-line> / span <value>;
     grid-row: <start-line> / <end-line> | <start-line> / span <value>;
-
+    |- Viết gọn 4 cái trên
+    
     grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>;
-
+    |- Viết gọn 2 cái trên
+    
     justify-self: start | end | center | stretch;
+    |- Vị trí của box trong item theo hàng
 
     align-self: start | end | center | stretch;
+    |- V
   }
 
 }
