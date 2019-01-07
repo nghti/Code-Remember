@@ -29,29 +29,11 @@
 15 isMounted                                  // Done
 ```
 ## structure
-- Tên thư mục
-```html
-- app      --> Tổng `?`
-            + exception  --> Page ngoại lệ ( 404, error )
-            + layouts    --> TP chung ( header, footer )
-            + routes     --> Đường dẫn web
-            + rootReducer.js
-            + rootSaga.js
-            + store.js
-- assets   --> css, img, font
-- common   --> chung `?`
-            + componets  --> TP dùng chung
-- features --> Layout từng page ( layout riêng, store [ actions, reducer, sage ] riêng, components riêng )
-- services --> Link API `?`
-- utils    --> chứa tạp `?`
-- index.js
-```
-- Trong React  có 2 loại Component
-> https://techtalk.vn/blog/posts/tim-hieu-component-trong-reactjs
-
+- Demo [https://github.com/nghti/Source-Demo/tree/master/Code-React](https://github.com/nghti/Source-Demo/tree/master/Code-React)
+- env [custom-react-scripts](https://www.npmjs.com/package/custom-react-scripts)
+- Trong React  có 2 loại [Component](https://techtalk.vn/blog/posts/tim-hieu-component-trong-reactjs)
     + Stateful Component 
     + Stateless Component
-
 - Containers
     + một khung lớn bao bọc các components nhỏ trong 1 màng hình
     + chỉ chứa dispatch , mapstate và phân phát cho components dùng
