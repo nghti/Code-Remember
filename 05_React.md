@@ -1,6 +1,7 @@
 # REACT
+> React là một thư viện viết bằng javascrip `Không như Angular là một Framework`, dùng để xây dựng giao diện người dùng `Làm all thao tác ngoài View trong mô hình MVC`
 
-> Mô Tả Tổng quan
+## Mô Tả Tổng quan
 ```html
 - nhận action từ người dung (click, onChange, lifecycle..)
 - dispatch đến 1 `action` (TYPE, DATA)
