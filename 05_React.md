@@ -5,8 +5,9 @@
 ```html
 - nhận action từ người dung (click, onChange, lifecycle..)
 - dispatch đến 1 `action` (TYPE, DATA)
--- Ở `Reducer`, dựa vào TYPE, update DATA
--- Ở `saga`, bắt sự kiện dựa vào TYPE, update DATA sever
+- đến `saga`, bắt sự kiện dựa vào TYPE, update DATA sever
+- đến `action` dựa vào Success/failure
+- đến `reducer`, dựa vào TYPE, update DATA
 - STATE change, được update lên STORE
 - DONE
 ```
