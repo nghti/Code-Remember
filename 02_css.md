@@ -1,13 +1,19 @@
 # CSS
-### Thẻ Cần nhớ
+## Thẻ Cần nhớ
 ```css
-word-spacing: -6px;     // Cách chữ
-letter-spacing: 8px;    // Cách từ
-cursor: pointer;        // Hiển thì chuột
-width: calc(100%/4);    // Tính toán
-height: 100vh;          // Full height
-width: 100vw;           // Full width
+word-spacing: -6px      // Cách chữ
+letter-spacing: 8px     // Cách từ
+width: calc(100%/4)     // Tính toán
+height: 100vh            // Full height
+width: 100vw              // Full width
+word-wrap: break-word       // từ xuống hàng
+word-break: break-all         // chữ xuống hàng
+text-overflow: ellipsis         // giới hạn và thay text
+text-shadow: 0 0 3px blue         // width -> height -> mờ -> màu
+box-shadow: 5px 10px 5px 10px #000  // width -> height -> mờ -> độ lan -> màu
+box-sizing: border-box            // width and height đã bao gồm border
 ```
+## Chủ đề HOT
 ### Priority in css ( `độ ưu tiên trong css` )
 > [Page](https://marksheet.io/css-priority.html)
 
@@ -31,64 +37,14 @@ width: 100vw;           // Full width
 
 > [Chọn remenber](https://viblo.asia/p/30-css-selectors-can-nho-p1-0bDM6ko6G2X4)
 
+### Tricks
+> [Thủ thuật CSS](https://viblo.asia/p/mot-vai-thu-thuat-css-ma-chinh-frontend-co-the-con-chua-biet-phan-1-3Q75wppeKWb)
+- [Flex equal height](http://osvaldas.info/flexbox-based-responsive-equal-height-blocks-with-javascript-fallback) (Chiều cao bằng nhau)
 ## CS3 NEW 
 > [Vendor prefix](https://kipalog.com/posts/Tai-sao-mot-so-thuoc-tinh-trong-CSS3-phai-them-Vendor-prefixes-nhu--moz----webkit---o----ms--) ( `tiền tố của trình duyệt` )
-```css
--moz-     // filefox
--o-       // opera
--ms-      // ie
--webkit-  // chrome & safari
-```
----------------
-> Tag đã dùng
-- border-radius
-- rgba
-- opacity
----------------
-> Tag có thể dùng
-- border-img      ie11 >>
-- column          (cột văn bản trong div) ie10 >>
-- filter          (lọc img) ie13
-- user Interface  (giao diện người dùng) ie13
----------------
-> Tag đang dùng
-
-#### text
-```css
-text-overflow ( giới hạn và thay text )
-text-overflow: clip;       // Xén bớt vùng text
-text-overflow: ellipsis;   // giới hạn vs thay = 3 chấm ! chạy được trên 1 dòng 
-text-overflow: 'còn tiếp'; // Cắt đoạn text ... và thay bằng đoạn text khác
-
-word-wrap ( từ xuống hàng )
-word-wrap: break-word; // Những từ quá dài sẽ xuống hàng.
-word-wrap: normal;     // mặc định cho word-wrap.
-
-word-break ( chữ xuống hàng )
-word-break: break-all; // hết đoạn ngắt chữ xuống hàng
-word-break: hyphenate; // hết từ xuống hàng tại gạch nối thích hợp
-word-break: normal;    // mặc định cho từ
-```
-
-#### text-shadow
-```css
-text-shadow: 0 0 3px blue;                      // width -> height -> mờ -> màu
-text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;  // nhiều màu
-```
-
-#### box-shadow
-```css
-box-shadow: 5px 10px 5px 10px #000;             // width -> height -> mờ -> độ lan -> màu
-box-shadow: 10px 10px #cc0000 inset;            // Thay độ bóng từ ngoài vào trong sáng
-```
-
-#### box-sizing
-```css
-box-sizing: border-box;                         // width and height đã bao gồm border
-```
 
 #### [display: flex;](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) ( `ie11 >>` )
-
+## Nhóm luyện công
 ```css
 .container {
   display: flex;
@@ -793,6 +749,7 @@ box-sizing: border-box;                         // width and height đã bao g�
       }
       ```
       ![img](https://css-tricks.com/wp-content/uploads/2018/11/place-self-center-stretch.svg)
+
 #### transition ( `chuyển đối khi có một hành động..:hover làm to nút` ) 
 ```css
   + [*]
@@ -855,104 +812,3 @@ box-sizing: border-box;                         // width and height đã bao g�
   animation: example 5s linear 2s infinite alternate;
 }
   ```
-
-#### background gradient && ie
-```css
-  background: linear-gradient(to right, rgba(35, 173, 56, .9) 0%, rgba(173, 202, 85, .9) 100%); 
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#23ad38', endColorstr='#adca55', GradientType=1)";
-```
-
-#### background
-```css
-// nhiều img
-  background-image: url(img_flwr.gif), url(paper.gif);
-  background-position: right bottom, left top;
-  background-repeat: no-repeat, repeat;
-  ...
-
-// bg cắt boc theo vùng giới hạn
-  background-clip: padding-box; (border-box, content-box)
-
-// chia lại tỉ lệ ảnh
-  background-size: cover or contain
-```
-
-## Demo support 
-- font-face
-```css
-@font-face {
-  font-family: 'MyriadPro-Regular';
-  src: url('fonts/MyriadPro-Regular.eot');
-  src: url('fonts/MyriadPro-Regular.eot?888#iefix') format('embedded-opentype'),
-  	 url('fonts/MyriadPro-Regular.woff') format('woff'),
-  	 url('fonts/MyriadPro-Regular.ttf') format('truetype'),
-  	 url('fonts/MyriadPro-Regular.svg#Soymilk') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-```
-
-- [Flex equal height](http://osvaldas.info/flexbox-based-responsive-equal-height-blocks-with-javascript-fallback) (Chiều cao bằng nhau)
-```css
-.list {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-.list__item {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-```
-
-- custom icon check
-```css
-.check01 {
-  label {
-    padding-left: 35px;
-  }
-  input[type="checkbox"] {
-    display: none;
-  }
-  [type="checkbox"]:not(:checked) + label:before {
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: -4px;
-    background: url(../images/checkbox01-off.png) no-repeat;
-    background-size: cover;
-    width: 28px;
-    height: 28px;
-  }
-  [type="checkbox"]:checked + label:before {
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: -4px;
-    background: url(../images/checkbox01-on.png) no-repeat;
-    background-size: cover;
-    width: 28px;
-    height: 28px;
-  }
-}
-```
-
-- background in css
-```css
-div {
-  display: block;
-  width: 41px; 
-  height: 41px;
-  background-position: center;
-  background-size: cover;
-  border-radius: 50%;
-}
-
-<span  style="background: url('../img/profile/cover-edit.png') no-repeat;"></span>
-
-shorthand =>> background: url(path/image.jpg) 0 0/cover no-repeat;
-```

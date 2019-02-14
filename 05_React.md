@@ -41,18 +41,21 @@
     + chỉ chứa dispatch , mapstate và phân phát cho components dùng
     + components chỉ chưa views
     + dễ sửa vs nhìn gọn hơn
+- truyền Props
+    + cha truyền đến con <Component/>
+    + React.createElement()
 
 ## Vi sao dùng redux
 - Nếu ko
 ```html
-- thay đổi state của component trên cùng từ component dưới cùng
+- Thay đổi state của component trên cùng từ component dưới cùng
 sẽ thông qua nhiều handlefunction sẽ rối handlefuntion
-- nhiều component sử dụng 1 state nếu ta thực thi 1 sự kiện nào đó 
+- Nhiều component sử dụng 1 state nếu ta thực thi 1 sự kiện nào đó 
 sẽ làm thay đổi state của nhiều component khác
 ```
 - Nếu dùng
 ```html
-- sẽ quản lý tất cả state tại store
-- component lấy state trực tiếp ko phải thông qua component khác
-- nếu mun thay đổi nhiều component ta có thể chỉ sét state 1 lần ở store
+- Sẽ quản lý tất cả state tại store
+- Component lấy state trực tiếp ko phải thông qua component khác
+- Nếu mun thay đổi nhiều component ta có thể chỉ xét state 1 lần ở store
 ```
