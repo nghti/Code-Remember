@@ -12,7 +12,27 @@ text-overflow: ellipsis         // giới hạn và thay text
 text-shadow: 0 0 3px blue         // width -> height -> mờ -> màu
 box-shadow: 5px 10px 5px 10px #000  // width -> height -> mờ -> độ lan -> màu
 box-sizing: border-box            // width and height đã bao gồm border
+table-layout: fixed;             // chia đều width cho các cột trong table
+div:not(:last-child)            // Trừ chọn cuối cùng
+~ :initial                     // Default all css not ie 11
+writing-mode: vertical-lr      // Text theo chiều dọc
 ```
+## shorthand
+```css
+background: url(path/image.jpg) 0 0 no-repeat;
+background-size: cover;
+>>>
+background: url(path/image.jpg) 0 0/cover no-repeat;
+```
+```css
+font-weight: bold;
+line-height: 1.2em;
+font-size: 20px;
+font-family: Roboto, sans-serif;
+>>>
+font: bold 20px/1.2em Roboto, sans-serif;
+```
+
 ## Chủ đề HOT
 ### Priority in css ( `độ ưu tiên trong css` )
 > [Page](https://marksheet.io/css-priority.html)
@@ -40,11 +60,11 @@ box-sizing: border-box            // width and height đã bao gồm border
 ### Tricks
 > [Thủ thuật CSS](https://viblo.asia/p/mot-vai-thu-thuat-css-ma-chinh-frontend-co-the-con-chua-biet-phan-1-3Q75wppeKWb)
 - [Flex equal height](http://osvaldas.info/flexbox-based-responsive-equal-height-blocks-with-javascript-fallback) (Chiều cao bằng nhau)
-## CS3 NEW 
+### CS3 NEW 
 > [Vendor prefix](https://kipalog.com/posts/Tai-sao-mot-so-thuoc-tinh-trong-CSS3-phai-them-Vendor-prefixes-nhu--moz----webkit---o----ms--) ( `tiền tố của trình duyệt` )
 
-#### [display: flex;](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) ( `ie11 >>` )
 ## Nhóm luyện công
+#### [display: flex;](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) ( `ie11 >>` )
 ```css
 .container {
   display: flex;
@@ -58,9 +78,9 @@ box-sizing: border-box            // width and height đã bao gồm border
   justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
       |- Linh hoạt 1 hàng ngang
   align-items: flex-start | flex-end | center | baseline | stretch;
-      |- Linh hoạt 1 hàng dọc
-  align-content: flex-start | flex-end | center | space-between | space-around | stretch;
-      |- Linh hoạt khối dọc
+      |- Linh shorthandhoạt 1 hàng dọc
+  align-contenshorthandt: flex-start | flex-end | center | space-between | space-around | stretch;
+      |- Linh shorthandhoạt khối dọc
   .item {
     order: <integer>; /* default is 0 */
         |- Có thể âm
