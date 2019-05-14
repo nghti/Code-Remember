@@ -1,30 +1,73 @@
-# CSS
-## Thẻ Cần nhớ
-```css
-word-spacing: -6px      // Cách chữ
-letter-spacing: 8px     // Cách từ
-width: calc(100%/4)     // Tính toán
-height: 100vh            // Full height
-width: 100vw              // Full width
-word-wrap: break-word       // từ xuống hàng
-word-break: break-all         // chữ xuống hàng
-text-overflow: ellipsis         // giới hạn và thay text
-text-shadow: 0 0 3px blue         // width -> height -> mờ -> màu
-box-shadow: 5px 10px 5px 10px #000  // width -> height -> mờ -> độ lan -> màu
-box-sizing: border-box            // width and height đã bao gồm border
-table-layout: fixed;             // chia đều width cho các cột trong table
-div:not(:last-child)            // Trừ chọn cuối cùng
-~ :initial                     // Default all css not ie 11
-writing-mode: vertical-lr      // Text theo chiều dọc
+# HTML5
+```html
+- khai báo đơn giản         // <!DOCTYPE html>, <meta charset="UTF-8">
+- các thẻ ngữ ngĩa new      // <header>, <footer>, ...
+- kiểm soát thuộc tính new  // ngày, giờ, lịch, ...
+- yếu tố đồ họa new         // <svg>, <canvas>
+- yếu tố đa phương tiện new // <audio>, <video>
+
+> Thẻ ngữ ngĩa
+
+- <header>  // Định nghĩa khu vực header (phần đầu) của trang.
+- <footer>  // Định nghĩa khu vực footer (phần cuối) của trang.
+- <section> // Định nghĩa một khu vực (vùng bao).
+- <article> // Định nghĩa một bài viết, một nội dung riêng biệt.
+- <aside>   // Định nghĩa nội dung bên ngoài nội dung chính (thường là phần sidebar).
+- <hgroup>  // Định nghĩa một nhóm các tiêu đề.
+- <nav>     // Định nghĩa link danh mục (navigation)
+- <mark>    // làm nổi bật văn bản.
+
+> New Input Types
+
+- color
+- date
+- datetime
+- datetime-local
+- email
+- month
+- number
+- range
+- search
+- tel
+- time
+- url
+- week
+
+> Đa phương tiện
+
+- audio
+- video
+
+> Đồ họa
+
+- svg
+- canvas
 ```
-## shorthand
+# CSS3
 ```css
+word-spacing: -6px                  // Cách chữ
+letter-spacing: 8px                 // Cách từ
+width: calc(100%/4)                 // Tính toán
+height: 100vh                       // Full height
+width: 100vw                        // Full width
+word-wrap: break-word               // từ xuống hàng
+word-break: break-all               // chữ xuống hàng
+text-overflow: ellipsis             // giới hạn và thay text
+text-shadow: 0 0 3px blue           // width -> height -> mờ -> màu
+box-shadow: 5px 10px 5px 10px #000  // width -> height -> mờ -> độ lan -> màu
+box-sizing: border-box              // width and height đã bao gồm border
+table-layout: fixed;                // chia đều width cho các cột trong table
+div:not(:last-child)                // Trừ chọn cuối cùng
+~ :initial                          // Default all css not ie 11
+writing-mode: vertical-lr           // Text theo chiều dọc
+
+> css shorthand
+
 background: url(path/image.jpg) 0 0 no-repeat;
 background-size: cover;
 >>>
 background: url(path/image.jpg) 0 0/cover no-repeat;
-```
-```css
+
 font-weight: bold;
 line-height: 1.2em;
 font-size: 20px;
@@ -32,39 +75,55 @@ font-family: Roboto, sans-serif;
 >>>
 font: bold 20px/1.2em Roboto, sans-serif;
 ```
+# Remember
+## [<!DOCTYPE>](http://hocwebchuan.com/reference/tag/tag_doctype.php)
+## Symbols ( `Ký tự đặt biệt` )
+> [on page](http://hocwebchuan.com/reference/tag/symbols.php)
 
-## Chủ đề HOT
-### Priority in css ( `độ ưu tiên trong css` )
-> [Page](https://marksheet.io/css-priority.html)
+## Tag inline/block
+> [on w3s](https://www.w3schools.com/html/html_blocks.asp)
 
-> [Question](https://stackoverflow.com/questions/1637343/what-are-the-priorities-among-css-selectors)
+## Priority ( `độ ưu tiên trong css` )
+> [on page](https://marksheet.io/css-priority.html)
+> [on stackoverflow](https://stackoverflow.com/questions/1637343/what-are-the-priorities-among-css-selectors)
 
-### Safe CSS Default ( `Giá trị mặc định của thẻ` )
-> [Default](http://nimbupani.com/safe-css-defaults.html)
+## Tag self closing
+> [on quora](https://www.quora.com/Which-HTML-tags-are-self-closing)
 
-> [All](https://stackoverflow.com/questions/15901030/reset-remove-css-styles-for-element-only)
+## Table
+```html
+colspan="2" // số cột
+rowspan="2" // số hàng
+```
 
-### CSS properties ( `Kế thừa của thẻ cha` )
-> [Question](https://stackoverflow.com/questions/5612302/which-css-properties-are-inherited)
+## JWT(TOKEN) Cookie - Localstorage - Sessionstorage
+> [on trello](https://trello.com/c/Dhb6Mp0c/247-jwttoken-cookie-localstorage-sessionstorage)
 
-### Pseudo in css ( `Phần tử giả của bộ chọn` )
-> [Pseudo](http://vietjack.com/css/pseudo_element_trong_css.jsp)
+## Safe CSS Default ( `Giá trị mặc định của thẻ` )
+> [for default](http://nimbupani.com/safe-css-defaults.html)
 
-### Select tag a pro ( `bộ chọn` )
-> [Demo chọn](http://lea.verou.me/demos/nth.html)
+> [for all](https://stackoverflow.com/questions/15901030/reset-remove-css-styles-for-element-only)
 
-> [Link](https://viblo.asia/p/30-css-selectors-can-nho-p1-0bDM6ko6G2X4)
+## CSS properties ( `Kế thừa của thẻ cha` )
+> [on stackoverflow](https://stackoverflow.com/questions/5612302/which-css-properties-are-inherited)
 
-> [Chọn remenber](https://viblo.asia/p/30-css-selectors-can-nho-p1-0bDM6ko6G2X4)
+## Pseudo in css ( `Phần tử giả của bộ chọn` )
+> [on page](http://vietjack.com/css/pseudo_element_trong_css.jsp)
 
-### Tricks
-> [Thủ thuật CSS](https://viblo.asia/p/mot-vai-thu-thuat-css-ma-chinh-frontend-co-the-con-chua-biet-phan-1-3Q75wppeKWb)
-- [Flex equal height](http://osvaldas.info/flexbox-based-responsive-equal-height-blocks-with-javascript-fallback) (Chiều cao bằng nhau)
-### CS3 NEW 
-> [Vendor prefix](https://kipalog.com/posts/Tai-sao-mot-so-thuoc-tinh-trong-CSS3-phai-them-Vendor-prefixes-nhu--moz----webkit---o----ms--) ( `tiền tố của trình duyệt` )
+## Select tag a pro ( `bộ chọn` )
+> [Demo select](http://lea.verou.me/demos/nth.html)
 
-## Nhóm luyện công
-#### [display: flex;](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) ( `ie11 >>` )
+> [on page](https://viblo.asia/p/30-css-selectors-can-nho-p1-0bDM6ko6G2X4)
+
+> [more](https://viblo.asia/p/30-css-selectors-can-nho-p1-0bDM6ko6G2X4)
+
+## Vendor prefix ( `tiền tố của trình duyệt` )
+> [on page](https://kipalog.com/posts/Tai-sao-mot-so-thuoc-tinh-trong-CSS3-phai-them-Vendor-prefixes-nhu--moz----webkit---o----ms--)
+
+## Box css - position - display - float
+> ...
+
+## [display: flex;](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) ( `ie11 >>` )
 ```css
 .container {
   display: flex;
@@ -73,14 +132,14 @@ font: bold 20px/1.2em Roboto, sans-serif;
       |- Xác định hướng
   flex-wrap: nowrap | wrap | wrap-reverse;
       |- Co dãng trên dòng, tràn xún vs tràn lên
-  flex-flow: <‘flex-direction’> || <‘flex-wrap’>
+  > flex-flow: <‘flex-direction’> || <‘flex-wrap’>
       |- kết hợp cả 2 cái trên
   justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
       |- Linh hoạt 1 hàng ngang
   align-items: flex-start | flex-end | center | baseline | stretch;
-      |- Linh shorthandhoạt 1 hàng dọc
-  align-contenshorthandt: flex-start | flex-end | center | space-between | space-around | stretch;
-      |- Linh shorthandhoạt khối dọc
+      |- Linh hoạt 1 hàng dọc
+  align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+      |- Linh hoạt khối dọc
   .item {
     order: <integer>; /* default is 0 */
         |- Có thể âm
@@ -217,7 +276,7 @@ font: bold 20px/1.2em Roboto, sans-serif;
       ![img](https://css-tricks.com/wp-content/uploads/2018/10/align-self.svg) 
 
 
-#### [display: grid;](https://css-tricks.com/snippets/css/complete-guide-grid/) ( `ie11 >>` )
+## [display: grid;](https://css-tricks.com/snippets/css/complete-guide-grid/) ( `ie11 >>` )
 
 ```css
 .container {
@@ -238,7 +297,7 @@ font: bold 20px/1.2em Roboto, sans-serif;
   grid-row-gap: 15px;
       |- Margin cho hàng
       
-  grid-gap: <grid-row-gap> <grid-column-gap>;
+  >> grid-gap: <grid-row-gap> <grid-column-gap>;
 
   justify-items: start | end | center | stretch;
       |- linh hoạt từng item hàng ngang trong lưới
@@ -262,11 +321,11 @@ font: bold 20px/1.2em Roboto, sans-serif;
     grid-row-end: <number> | <name> | span <number> | span <name> | auto
     |- Xác định vị trí và kích thước item
     
-    grid-column: <start-line> / <end-line> | <start-line> / span <value>;
-    grid-row: <start-line> / <end-line> | <start-line> / span <value>;
+    >> grid-column: <start-line> / <end-line> | <start-line> / span <value>;
+    >> grid-row: <start-line> / <end-line> | <start-line> / span <value>;
     |- Viết gọn 4 cái trên
     
-    grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>;
+    >> grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>;
     |- Viết gọn 2 cái trên
     
     justify-self: start | end | center | stretch;
@@ -770,7 +829,7 @@ font: bold 20px/1.2em Roboto, sans-serif;
       ```
       ![img](https://css-tricks.com/wp-content/uploads/2018/11/place-self-center-stretch.svg)
 
-#### transition ( `chuyển đối khi có một hành động..:hover làm to nút` ) 
+### transition ( `chuyển đối khi có một hành động..:hover làm to nút` ) 
 ```css
   + [*]
   transition-timing-function: linear;      // chậm -> nhanh -> chậm (Default)
@@ -802,7 +861,7 @@ font: bold 20px/1.2em Roboto, sans-serif;
   transform: rotate(45deg) translate(24px, 25px)
 ```
 
-#### animations ( `xác định một chuyển động.. a -> b` )
+### animations ( `xác định một chuyển động.. a -> b` )
 ```css
   + [*]()
   {animation-timing-function: linear;}      // chậm -> nhanh -> chậm (MD)
