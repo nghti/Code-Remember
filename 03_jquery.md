@@ -5,38 +5,35 @@
 $ <=> jQuery                       // 2js jQuery.noConflict()
 $(document).ready(function(){...}) // thực thi khi HTML được nạp và DOM đã sẵn sàng
 $(window).resize(function(){...})  // thực thi khi trang hoàn chỉnh được nạp đầy đủ,
-bao gồm tất cả các khung, các đối tượng và hình ảnh
+                                      bao gồm tất cả các khung, các đối tượng và hình ảnh
 $(window).width() <= 768           // responsive
 ```
 
 ## import Js
 
-### in HTML 
+- in HTML 
 ```js
 <script type="text/javascript">
   ...
 </script>
 ```
 
-### in file JS
+- in file JS
 ```js
-  $(function Hello()
-  {
-      alert("Hello, World");
-  });
-
-  Hello();
-
-  $(window).on('load resize', function() {
-    Hello();
-  });
-  
+$(function Hello()
+{
+  alert("Hello, World");
+});
+Hello();
+-------------------------------------------
+$(window).on('load resize', function() {
+Hello();
+});
 ```
 
 ## Select
 ```js
 $(':button')    // chọn 
-.............>> CSS
 ```
 ## event
 ```js
@@ -49,7 +46,8 @@ trigger()                            // kick hoạt sự kiện được chọn
 change()                             // thay đổi only form
 focus()                              // focusin(), focusout()
 ```
-## Hiệu ứng
+## actions
+- Hiệu ứng
 ```js
 animate()     // hình ảnh động tùy chỉnh bằng css
 ex: 
@@ -84,7 +82,7 @@ slideToggle() // ẩn hiện trượt
 // finish()      // loại bỏ tất cả chức năng tiếp theo rồi xong lun
 // stop()        // tạm dừng chức năng
 ```
-## thuộc tính HTML/CSS
+- thuộc tính HTML/CSS
 ```js
 addClass() - removeClass() - toggleClass() 
 
@@ -97,7 +95,7 @@ remove()      // xóa tp dk chọn
 empty()       // xóa pt con của tp dk chọn
 window.open() // mở cửa sổ mới
 ```
-## Tìm
+- Tìm
 ```js
 each            // thực hiện hành động cho mỗi phần tử, mỗi lần 1pt dùng this
 replace('','')  // tìm và thay chuỗi
