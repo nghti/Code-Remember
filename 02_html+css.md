@@ -1,4 +1,5 @@
 # HTML5
+
 ```html
 - khai báo đơn giản         // <!DOCTYPE html>, <meta charset="UTF-8">
 - các thẻ ngữ ngĩa new      // <header>, <footer>, ...
@@ -7,7 +8,6 @@
 - yếu tố đa phương tiện new // <audio>, <video>
 
 > Thẻ ngữ ngĩa
-
 - <header>  // Định nghĩa khu vực header (phần đầu) của trang.
 - <footer>  // Định nghĩa khu vực footer (phần cuối) của trang.
 - <section> // Định nghĩa một khu vực (vùng bao).
@@ -18,7 +18,6 @@
 - <mark>    // làm nổi bật văn bản.
 
 > New Input Types
-
 - color
 - date
 - datetime
@@ -34,12 +33,10 @@
 - week
 
 > Đa phương tiện
-
 - audio
 - video
 
 > Đồ họa
-
 - svg
 - canvas
 ```
@@ -47,6 +44,7 @@
 ```css
 word-spacing: -6px                  // Cách chữ
 letter-spacing: 8px                 // Cách từ
+white-space:                        // trên dòng or rớt
 width: calc(100%/4)                 // Tính toán
 height: 100vh                       // Full height
 width: 100vw                        // Full width
@@ -80,50 +78,208 @@ font: bold 20px/1.2em Roboto, sans-serif;
 ## Symbols ( `Ký tự đặt biệt` )
 > [on page](http://hocwebchuan.com/reference/tag/symbols.php)
 
+```html
+&nbsp; Ký tự trắng
+```
+
 ## Tag inline/block
 > [on w3s](https://www.w3schools.com/html/html_blocks.asp)
 
+- Block-level Elements
+
+```html
+<p> <h1>-<h6>
+
+<table> <form> <ul> <ol> <li> <hr>
+
+<div> <section> <article> <aside> <header> <footer> <main> <nav> <canvas> <video>
+
+<dd> <dl> <dt> <pre>
+```
+
+~~blockquote address fieldset figcaption figure noscript tfoot~~
+
+
+- Inline Elements
+
+```html
+<a> <img>
+
+<input> <button> <label> <textarea> <select>
+
+<span> <br> <small>
+
+<b> <i> <em> <strong>
+```
+
+~~abbr acronym bdo big cite code dfn kbd map object~~
+~~output q samp script sub sup time tt var~~
+
 ## Priority ( `độ ưu tiên trong css` )
-> [on page](https://marksheet.io/css-priority.html)
 > [on stackoverflow](https://stackoverflow.com/questions/1637343/what-are-the-priorities-among-css-selectors)
+
+```html
+!important
+inline style
+id
+class
+tag
+```
 
 ## Tag self closing
 > [on quora](https://www.quora.com/Which-HTML-tags-are-self-closing)
 
-## Table
 ```html
-colspan="2" // số cột
-rowspan="2" // số hàng
+<br /> <hr /> <img /> <input /> <link /> <meta />
 ```
 
-## JWT(TOKEN) Cookie - Localstorage - Sessionstorage
-> [on trello](https://trello.com/c/Dhb6Mp0c/247-jwttoken-cookie-localstorage-sessionstorage)
+~~area base embed iframe param source track~~
+
+## Table
+> [on page](https://html.com/tables/rowspan-colspan/)
+
+```html
+colspan="2" // Chiếm 2 cột
+rowspan="2" // chiếm 2 hàng
+```
 
 ## Safe CSS Default ( `Giá trị mặc định của thẻ` )
 > [for default](http://nimbupani.com/safe-css-defaults.html)
 
 > [for all](https://stackoverflow.com/questions/15901030/reset-remove-css-styles-for-element-only)
 
+```css
+max-width       // none
+max-height      // none
+float           // none
+clear           // none
+box-shadow      // none
+text-shadow     // none
+text-Transform  // none
+Transform       // none
+Transition      // none
+
+background      // none or 0 0
+border          // none or 0
+
+border-radius   // 0
+min-width       // 0
+min-height      // 0
+
+content         // normal
+font            // normal
+letter-spacing  // normal
+line-height     // normal
+white-space     // normal
+word-spacing    // normal
+
+width           // auto
+height          // auto
+
+z-index         // auto (not none or 0)
+
+display         // inline
+opacity         // 1
+overflow        // visible
+visibility      // visible
+position        // static (not relative)
+vertical-align  // baseline
+```
+
+~~border-image	none, page-break-inside	auto~~
+
 ## CSS properties ( `Kế thừa của thẻ cha` )
 > [on stackoverflow](https://stackoverflow.com/questions/5612302/which-css-properties-are-inherited)
+
+```css
+cursor, color, font, line-height, list-style, 
+text-align, text-indent, text-transform
+visibility, white-space, word-spacing, letter-spacing
+```
 
 ## Pseudo in css ( `Phần tử giả của bộ chọn` )
 > [on page](http://vietjack.com/css/pseudo_element_trong_css.jsp)
 
-## Select tag a pro ( `bộ chọn` )
-> [Demo select](http://lea.verou.me/demos/nth.html)
-
-> [on page](https://viblo.asia/p/30-css-selectors-can-nho-p1-0bDM6ko6G2X4)
-
-> [more](https://viblo.asia/p/30-css-selectors-can-nho-p1-0bDM6ko6G2X4)
+```css
+:first-line     // cho dòng đầu tiên của đoạn văn
+:first-letter   // cho chữ cái đầu tiên
+:before         // vào trước một phần tử
+:after          // vào sau một phần tử
+```
 
 ## Vendor prefix ( `tiền tố của trình duyệt` )
 > [on page](https://kipalog.com/posts/Tai-sao-mot-so-thuoc-tinh-trong-CSS3-phai-them-Vendor-prefixes-nhu--moz----webkit---o----ms--)
 
-## Box css - position - display - float
-> ...
+## CS3 Magic
+- transition ( `chuyển đối khi có một hành động..:hover làm to nút` ) 
 
-## [display: flex;](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) ( `ie11 >>` )
+```css
+  + [*]
+  transition-timing-function: linear;      // chậm -> nhanh -> chậm (Default)
+  transition-timing-function: ease;        // nhanh đều
+  transition-timing-function: ease-in;     // chậm chậm
+  transition-timing-function: ease-out;    // kết chậm
+  transition-timing-function: ease-in-out; // chậm đều
+  -----------
+  transition-property: width;              // xác định hiệu ứng chuyển đổi cho thuộc tính
+  transition-duration: 2s;                 // time
+  transition-timing-function: linear;      // [*]
+  transition-delay: 1s;                    // time delay
+  -----------
+  transition: width 2s linear 1s;
+  + [*]
+  Transition + Transform
+  
+```
+
+- transform ( c`huyển đổi 2 chiều, 3 chiều, xoay, nghiêng, kích thước PT ...` )
+
+```css
+transform: rotate();       // xoay thành phần theo kim đồng hồ      
+           translate()     // di chuyển thanh phần nằm ngang lên or xún
+           scale()         // ảnh hưởng đến kích thước pt
+           sKewX(),sKewy() // nghiêng yếu tố sang trái or phải
+           matrix()        // chuyển đổi 2D or 3D
+-----------
+transform: scale(20) skew(-20deg);
+transform: rotate(45deg) translate(24px, 25px)
+```
+
+- animations ( `xác định một chuyển động.. a -> b` )
+
+```css
++ [*]()
+{animation-timing-function: linear;}      // chậm -> nhanh -> chậm (MD)
+{animation-timing-function: ease;}        // nhanh đều
+{animation-timing-function: ease-in;}     // đều chậm
+{animation-timing-function: ease-out;}    // kết chậm
+{animation-timing-function: ease-in-out;} // chậm đều
+>  mã animation
+@keyframes example {
+  0%   {background-color: red; left:0px; top:0px;}
+  25%  {background-color: yellow; left:200px; top:0px;}
+  50%  {background-color: blue; left:200px; top:200px;}
+  75%  {background-color: green; left:0px; top:200px;}
+  100% {background-color: red; left:0px; top:0px;}
+}
+-----------
+{
+  animation-name: example;        // tên
+  animation-duration: 5s;         // chạy 4s
+  animation-timing-function: linear;
+  animation-delay: 2s;          
+  animation-iteration-count: 3;   // infinite(~)
+  animation-direction: alternate; // reverse(chạy ngược) or alternate(chay 1v sau đó ngược lại )
+}
+-----------
+{
+  animation: example 5s linear 2s infinite alternate;
+}
+  ```
+
+## display: flex
+[on page](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
 ```css
 .container {
   display: flex;
@@ -156,6 +312,71 @@ rowspan="2" // số hàng
   }
 }
 ```
+
+## [display: grid;](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
+```css
+.container {
+  display: grid;
+  
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 25% 100px auto;
+      |- Chia cột vs hàng
+
+  grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+      |- Đặt tên chia lưới
+      
+  grid-column-gap: 10px;
+      |- Margin cho cột
+  grid-row-gap: 15px;
+      |- Margin cho hàng
+      
+  >> grid-gap: <grid-row-gap> <grid-column-gap>;
+
+  justify-items: start | end | center | stretch;
+      |- linh hoạt từng item hàng ngang trong lưới
+
+  align-items: start | end | center | stretch;
+      |- Linh hoạt từng item hàng dọc trong lưới
+      
+  justify-content: start | end | center | stretch | space-around | space-between | space-evenly;
+      |- Linh hoạt ngang cho khối lưới
+
+  align-content: start | end | center | stretch | space-around | space-between | space-evenly;
+      |- Linh hoạt dọc cho khối lưới
+
+  grid-auto-flow: row | column | row dense | column dense;
+      |- Dòng chảy của lưới
+
+  .item {
+    grid-column-start: <number> | <name> | span <number> | span <name> | auto
+    grid-column-end: <number> | <name> | span <number> | span <name> | auto
+    grid-row-start: <number> | <name> | span <number> | span <name> | auto
+    grid-row-end: <number> | <name> | span <number> | span <name> | auto
+    |- Xác định vị trí và kích thước item
+    
+    >> grid-column: <start-line> / <end-line> | <start-line> / span <value>;
+    >> grid-row: <start-line> / <end-line> | <start-line> / span <value>;
+    |- Viết gọn 4 cái trên
+    
+    >> grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>;
+    |- Viết gọn 2 cái trên
+    
+    justify-self: start | end | center | stretch;
+    |- Vị trí của box trong item theo hàng
+
+    align-self: start | end | center | stretch;
+    |- Vị trí của box trong item theo cột
+    
+  }
+
+}
+```
+
+- EX For Flex
 
   - flex container
     + flex-direction
@@ -276,68 +497,7 @@ rowspan="2" // số hàng
       ![img](https://css-tricks.com/wp-content/uploads/2018/10/align-self.svg) 
 
 
-## [display: grid;](https://css-tricks.com/snippets/css/complete-guide-grid/) ( `ie11 >>` )
-
-```css
-.container {
-  display: grid;
-  
-  grid-template-columns: 40px 50px auto 50px 40px;
-  grid-template-rows: 25% 100px auto;
-      |- Chia cột vs hàng
-
-  grid-template-areas: 
-    "header header header header"
-    "main main . sidebar"
-    "footer footer footer footer";
-      |- Đặt tên chia lưới
-      
-  grid-column-gap: 10px;
-      |- Margin cho cột
-  grid-row-gap: 15px;
-      |- Margin cho hàng
-      
-  >> grid-gap: <grid-row-gap> <grid-column-gap>;
-
-  justify-items: start | end | center | stretch;
-      |- linh hoạt từng item hàng ngang trong lưới
-
-  align-items: start | end | center | stretch;
-      |- Linh hoạt từng item hàng dọc trong lưới
-      
-  justify-content: start | end | center | stretch | space-around | space-between | space-evenly;
-      |- Linh hoạt ngang cho khối lưới
-
-  align-content: start | end | center | stretch | space-around | space-between | space-evenly;
-      |- Linh hoạt dọc cho khối lưới
-
-  grid-auto-flow: row | column | row dense | column dense;
-      |- Dòng chảy của lưới
-
-  .item {
-    grid-column-start: <number> | <name> | span <number> | span <name> | auto
-    grid-column-end: <number> | <name> | span <number> | span <name> | auto
-    grid-row-start: <number> | <name> | span <number> | span <name> | auto
-    grid-row-end: <number> | <name> | span <number> | span <name> | auto
-    |- Xác định vị trí và kích thước item
-    
-    >> grid-column: <start-line> / <end-line> | <start-line> / span <value>;
-    >> grid-row: <start-line> / <end-line> | <start-line> / span <value>;
-    |- Viết gọn 4 cái trên
-    
-    >> grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>;
-    |- Viết gọn 2 cái trên
-    
-    justify-self: start | end | center | stretch;
-    |- Vị trí của box trong item theo hàng
-
-    align-self: start | end | center | stretch;
-    |- Vị trí của box trong item theo cột
-    
-  }
-
-}
-```
+- EX for Grid
 
   - Grid Container
     - grid-template-columns
@@ -828,66 +988,3 @@ rowspan="2" // số hàng
       }
       ```
       ![img](https://css-tricks.com/wp-content/uploads/2018/11/place-self-center-stretch.svg)
-
-### transition ( `chuyển đối khi có một hành động..:hover làm to nút` ) 
-```css
-  + [*]
-  transition-timing-function: linear;      // chậm -> nhanh -> chậm (Default)
-  transition-timing-function: ease;        // nhanh đều
-  transition-timing-function: ease-in;     // chậm chậm
-  transition-timing-function: ease-out;    // kết chậm
-  transition-timing-function: ease-in-out; // chậm đều
-  -----------
-  transition-property: width;  // xác định hiệu ứng chuyển đổi cho thuộc tính
-  transition-duration: 2s;     // time
-  transition-timing-function: linear;
-  transition-delay: 1s;
-  + [Viết tắt]
-  transition: width 2s linear 1s;
-  + [*]
-  Transition + Transform
-  
-```
-
-- transform ( c`huyển đổi 2 chiều, 3 chiều, xoay, nghiêng, kích thước PT ...` )
-```css
-  transform: rotate();       // xoay thành phần theo kim đồng hồ      
-             translate()     // di chuyển thanh phần nằm ngang lên or xún
-             scale()         // ảnh hưởng đến kích thước pt
-             sKewX(),sKewy() // nghiêng yếu tố sang trái or phải
-             matrix()        // chuyển đổi 2D or 3D
-  -----------
-  transform: scale(20) skew(-20deg);
-  transform: rotate(45deg) translate(24px, 25px)
-```
-
-### animations ( `xác định một chuyển động.. a -> b` )
-```css
-  + [*]()
-  {animation-timing-function: linear;}      // chậm -> nhanh -> chậm (MD)
-  {animation-timing-function: ease;}        // nhanh đều
-  {animation-timing-function: ease-in;}     // đều chậm
-  {animation-timing-function: ease-out;}    // kết chậm
-  {animation-timing-function: ease-in-out;} // chậm đều
-  -----------
->  mã animation
-@keyframes example {
-  0%   {background-color: red; left:0px; top:0px;}
-  25%  {background-color: yellow; left:200px; top:0px;}
-  50%  {background-color: blue; left:200px; top:200px;}
-  75%  {background-color: green; left:0px; top:200px;}
-  100% {background-color: red; left:0px; top:0px;}
-}
-{
-  animation-name: example;        // tên
-  animation-duration: 5s;         // chạy 4s
-  animation-timing-function: linear;
-  animation-delay: 2s;          
-  animation-iteration-count: 3;   // infinite(~)
-  animation-direction: alternate; // reverse(chạy ngược) or alternate(chay 1v sau đó ngược lại )
-}
-+ [Viết tắt]
-{
-  animation: example 5s linear 2s infinite alternate;
-}
-  ```
