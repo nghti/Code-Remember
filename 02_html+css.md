@@ -59,6 +59,9 @@ text-overflow: ellipsis             // giới hạn và thay text
 text-shadow: 0 0 3px blue           // width -> height -> mờ -> màu
 box-shadow: 5px 10px 5px 10px #000  // width -> height -> mờ -> độ lan -> màu
 box-sizing: border-box              // width and height đã bao gồm border
+
+object-fit: cover;                  // tùy chỉnh tỉ lệ tag img
+object-position: right bottom;      // tùy chỉnh vị trí tag img
 ```
 # Remember
 ## [<!DOCTYPE> là ji?](http://hocwebchuan.com/reference/tag/tag_doctype.php)
