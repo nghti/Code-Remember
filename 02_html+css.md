@@ -113,10 +113,10 @@ height          // auto
 z-index         // auto (not none or 0)
 
 display         // inline
+position        // static (not relative)
 opacity         // 1
 overflow        // visible
 visibility      // visible
-position        // static (not relative)
 vertical-align  // baseline
 ```
 
@@ -175,6 +175,10 @@ rowspan="2" // chiếm 2 hàng
 ### + [CSS properties](https://stackoverflow.com/questions/5612302/which-css-properties-are-inherited) ( `Kế thừa của thẻ cha` )
 ### + [Vendor prefix](https://kipalog.com/posts/Tai-sao-mot-so-thuoc-tinh-trong-CSS3-phai-them-Vendor-prefixes-nhu--moz----webkit---o----ms--) ( `tiền tố của trình duyệt` )
 
+
+### [ Flexbox dễ dàng tạo ra layout và căn chỉnh nội dung bên trong một containers còn grid cũng làm được như vậy thậm chỉ còn làm tốt hơn nữa
+### vậy flex thì tạo ra layout 1 chiều còn grid thì là 2 chiều làm được nhiều hơn nhưng đồng thời cũng phức tạm hơn còn flex thì gọn hơn nên ### dễ maintain hơn bời vậy chúng ta nên linh hoạt kết hợp giữa 2 cái layout chia cột và 2 chiều thì cùng grid còn layout chỉnh nội dung 1 ### chiều thì nên dùng flex ]
+
 ## display: flex;
 > [on page](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
@@ -201,11 +205,8 @@ rowspan="2" // chiếm 2 hàng
       |- Linh hoạt khối dọc
 
   .item {
-    order: <integer>; /* default is 0 */
-        |- Có thể âm
-
     flex-grow: <number>; /* default 0 */
-        |- Số 2 wid gấp đôi 1 và không âm
+        |- là 2 wid gấp đôi wid item 1 và không âm
 
     flex-shrink: <number>; /* default 1 */
         |- Ngược với flex-grow và không âm
@@ -215,6 +216,9 @@ rowspan="2" // chiếm 2 hàng
 
     flex: 0 1 auto;
         |- Viết tắt 3 cái trên, Default is 0 1 auto
+
+    order: <integer>; /* default is 0 */
+        |- Có thể âm
 
     align-self: auto | flex-start | flex-end | center | baseline | stretch;
         |- Thay mặc định để ghi đẻ 1 mục riêng
@@ -287,7 +291,7 @@ rowspan="2" // chiếm 2 hàng
 ```
 
 ## CS3 Magic
-- transition ( `chuyển đối khi có một hành động..:hover làm to nút` ) 
+### transition ( `chuyển đối khi có một hành động..:hover làm to nút` ) 
 
 ```css
   + [*]
@@ -308,7 +312,7 @@ rowspan="2" // chiếm 2 hàng
   
 ```
 
-- transform ( c`huyển đổi 2 chiều, 3 chiều, xoay, nghiêng, kích thước PT ...` )
+### transform ( c`huyển đổi 2 chiều, 3 chiều, xoay, nghiêng, kích thước PT ...` )
 
 ```css
 transform: rotate();       // xoay thành phần theo kim đồng hồ      
@@ -321,7 +325,7 @@ transform: scale(20) skew(-20deg);
 transform: rotate(45deg) translate(24px, 25px)
 ```
 
-- animations ( `xác định một chuyển động.. a -> b` )
+### animations ( `xác định một chuyển động.. a -> b` )
 
 ```css
 + [*]()
