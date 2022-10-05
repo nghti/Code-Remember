@@ -7,7 +7,6 @@
 - `let` Cục bộ cho cập nhật biến không cho khai báo lại biến
 - `const` Cục bộ không cho cập nhật hay khai báo lại biến
 ```
-> [More](https://trello.com/c/aQOJ03LW/274-javascrip-101)
 
 ## Operation [Toán tử](https://trello.com/c/NTktUUCX/7-js-các-toán-tử-4)
 
@@ -20,21 +19,21 @@
 - Nhớ độ ưu tiên của toán tử
 ```
 
-## Object [Đối tượng](https://trello.com/c/xmiQTwXR/46-js-object-là-gì-43)
+## Number [Số](https://trello.com/c/qdhiQlai/34-js-number-object-31)
+> [Number Object Function](https://trello.com/c/pMyMfZrg/35-js-number-object-function-32)
 
-```js
-let Comment = new Object()
-let Comment = {}
-let Comment = {
-    title : "doi tuwong",
-    content : "khai bao doi tuong",
-    name: function() {
-        document.write('nghti')
-    }
-}
+```javascript
+valueOf()                               // Trả vê giá trị gốc của nó
+Number(String_so)                       // Chuyển sang kiểu number
+parseInt(String_so_dau)                 // Như Number nhưng chỉ lấy số đầu bỏ string
+parseFloat(String_so_dau)               // Như parseInt nhưng lấy được số lẻ (float)
+so.toString()                           // number to string
 ```
 
-## String [Chuỗi](https://trello.com/c/LTxZALUI/30-js-string-object-27) - Object đặt biệt
+~~so.toFixed(n), so.toPrecision(n), number.toExponential()
+Number.isSafeInteger(), Number.isNaN(), Number.isInteger(), Number.isFinite()~~
+
+## String [Chuỗi](https://trello.com/c/LTxZALUI/30-js-string-object-27)
 
 ```javascript
 let title = "hello string"
@@ -69,7 +68,7 @@ String.includes('con')                  // có con ko
 ~~String.toUpperCase(), String.toLowerCase(), String.fromCharCode()
 string.repeat(), string.match(), string.localeCompare(),~~
 
-## Array [mảng](https://trello.com/c/pffrZkNv/32-js-array-object-29) - Chứa nhiều giá trị
+## Array [mảng Chứa nhiều giá trị](https://trello.com/c/pffrZkNv/32-js-array-object-29)
 
 ```javascript
 var name_array = new Array(1,2,3)
@@ -112,29 +111,21 @@ array.toString()                        // chuổi sang mảng cách nhau dấu 
 
 ~~array.fill(), array.copyWithin(), array.reduce(), array.reduceRight()~~
 
-## Number [Số](https://trello.com/c/qdhiQlai/34-js-number-object-31)
-> [Number Object Function](https://trello.com/c/pMyMfZrg/35-js-number-object-function-32)
+## Object [Đối tượng](https://trello.com/c/xmiQTwXR/46-js-object-là-gì-43)
 
-```javascript
-valueOf()                               // Trả vê giá trị gốc của nó
-Number(String_so)                       // Chuyển sang kiểu number
-parseInt(String_so_dau)                 // Như Number nhưng chỉ lấy số đầu bỏ string
-parseFloat(String_so_dau)               // Như parseInt nhưng lấy được số lẻ (float)
-so.toString()                           // number to string
+```js
+let Comment = new Object()
+let Comment = {}
+let Comment = {
+    title : "doi tuwong",
+    content : "khai bao doi tuong",
+    name: function() {
+        document.write('nghti')
+    }
+}
 ```
 
-~~so.toFixed(n), so.toPrecision(n), number.toExponential()
-Number.isSafeInteger(), Number.isNaN(), Number.isInteger(), Number.isFinite()~~
-
-## Control Statement [Câu lệnh điều khiển]
-
-- [if/else](https://trello.com/c/lGeiSt5C/8-js-l%E1%BB%87nh-if-else-5)
-- [switch, case](https://trello.com/c/2BwQc2qC/9-js-l%E1%BB%87nh-switch-case-6)
-- [Vòng lặp for](https://trello.com/c/gWdye63t/15-js-vòng-lặp-for-12)
-- [Vòng lặp while, do while](https://trello.com/c/pDQ9C9GU/16-js-v%C3%B2ng-l%E1%BA%B7p-while-do-while-13)
-- [break, continue](https://trello.com/c/qo6IcEVI/17-js-l%E1%BB%87nh-break-continue-14)
-
-## functions [Hàm](https://trello.com/c/SduJ3Qwi/10-js-function-7)
+## Functions [Hàm](https://trello.com/c/SduJ3Qwi/10-js-function-7)
 
 ```javascript
 function print_function(n)
@@ -146,34 +137,34 @@ function print_function(n)
 print_function(4)
 ```
 
-## Event [Sự kiện](https://trello.com/c/NsMWxLHg/18-js-sự-kiện-event-là-gì-15)
+# Control Statement <b>Câu lệnh điều khiển</b>
+
+- [if/else](https://trello.com/c/lGeiSt5C/8-js-l%E1%BB%87nh-if-else-5)
+- [switch, case](https://trello.com/c/2BwQc2qC/9-js-l%E1%BB%87nh-switch-case-6)
+- [Vòng lặp for](https://trello.com/c/gWdye63t/15-js-vòng-lặp-for-12)
+- [Vòng lặp while, do while](https://trello.com/c/pDQ9C9GU/16-js-v%C3%B2ng-l%E1%BA%B7p-while-do-while-13)
+- [break, continue](https://trello.com/c/qo6IcEVI/17-js-l%E1%BB%87nh-break-continue-14)
+
+# Event [Sự kiện](https://trello.com/c/NsMWxLHg/18-js-sự-kiện-event-là-gì-15)
 
 ```html
 STT	Event Name	    Description
 1	onclick             Xảy ra khi click vào thẻ HTML
 2	ondbclick	    Xảy ra khi double click vào thẻ HTML
-3	onchange	    Xảy ra khi giá trị (value) của thẻ HTML đổi. Thường dùng trong các đối thẻ form input
-4	onmouseover	    Xảy ra khi con trỏ chuột bắt đầu đi vào thẻ HTML
-5	onmouseout	    Xảy ra khi con trỏ chuột bắt đầu rời khỏi thẻ HTML
-6	onmouseenter	    Tương tự như onmouseover
-7	onmouseleave	    Tương tự như onmouseout
-8	onmousemove	    Xảy ra khi con chuột di chuyển bên trong thẻ HTML
+3	onchange	    Xảy ra khi giá trị (value) của thẻ HTML đổi. Thường dùng form input
 9	onkeydown	    Xảy ra khi gõ một phím bất kì vào ô input
-10	onload	            Sảy ra khi thẻ HTML bắt đầu chạy, nó giống như hàm khởi tạo trong lập trình hướng đối tượng vậy đó.
+10	onload	            Sảy ra khi thẻ HTML bắt đầu chạy
 11	onkeyup	            Xảy ra khi bạn gõ phím nhưng lúc bạn nhã phím ra sẽ được kích hoạt
 12	onkeypress	    Xảy ra khi bạn nhấn môt phím vào ô input
-14	onblur	            Xảy ra khi con trỏ chuột rời khỏi ô input
-15	oncopy	            Xảy ra khi bạn copy nội dung của thẻ
-16	oncut	            Xảy ra khi bạn cắt nội dung của thẻ
-17	onpaste	            Xảy ra khi bạn dán nội dung vào thẻ
+14	... more
 ```
 
-- [setTimeout(function, time), setInterval(function, time)](https://trello.com/c/PxctX5sT/14-js-settimeout-setinterval-11)
-- [Thêm sự kiện bằng javascrip & for](https://trello.com/c/sFHdiH08/19-js-thêm-sự-kiện-event-16)
-- [return true/false](https://trello.com/c/JGaACbVx/20-js-return-true-false-17)
-- [Sự kiện onload](https://trello.com/c/LxcgVCHs/21-js-sự-kiện-onload-18)
-- [addEventListener](https://trello.com/c/VK7T4Qxn/22-js-hàm-addeventlistener-19)
-- [removeEventListener](https://trello.com/c/0C6JqmyI/23-js-hàm-removeeventlistener-20)
+- [<h2>setTimeout(function, time), setInterval(function, time)</h2>](https://trello.com/c/PxctX5sT/14-js-settimeout-setinterval-11)
+- [<h2>Thêm sự kiện bằng javascrip & for</h2>](https://trello.com/c/sFHdiH08/19-js-thêm-sự-kiện-event-16)
+- [<h2>return true/false</h2>](https://trello.com/c/JGaACbVx/20-js-return-true-false-17)
+- [<h2>Sự kiện onload</h2>](https://trello.com/c/LxcgVCHs/21-js-sự-kiện-onload-18)
+- [<h2>addEventListener</h2>](https://trello.com/c/VK7T4Qxn/22-js-hàm-addeventlistener-19)
+- [<h2>removeEventListener</h2>](https://trello.com/c/0C6JqmyI/23-js-hàm-removeeventlistener-20)
 
 ## DOM [Document Object Model](https://trello.com/c/mHZzhQUp/24-js-dom-là-gì-21)
 - [DOM Element](https://trello.com/c/qOtlzmLX/25-js-dom-element-22)
@@ -216,43 +207,6 @@ Node.appendChild(h2)
 Node.insertBefore(node_insert, node_child)
 Node.removeChild(node_remove)
 Node.replaceChild(node_new, node_replace)
-```
-
-## Date [Thời gian](https://trello.com/c/C07RqZRU/36-js-date-object-33)
-
-```html
-new Date()
-new Date(dateString)                    // Có thể Lấy và truyền vào xem bài dưới
-        - year
-        - month
-        - day
-        - hours
-        - minutes
-        - seconds
-        - milliseconds
-        
-ISO   new Date("2014-11-20")
-Long  new Date("Mar 25 2015")
-Short new Date("03/25/2015")
-đầy đủ    Phải ghi đầy đủ hết
-```
-
-> [Date Object Function](https://trello.com/c/fEPjquEY/37-js-date-object-function-34)
-
-```javascript
-new Date().getDate()                    // lấy ngày (1 - 31)
-new Date().getDay()                     // lấy ngày trong tuần (0-6)
-new Date().getFullYear()                // lấy năm đầy đủ (YYYY)
-new Date().getYear()                    // lấy năm 2 số cuối (YY)
-new Date().getHours()                   // lấy số giờ (0 - 23)
-new Date().getMiliSeconds()             // lấy số mili giây (0 - 999)
-new Date().getMinutes()                 // lấy số phút (0 - 59)
-new Date().getMonth()                   // lấy tháng (0 - 11)
-new Date().getSeconds()                 // lấy số giây (0 - 59)
-new Date().getTime()                    // thời gian đã được convert sang dạng miliseconds.
->>
-new Date().setDate(20)                  // Thêm ngày 20
-...
 ```
 
 ## BOM [Browser Object Model](https://trello.com/c/yrdLKCEJ/39-js-bom-là-gì-36)
@@ -326,3 +280,7 @@ screen.availHeight
 screen.colorDepth
 screen.pixelDepth
 ```
+
+## Date [Thời gian](https://trello.com/c/C07RqZRU/36-js-date-object-33)
+
+> [Date Object Function](https://trello.com/c/fEPjquEY/37-js-date-object-function-34)
