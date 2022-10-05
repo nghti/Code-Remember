@@ -159,12 +159,12 @@ STT	Event Name	    Description
 14	... more
 ```
 
-- [<h2>setTimeout(function, time), setInterval(function, time)</h2>](https://trello.com/c/PxctX5sT/14-js-settimeout-setinterval-11)
-- [<h2>Thêm sự kiện bằng javascrip & for</h2>](https://trello.com/c/sFHdiH08/19-js-thêm-sự-kiện-event-16)
-- [<h2>return true/false</h2>](https://trello.com/c/JGaACbVx/20-js-return-true-false-17)
-- [<h2>Sự kiện onload</h2>](https://trello.com/c/LxcgVCHs/21-js-sự-kiện-onload-18)
-- [<h2>addEventListener</h2>](https://trello.com/c/VK7T4Qxn/22-js-hàm-addeventlistener-19)
-- [<h2>removeEventListener</h2>](https://trello.com/c/0C6JqmyI/23-js-hàm-removeeventlistener-20)
+- [setTimeout(function, time), setInterval(function, time)](https://trello.com/c/PxctX5sT/14-js-settimeout-setinterval-11)
+- [Thêm sự kiện bằng javascrip & for](https://trello.com/c/sFHdiH08/19-js-thêm-sự-kiện-event-16)
+- [return true/false](https://trello.com/c/JGaACbVx/20-js-return-true-false-17)
+- [Sự kiện onload](https://trello.com/c/LxcgVCHs/21-js-sự-kiện-onload-18)
+- [addEventListener](https://trello.com/c/VK7T4Qxn/22-js-hàm-addeventlistener-19)
+- [removeEventListener](https://trello.com/c/0C6JqmyI/23-js-hàm-removeeventlistener-20)
 
 ## DOM [Document Object Model](https://trello.com/c/mHZzhQUp/24-js-dom-là-gì-21)
 - [DOM Element](https://trello.com/c/qOtlzmLX/25-js-dom-element-22)
