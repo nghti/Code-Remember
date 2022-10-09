@@ -1,14 +1,8 @@
-## [3 cách dùng script](https://trello.com/c/5sm3mWW3/4-js-javascript-l%C3%A0-g%C3%AC-1)
-## Variables [Biến](https://trello.com/c/tr412o82/5-js-khai-b%C3%A1o-bi%E1%BA%BFn-2)
-[Global vs Local](https://trello.com/c/OAP3LT1j/11-js-biến-toàn-cục-và-cục-bộ-8)
+# Board Javascript on [trello](https://trello.com/b/LDdECz87/javascrip)
+## [3 cách dùng script](https://trello.com/c/5sm3mWW3/4-js-javascript-l%C3%A0-g%C3%AC-1) ( Trong File, import, trong thẻ )
+## [Variables](https://trello.com/c/tr412o82/5-js-khai-b%C3%A1o-bi%E1%BA%BFn-2) (biến ko dấu, bắt đầu chữ hoặc _)
 
-```
-- `var` Toàn cục
-- `let` Cục bộ cho cập nhật biến không cho khai báo lại biến
-- `const` Cục bộ không cho cập nhật hay khai báo lại biến
-```
-
-## Operation [Toán tử](https://trello.com/c/NTktUUCX/7-js-các-toán-tử-4)
+## [Operation](https://trello.com/c/NTktUUCX/7-js-các-toán-tử-4) (Toán tử)
 
 ```
 - toán tử toán học
@@ -19,8 +13,7 @@
 - Nhớ độ ưu tiên của toán tử
 ```
 
-## Number [Số](https://trello.com/c/qdhiQlai/34-js-number-object-31)
-> [Number Object Function](https://trello.com/c/pMyMfZrg/35-js-number-object-function-32)
+## [Number](https://trello.com/c/qdhiQlai/34-js-number-object-31)
 
 ```javascript
 valueOf()                               // Trả vê giá trị gốc của nó
@@ -30,17 +23,9 @@ parseFloat(String_so_dau)               // Như parseInt nhưng lấy được s
 so.toString()                           // number to string
 ```
 
-~~so.toFixed(n), so.toPrecision(n), number.toExponential()
-Number.isSafeInteger(), Number.isNaN(), Number.isInteger(), Number.isFinite()~~
+>[More](https://trello.com/c/pMyMfZrg/35-js-number-object-function-32)
 
-## String [Chuỗi](https://trello.com/c/LTxZALUI/30-js-string-object-27)
-
-```javascript
-let title = "hello string"
-```
-> [String Object Function](https://trello.com/c/mNFplg4v/31-js-string-object-function-28)
-
-> [Hàm typeof](https://trello.com/c/0Kj1fKad/38-js-hàm-typeof-35)
+## [String](https://trello.com/c/mNFplg4v/31-js-string-object-function-28)
 ```javascript
 typeof number                           // check type
 number.toString()                       // chuyển qua string
@@ -64,23 +49,15 @@ String.endsWith('con')                  // Kết thúc bằng con ko
 String.includes('con')                  // có con ko
 
 ```
+> [Hàm typeof](https://trello.com/c/0Kj1fKad/38-js-hàm-typeof-35) check type
 
-~~String.toUpperCase(), String.toLowerCase(), String.fromCharCode()
-string.repeat(), string.match(), string.localeCompare(),~~
-
-## Array [mảng Chứa nhiều giá trị](https://trello.com/c/pffrZkNv/32-js-array-object-29)
+## [Array](https://trello.com/c/pffrZkNv/32-js-array-object-29) (mảng Chứa nhiều giá trị)
 
 ```javascript
-var name_array = new Array(1,2,3)
-var name_array = [1,2,3]
-
+let name_array = [1,2,3]
 name_array[0]                           // Lấy phần tử trong mảng
 name_array.join('-')                    // Hiển thị PT ra ngoài theo kiểu chuổi
-```
 
-> [Array Object Function](https://trello.com/c/JGtZNjLs/33-js-array-object-function-30)
-
-```javascript
 array.valueOf()                         // Trả về giá trị gốc cảu mảng
 
 array.push('add')                       // Thêm PT vào cuối mảng
@@ -108,13 +85,11 @@ array.indexOf('html')                   // Tìm value trả ra key
 array.lastIndexOf()                     // Tìm value trả ra key cuối
 array.toString()                        // chuổi sang mảng cách nhau dấu ,
 ```
+> [More](https://trello.com/c/JGtZNjLs/33-js-array-object-function-30)
 
-~~array.fill(), array.copyWithin(), array.reduce(), array.reduceRight()~~
-
-## Object [Đối tượng](https://trello.com/c/xmiQTwXR/46-js-object-là-gì-43)
+## [Object](https://trello.com/c/xmiQTwXR/46-js-object-là-gì-43) (Đối tượng)
 
 ```js
-let Comment = new Object()
 let Comment = {}
 let Comment = {
     title : "doi tuwong",
@@ -125,7 +100,7 @@ let Comment = {
 }
 ```
 
-## Functions [Hàm](https://trello.com/c/SduJ3Qwi/10-js-function-7)
+## [Functions](https://trello.com/c/SduJ3Qwi/10-js-function-7) (Hàm)
 
 ```javascript
 function print_function(n)
@@ -137,7 +112,7 @@ function print_function(n)
 print_function(4)
 ```
 
-# Control Statement <b>Câu lệnh điều khiển</b>
+# <b>Control Statement</b> Câu lệnh điều khiển
 
 - [if/else](https://trello.com/c/lGeiSt5C/8-js-l%E1%BB%87nh-if-else-5)
 - [switch, case](https://trello.com/c/2BwQc2qC/9-js-l%E1%BB%87nh-switch-case-6)
@@ -145,7 +120,7 @@ print_function(4)
 - [Vòng lặp while, do while](https://trello.com/c/pDQ9C9GU/16-js-v%C3%B2ng-l%E1%BA%B7p-while-do-while-13)
 - [break, continue](https://trello.com/c/qo6IcEVI/17-js-l%E1%BB%87nh-break-continue-14)
 
-# Event [Sự kiện](https://trello.com/c/NsMWxLHg/18-js-sự-kiện-event-là-gì-15)
+# [Event](https://trello.com/c/NsMWxLHg/18-js-sự-kiện-event-là-gì-15)
 
 ```html
 STT	Event Name	    Description
@@ -166,7 +141,7 @@ STT	Event Name	    Description
 - [addEventListener](https://trello.com/c/VK7T4Qxn/22-js-hàm-addeventlistener-19)
 - [removeEventListener](https://trello.com/c/0C6JqmyI/23-js-hàm-removeeventlistener-20)
 
-## DOM [Document Object Model](https://trello.com/c/mHZzhQUp/24-js-dom-là-gì-21)
+## [DOM](https://trello.com/c/mHZzhQUp/24-js-dom-là-gì-21) (Document Object Model)
 - [DOM Element](https://trello.com/c/qOtlzmLX/25-js-dom-element-22)
 
 ```javascript
@@ -209,7 +184,7 @@ Node.removeChild(node_remove)
 Node.replaceChild(node_new, node_replace)
 ```
 
-## BOM [Browser Object Model](https://trello.com/c/yrdLKCEJ/39-js-bom-là-gì-36)
+## [BOM](https://trello.com/c/yrdLKCEJ/39-js-bom-là-gì-36) (Browser Object Model)
 - [BOM Window](https://trello.com/c/nbvXKzip/40-js-bom-window-37)
 > Window là một đối tượng toàn cục và ở đâu trong website cũng có thể sử dụng được.
 
