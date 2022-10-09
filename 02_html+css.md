@@ -1,73 +1,38 @@
 # HTML5
-
+## [<!DOCTYPE>](http://hocwebchuan.com/reference/tag/tag_doctype.php) 
+### không phải là một tag HTML,chi cho biết đang dùng phiên bản nào!
 ```html
 1. khai báo đơn giản         // <!DOCTYPE html>, <meta charset="UTF-8">
-2. các thẻ ngữ ngĩa new      // <header>, <footer>, ...
-3. kiểm soát thuộc tính new  // ngày, giờ, lịch, ...
+2. các thẻ ngữ ngĩa new      // <header>, <footer>, <section>...
+3. kiểm soát thuộc tính new  // date, number, time, ...
 4. yếu tố đa phương tiện new // <audio>, <video>
 5. yếu tố đồ họa new         // <svg>, <canvas>
-
->> Thẻ ngữ ngĩa
-- <header>  // Định nghĩa khu vực header (phần đầu) của trang.
-- <footer>  // Định nghĩa khu vực footer (phần cuối) của trang.
-- <section> // Định nghĩa một khu vực (vùng bao).
-- <article> // Định nghĩa một bài viết, một nội dung riêng biệt.
-- <aside>   // Định nghĩa nội dung bên ngoài nội dung chính (thường là phần sidebar).
-- <hgroup>  // Định nghĩa một nhóm các tiêu đề.
-- <nav>     // Định nghĩa link danh mục (navigation)
-- <mark>    // làm nổi bật văn bản.
-
->> New Input Types
-- color
-- date
-- datetime
-- datetime-local
-- email
-- month
-- number
-- range
-- search
-- tel
-- time
-- url
-- week
-
->> Đa phương tiện
-- audio
-- video
-
->> Đồ họa
-- svg
-- canvas
 ```
+
 # CSS3
 ```css
-width: calc(100%/4)                 // Tính toán
-width: 100vw                        // Full width
-height: 100vh                       // Full height
-table-layout: fixed;                // chia đều width cho các cột trong table
+text-shadow: 0 0 3px blue           // width -> height -> mờ -> màu
+box-shadow: 5px 10px 5px 10px #000  // width -> height -> mờ -> độ lan -> màu
+box-sizing: border-box              // width and height đã bao gồm border
+
+word-wrap: break-word               // từ xuống hàng
+word-break: break-all               // chữ xuống hàng
+text-overflow: ellipsis             // giới hạn và thay text
 
 word-spacing: -6px                  // Cách chữ
 letter-spacing: 8px                 // Cách từ
 white-space:                        // trên dòng or rớt
 writing-mode: vertical-lr           // Text theo chiều dọc
 
-word-wrap: break-word               // từ xuống hàng
-word-break: break-all               // chữ xuống hàng
-text-overflow: ellipsis             // giới hạn và thay text
-
-text-shadow: 0 0 3px blue           // width -> height -> mờ -> màu
-box-shadow: 5px 10px 5px 10px #000  // width -> height -> mờ -> độ lan -> màu
-box-sizing: border-box              // width and height đã bao gồm border
-
+width: calc(100%/4)                 // Tính toán
+width: 100vw                        // Full width
+height: 100vh                       // Full height
 object-fit: cover;                  // tùy chỉnh tỉ lệ tag img
 object-position: right bottom;      // tùy chỉnh vị trí tag img
+table-layout: fixed;                // chia đều width cho các cột trong table
 ```
-# Remember
-## [<!DOCTYPE> là ji?](http://hocwebchuan.com/reference/tag/tag_doctype.php)
 
-## Priority ( `độ ưu tiên trong css` )
-> [on stackoverflow](https://stackoverflow.com/questions/1637343/what-are-the-priorities-among-css-selectors)
+## [Priority](https://stackoverflow.com/questions/1637343/what-are-the-priorities-among-css-selectors) ( `độ ưu tiên trong css` )
 
 ```html
 !important
@@ -77,10 +42,7 @@ class
 tag
 ```
 
-## Safe CSS Default ( `Giá trị mặc định của thẻ` )
-> [for default](http://nimbupani.com/safe-css-defaults.html)
-
-> [for all](https://stackoverflow.com/questions/15901030/reset-remove-css-styles-for-element-only)
+## [Safe CSS Default](http://nimbupani.com/safe-css-defaults.html) ( `Giá trị mặc định của thẻ or unset` )
 
 ```css
 max-width       // none
@@ -120,26 +82,17 @@ visibility      // visible
 vertical-align  // baseline
 ```
 
-## Pseudo in css ( `Phần tử giả của bộ chọn` )
-> [on page](http://vietjack.com/css/pseudo_element_trong_css.jsp)
+## [Pseudo](http://vietjack.com/css/pseudo_element_trong_css.jsp) in css ( `Phần tử giả của bộ chọn` )
 
 ```css
+> được sử dụng để thêm các hiệu ứng đặc biệt cho một số Selector
 :before         // vào trước một phần tử
 :after          // vào sau một phần tử
 :first-line     // cho dòng đầu tiên của đoạn văn
 :first-letter   // cho chữ cái đầu tiên
 ```
 
-## Table
-> [on page](https://html.com/tables/rowspan-colspan/)
-
-```html
-colspan="2" // Chiếm 2 cột
-rowspan="2" // chiếm 2 hàng
-```
-
-## Tag inline/block
-> [on w3s](https://www.w3schools.com/html/html_blocks.asp)
+## Tag [block/inline](https://www.w3schools.com/html/html_blocks.asp)
 
 - Block-level Elements
 
@@ -165,8 +118,7 @@ rowspan="2" // chiếm 2 hàng
 <b> <i> <em> <strong>
 ```
 
-## Tag self closing
-> [on quora](https://www.quora.com/Which-HTML-tags-are-self-closing)
+## Tag self [closing](https://www.quora.com/Which-HTML-tags-are-self-closing)
 
 ```html
 <br /> <hr /> <img /> <input /> <link /> <meta />
@@ -174,13 +126,11 @@ rowspan="2" // chiếm 2 hàng
 ### + [Symbols](http://hocwebchuan.com/reference/tag/symbols.php) ( `Ký tự đặc biệt` )
 ### + [CSS properties](https://stackoverflow.com/questions/5612302/which-css-properties-are-inherited) ( `Kế thừa của thẻ cha` )
 ### + [Vendor prefix](https://kipalog.com/posts/Tai-sao-mot-so-thuoc-tinh-trong-CSS3-phai-them-Vendor-prefixes-nhu--moz----webkit---o----ms--) ( `tiền tố của trình duyệt` )
+----
+### **Flexbox** dễ dàng tạo ra layout và căn chỉnh nội dung bên trong một containers còn **grid** cũng làm được như vậy thậm chỉ còn làm tốt hơn nữa
+### **vậy flex** thì tạo ra layout 1 chiều còn **grid** thì là 2 chiều làm được nhiều hơn nhưng đồng thời cũng phức tạm hơn còn **flex** thì gọn hơn nên dễ maintain hơn bời vậy chúng ta nên linh hoạt kết hợp giữa 2 cái, layout chia cột và 2 chiều thì cùng **grid** còn layout chỉnh nội dung 1 chiều thì nên dùng **flex**
 
-
-### [ Flexbox dễ dàng tạo ra layout và căn chỉnh nội dung bên trong một containers còn grid cũng làm được như vậy thậm chỉ còn làm tốt hơn nữa
-### vậy flex thì tạo ra layout 1 chiều còn grid thì là 2 chiều làm được nhiều hơn nhưng đồng thời cũng phức tạm hơn còn flex thì gọn hơn nên ### dễ maintain hơn bời vậy chúng ta nên linh hoạt kết hợp giữa 2 cái layout chia cột và 2 chiều thì cùng grid còn layout chỉnh nội dung 1 ### chiều thì nên dùng flex ]
-
-## display: flex;
-> [on page](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+## [display: flex](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ```css
 .container {
@@ -205,13 +155,13 @@ rowspan="2" // chiếm 2 hàng
       |- Linh hoạt khối dọc
 
   .item {
-    flex-grow: <number>; /* default 0 */
+    flex-grow: <number>;
         |- là 2 wid gấp đôi wid item 1 và không âm
 
-    flex-shrink: <number>; /* default 1 */
+    flex-shrink: <number>;
         |- Ngược với flex-grow và không âm
 
-    flex-basis: <length> | auto; /* default auto */
+    flex-basis: <length> | auto;
         |- Độ dài của phần tử
 
     flex: 0 1 auto;
@@ -226,8 +176,7 @@ rowspan="2" // chiếm 2 hàng
 }
 ```
 
-## display: grid;
-> [on page](https://css-tricks.com/snippets/css/complete-guide-grid/)
+## [display: grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 ```css
 .container {
