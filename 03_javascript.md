@@ -5,12 +5,12 @@
 ## [Operation](https://trello.com/c/NTktUUCX/7-js-các-toán-tử-4) (Toán tử)
 
 ```
-- toán tử toán học
-- toán tử gán
-- toán tử quan hệ
-- toán tử luận lý
-- toán tử so sánh
-- Nhớ độ ưu tiên của toán tử
+- toán tử toán học; +, -, *, /, %, ++, --
+- toán tử gán; =, +=, -=, *=, /=, %=
+- toán tử quan hệ; >, <, >=, <=, ==, != ; TRUE / FALSE
+- toán tử luận lý; &&, ||, ! ; TRUE / FALSE
+- toán tử so sánh; ==, ===
+- Nhớ độ ưu tiên của toán tử; Nhân chia trước ...
 ```
 
 ## [Number](https://trello.com/c/qdhiQlai/34-js-number-object-31)
