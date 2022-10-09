@@ -1,6 +1,6 @@
 # HTML5
 ## [<!DOCTYPE>](http://hocwebchuan.com/reference/tag/tag_doctype.php) 
-### không phải là một tag HTML,chi cho biết đang dùng phiên bản nào!
+### không phải là một tag HTML, chỉ cho biết đang dùng phiên bản nào!
 ```html
 1. khai báo đơn giản         // <!DOCTYPE html>, <meta charset="UTF-8">
 2. các thẻ ngữ ngĩa new      // <header>, <footer>, <section>...
