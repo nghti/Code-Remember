@@ -1,6 +1,5 @@
 # HTML5
-## [<!DOCTYPE>](http://hocwebchuan.com/reference/tag/tag_doctype.php) 
-### không phải là một tag HTML, chỉ cho biết đang dùng phiên bản nào!
+### [<!DOCTYPE>](http://hocwebchuan.com/reference/tag/tag_doctype.php) ( không phải là một tag HTML, chỉ cho biết đang dùng phiên bản nào! )
 ```html
 1. khai báo đơn giản         // <!DOCTYPE html>, <meta charset="UTF-8">
 2. các thẻ ngữ ngĩa new      // <header>, <footer>, <section>...
@@ -10,28 +9,6 @@
 ```
 
 # CSS3
-```css
-text-shadow: 0 0 3px blue           // width -> height -> mờ -> màu
-box-shadow: 5px 10px 5px 10px #000  // width -> height -> mờ -> độ lan -> màu
-box-sizing: border-box              // width and height đã bao gồm border
-
-word-wrap: break-word               // từ xuống hàng
-word-break: break-all               // chữ xuống hàng
-text-overflow: ellipsis             // giới hạn và thay text
-
-word-spacing: -6px                  // Cách chữ
-letter-spacing: 8px                 // Cách từ
-white-space:                        // trên dòng or rớt
-writing-mode: vertical-lr           // Text theo chiều dọc
-
-width: calc(100%/4)                 // Tính toán
-width: 100vw                        // Full width
-height: 100vh                       // Full height
-object-fit: cover;                  // tùy chỉnh tỉ lệ tag img
-object-position: right bottom;      // tùy chỉnh vị trí tag img
-table-layout: fixed;                // chia đều width cho các cột trong table
-```
-
 ## [Priority](https://stackoverflow.com/questions/1637343/what-are-the-priorities-among-css-selectors) ( `độ ưu tiên trong css` )
 
 ```html
