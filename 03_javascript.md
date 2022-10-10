@@ -92,7 +92,7 @@ array.toString()                        // chuổi sang mảng cách nhau dấu 
 ```js
 let Comment = {}
 let Comment = {
-    title : "doi tuwong",
+    title : "doi tuong",
     content : "khai bao doi tuong",
     name: function() {
         document.write('nghti')
@@ -112,15 +112,57 @@ function print_function(n)
 print_function(4)
 ```
 
-# <b>Control Statement</b> Câu lệnh điều khiển
+## <b>Control Statement</b> Câu lệnh điều khiển
 
 - [if/else](https://trello.com/c/lGeiSt5C/8-js-l%E1%BB%87nh-if-else-5)
+```js
+NULL => False
+Rỗng(empty) => False
+undefined => False
+Số khác 0 => TRUE
+Số 0 => FALSE
+```
 - [switch, case](https://trello.com/c/2BwQc2qC/9-js-l%E1%BB%87nh-switch-case-6)
+```js
+switch (variable)
+{
+    case value_1 : {
+        // do some thing
+        break;
+    }
+    case value_2 : {
+        // do some thing
+        break;
+    }
+    default : {
+        // do something
+    }
+}
+`break` là thoát chương trình
+`default` trường hợp ngoại lệ
+```
 - [Vòng lặp for](https://trello.com/c/gWdye63t/15-js-vòng-lặp-for-12)
+```html
+var i = 0;
+for (i = 0; i < 100; i++){
+    // Dòng lệnh xử lý vòng lặp
+}
+```
 - [Vòng lặp while, do while](https://trello.com/c/pDQ9C9GU/16-js-v%C3%B2ng-l%E1%BA%B7p-while-do-while-13)
+```js
+- Vòng lặp while và do while dùng để lặp với trường hợp ta không biết chính xác số lần lặp là bao nhiêu
+- trường hợp điều kiện dừng vòng lặp phức tạp, điều này hoàn toàn khác với vòng lặp for
+- Đối với vòng lặp do while thì luôn luôn lặp ít nhất 1 lần tại vì nó thực hiện code bên trong lệnh do rồi mới kiểm tra điều kiện
+```
 - [break, continue](https://trello.com/c/qo6IcEVI/17-js-l%E1%BB%87nh-break-continue-14)
+```js
+- `break` dừng vòng lặp cho dù điều kiện của vòng lặp vẫn đang đúng
+- `continue` bỏ qua một bước lặp nào đó
+=> Ngoài vòng lặp for và vòng lặp while ra thì hai lệnh này có thể được dùng với tất cả các vòng lặp khác
+=> giúp cho chương trình có thể hoạt động một cách lắc léo hơn
+```
 
-# [Event](https://trello.com/c/NsMWxLHg/18-js-sự-kiện-event-là-gì-15)
+## [Event](https://trello.com/c/NsMWxLHg/18-js-sự-kiện-event-là-gì-15)
 
 ```html
 STT	Event Name	    Description
@@ -135,12 +177,63 @@ STT	Event Name	    Description
 ```
 
 - [setTimeout(function, time), setInterval(function, time)](https://trello.com/c/PxctX5sT/14-js-settimeout-setinterval-11)
-- [Thêm sự kiện bằng javascrip & for](https://trello.com/c/sFHdiH08/19-js-thêm-sự-kiện-event-16)
-- [return true/false](https://trello.com/c/JGaACbVx/20-js-return-true-false-17)
-- [Sự kiện onload](https://trello.com/c/LxcgVCHs/21-js-sự-kiện-onload-18)
-- [addEventListener](https://trello.com/c/VK7T4Qxn/22-js-hàm-addeventlistener-19)
-- [removeEventListener](https://trello.com/c/0C6JqmyI/23-js-hàm-removeeventlistener-20)
+```js
+`setTimeout(function(){alert('hien sau 3 giay')}, 3000)`
+- dùng để thiết lập một khoảng thời gian nào đó sẽ thực hiện một nhiệm vụ nào đó và nó chỉ thực hiện đúng `một lần`.
+`clearTimeout(action)` 
+- biết trên dùng hủy bỏ let action = setTimeout
 
+`setInterval(function, time)`
+- như trên nhưng `N lần`
+`clearInterval()` 
+- như trên for setInterval
+```
+- [Thêm sự kiện bằng javascrip & for](https://trello.com/c/sFHdiH08/19-js-thêm-sự-kiện-event-16)
+```js
+Tại sao nên gán `sự kiện bằng Javascript` thay vì `gán trực tiếp bằng mã HTML` >> VD có 100 thẻ a ko thể gán 100 sự kiện onclick (Dùng DOM thêm vòng lặp)
+```
+- [return true/false](https://trello.com/c/JGaACbVx/20-js-return-true-false-17)
+```js
+- Hàm có return và hàm không có return
+    + Thông thường ta sử dụng return ở những trường hợp cần lấy kết quả đó để xử lý tiếp
+    + Còn trả về kq luôn thì dùng hàm không return
+    + Như vậy tùy vào mục đích mà ta dùng có return hay không có return
+
+- True/False 
+    + Tóm lại return của events trong javascript dùng để xác nhận một `sự kiện` nào đó thực thi `thành công` hay `thất bại`
+    + Từ đó đối tượng HTML sẽ có những xử lý `cho phép` hoặc `không cho phép` thao tác đó thực hiện tiếp như validate ko
+    + Nếu có return sẽ trả về giá trị
+```
+- [Sự kiện onload](https://trello.com/c/LxcgVCHs/21-js-sự-kiện-onload-18)
+```js
+- Javascript : `onload` cho all `window.onload`
+    + Javascript sẽ chạy biên dịch từ trên xuống dưới và từ trái qua phải
+    + Chính vì vậy khi bạn sử dụng một hàm mà `phía trên nó` không tồn tại hàm đó thì sẽ bị báo lỗi undefined ngay. Và để giải quyết vấn đề này thì ta sẽ dùng `sự kiện onload trong javascript`.
+
+    window.onload = function()
+    {
+        // code
+    };
+    => code sẽ chạy khi trình duyệt load xong mọi thứ
+```
+- [addEventListener](https://trello.com/c/VK7T4Qxn/22-js-hàm-addeventlistener-19)
+```js
+// Lấy đối tượng
+var input = document.getElementById("txt-val");
+// Thêm sự kiện cho đối tượng
+input.addEventListener('keyup', function(){
+    // Gán giá trị vào div
+    document.getElementById('result').innerHTML = input.value;
+});
+```
+- [removeEventListener](https://trello.com/c/0C6JqmyI/23-js-hàm-removeeventlistener-20)
+```js
+Tóm lại hàm `removeEventListener()` dùng để xóa một hành động ra khỏi một sự kiện nào đó và hành động đó `phải được định nghĩa bằng một hàm` chứ không gán trực tiếp vào
+
+object.removeEventListener("click", some_action);
++ object: (html ...)
++ some_action: Tên của function
+```
 ## [DOM](https://trello.com/c/mHZzhQUp/24-js-dom-là-gì-21) (Document Object Model)
 - [DOM Element](https://trello.com/c/qOtlzmLX/25-js-dom-element-22)
 
