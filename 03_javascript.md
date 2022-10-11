@@ -16,74 +16,61 @@
 ## [Number](https://trello.com/c/qdhiQlai/34-js-number-object-31)
 
 ```javascript
-valueOf()                               // Trả vê giá trị gốc của nó
 Number(String_so)                       // Chuyển sang kiểu number
 parseInt(String_so_dau)                 // Như Number nhưng chỉ lấy số đầu bỏ string
 parseFloat(String_so_dau)               // Như parseInt nhưng lấy được số lẻ (float)
-so.toString()                           // number to string
 ```
 
 >[More](https://trello.com/c/pMyMfZrg/35-js-number-object-function-32)
 
-## [String](https://trello.com/c/mNFplg4v/31-js-string-object-function-28)
+## [String](https://trello.com/c/mNFplg4v/31-js-string-object-function-27)
 ```javascript
 typeof number                           // check type
-number.toString()                       // chuyển qua string
-String.indexOf(str)                     // Tìm vị trí ký tự
-String.lastIndexOf(str)                 // Như trên nhưng tìm con cuối cùng
-String.search(str)                      // Giống indexOf()
-
-String.slice(start, end)                // Cắt chuỗi nếu âm thì ngược lại
-String.substring(start, end)            // Như trên nhưng ko âm
-String.substr(start, length)            // Cắt bao nhiêu chữ 
-
-String.replace(str_find, str_replace)   // Tìm kiếm và lặp chuỗi
-
-String.concat('add')                    // Nối thêm chuỗi
-String.charAt(4)                        // Tìm vị trí của số
+number.toString() / array.toString()    // chuyển qua string
 String.split()                          // Chuyển chuỗi sang mảng
 
 String.trim()                           // Loại bỏ span đầu và cuối
-String.startsWith('con')                // Bắt đầu bằng con ko
-String.endsWith('con')                  // Kết thúc bằng con ko
+String.concat(String2)                  // Nối thêm chuỗi
+String.replace(str_find, str_replace)   // Tìm kiếm và lặp chuỗi
+
+String.slice(start, end)                // Cắt chuỗi nếu âm thì ngược lại
+    String.substring(start, end)        // Như trên nhưng ko âm
+    String.substr(start, length)        // Cắt bao nhiêu chữ 
+
+String.indexOf(str)                     // Tìm vị trí ký tự
+    String.lastIndexOf(str)             // Như trên nhưng tìm con cuối cùng
+    String.search(str)                  // Giống indexOf()
+    String.charAt(4)                    // Tìm vị trí của số
+
 String.includes('con')                  // có con ko
+    String.startsWith('con')            // Bắt đầu bằng con ko
+    String.endsWith('con')              // Kết thúc bằng con ko
 
 ```
-> [Hàm typeof](https://trello.com/c/0Kj1fKad/38-js-hàm-typeof-35) check type
+> [More](https://trello.com/c/mNFplg4v/31-js-string-object-function-27)
 
 ## [Array](https://trello.com/c/pffrZkNv/32-js-array-object-29) (mảng Chứa nhiều giá trị)
 
 ```javascript
 let name_array = [1,2,3]
-name_array[0]                           // Lấy phần tử trong mảng
+name_array[0]                           // Lấy phần tử trong mảng = 1
 name_array.join('-')                    // Hiển thị PT ra ngoài theo kiểu chuổi
 
-array.valueOf()                         // Trả về giá trị gốc cảu mảng
-
 array.push('add')                       // Thêm PT vào cuối mảng
-array.unshift()                         // Thêm PT vào đầu mảng
-array.pop()                             // Xóa PT cuối của mảng
+    array.unshift()                     // Thêm PT vào đầu mảng
+    array.pop()                         // Xóa PT cuối của mảng
 array.shift()                           // Xóa PT đầu của mảng
-array.splice(position_add, num_element_remove, value1, value2, ...)
-
+array.splice(position, num_element_remove, value1_add, value2_add, ...)
+// chọn Vị trí, xóa n*PT, them1, them2, ... nhiều PT
 array.sort()                            // Sắp xếp lại theo alpha
 array.reverse()                         // Đảo ngược lại vị trí
 array_1.concat(array_2)                 // Nối 2 mảng lại
 array.slice(start, end)                 // Lấy số PT trong mảng
 
-Array.isArray('array')                  // Kiểm tra đối tượng phải mảng ko
-array.some(fun)                         // Chạy qua mảng để kiểm tra or thực hiện chức năng nào đó
-array.every(fun)                        // Chạy qua mảng để kiểm tra or thực hiện chức năng nào đó
-
 array.forEach(fun)                      // Chạy qua mảng thực hiện func nào đó
 array.map(func)                         // Chạy qua mảng kiểu forEach() cho ra mảng mới
 array.filter(func)                      // lọc các phần tử trong mảng ra mảng mới
-
 array.find(fucn)                        // Trả về value đầu tiên thỏa mãn điều kiện
-array.findIndex()                       // Trả về key đầu tiên thỏa mãn điều kiện
-array.indexOf('html')                   // Tìm value trả ra key
-array.lastIndexOf()                     // Tìm value trả ra key cuối
-array.toString()                        // chuổi sang mảng cách nhau dấu ,
 ```
 > [More](https://trello.com/c/JGtZNjLs/33-js-array-object-function-30)
 
@@ -92,8 +79,8 @@ array.toString()                        // chuổi sang mảng cách nhau dấu 
 ```js
 let Comment = {}
 let Comment = {
-    title : "doi tuong",
-    content : "khai bao doi tuong",
+    title : "thuoc tinh",
+    content : "gia tri cua thuoc tinh",
     name: function() {
         document.write('nghti')
     }
